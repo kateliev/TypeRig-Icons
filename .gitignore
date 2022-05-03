@@ -1,0 +1,8 @@
+# -- General
+.DS_Store
+
+# -- FontLab Specific
+*.backup*
+
+# -- Python Specific
+*.pyc
