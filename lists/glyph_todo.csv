@@ -1,145 +1,308 @@
-﻿Priority,Action,Glyph,Meaning,Draw from,Replaces,Count,Captions,Where
-P1,rename glyph,keyboard_arrows,"Arrow-key nudge / keyboard capture (fix typo keyboard_arows, update the call sites)",keyboard_arows,keyboard_arows,3,"Movement | Capture keyboard: | Keyboard: arrow keys move selected nodes by per-master X / Y steps (Shift x10, Shift+Cmd x100); Option+click: set the steps",FontRig index.html:99; TR TypeRig GUI/Panel/Node.py:642; Glyphs TypeRig Toolbar/tr_toolbar.py:91
-P1,rename glyph,pen_cap_butt,Rename pen_capp_butt (typo); no code uses it yet,pen_capp_butt,,0,,
-P1,rename glyph,pen_cap_angle,Rename pen_capp_angle (typo); no code uses it yet,pen_capp_angle,,0,,
-P1,new glyph,config_save,Save setup / configuration / layout / options (now file_save or text),file_save + value_sliders,"file_save, (text)",11,Save setup as JSON | Save configuration to JSON | Save layout | Save axis data to external file,FontRig js/panels/delta-panel.js:284; FontRig js/panels/scripting-panel.js:96; FontRig panels/workplane.html:218; TR TypeRig GUI/Panel/Delta.py:140; TR TypeRig GUI/Panel/DeltaNew.py:694; TR TypeRig GUI/typerig-panel.py:93; TR TypeRig Tools/TR-DeltaPreview.py:568; Glyphs IconAssist/ia_configurator.py:124; Glyphs TypeRig Delta Machine/trdm_window.py:289; Glyphs TypeRig Panel/Panel/Delta.py:410; Glyphs TypeRig Panel/configurator.py:150
-P1,new glyph,config_open,Load setup / configuration / layout (now file_open or text),file_open + value_sliders,"file_open, (text)",9,Load setup from JSON | Load configuration from JSON | Load layout | Load axis data from external file,FontRig js/panels/delta-panel.js:289; FontRig js/panels/scripting-panel.js:95; FontRig panels/workplane.html:221; TR TypeRig GUI/Panel/Delta.py:145; TR TypeRig GUI/Panel/DeltaNew.py:699; TR TypeRig GUI/typerig-panel.py:98; TR TypeRig Tools/TR-DeltaPreview.py:569; Glyphs TypeRig Delta Machine/trdm_window.py:290; Glyphs TypeRig Panel/Panel/Delta.py:408
-P1,new glyph,axis_reset,Reset axis: neutral controls for this layer (now axis_remove),axis_set + refresh,axis_remove,8,Reset axis | Axis reset: neutral controls for this layer,TR TypeRig GUI/Panel/Delta.py:130; TR TypeRig GUI/Panel/DeltaNew.py:2135; TR TypeRig GUI/Panel/Layer.py:304; TR TypeRig Tools/TR-DeltaPreview.py:566; Glyphs TypeRig Delta Live/delta_live_controller.py:102; Glyphs TypeRig Panel/Panel/Delta.py:269; Glyphs TypeRig Panel/Panel/DeltaLite.py:217; Glyphs TypeRig Panel/Panel/Layer.py:293
-P1,new glyph,file_export,"Export to another format: SVG, UFO (now file_save); or adopt the unused file_upload",file_save + arrow out,file_save,7,Export | SVG -> Current Layer | SVG -> Current Layer (Debug color) | SVG -> All layers...,FontRig index.html:37; FontRig index.html:39; FontRig index.html:40; FontRig index.html:42; FontRig index.html:43; FontRig index.html:45; Glyphs TypeRig Delta Machine/trdm_window.py:565
-P1,new glyph,delta_bake,"Execute / bake delta targets (now action_play, shared with apply / run)",delta_machine + action_play,action_play,6,Execute delta — bake targets | Execute delta scale | Execute delta (bake targets) | Execute delta to Target Layers,FontRig js/panels/delta-panel.js:201; TR TypeRig GUI/Panel/Delta.py:105; TR TypeRig GUI/Panel/DeltaNew.py:652; TR TypeRig Tools/TR-DeltaPreview.py:554; Glyphs TypeRig Delta Machine/trdm_window.py:280; Glyphs TypeRig Panel/Panel/Delta.py:401
-P1,new glyph,action_apply,"Apply current settings: transform, XML, warp update (now action_play)",check + action_play,action_play,6,Apply transform to selected contours | Apply | Update: warp the captured outline with the current controls | Refresh,FontRig js/panels/contour-panel.js:417; FontRig panels/detached-panel.html:520; TR TypeRig GUI/Panel/MagicScale.py:128; TR TypeRig GUI/Panel/Outline.py:74; Glyphs TypeRig Panel/Panel/Contour.py:540; Glyphs TypeRig Panel/Panel/Layer.py:278
-P1,new glyph,axis_reset_all,Reset all axes / new setup / clear delta state (now axis_remove or text),axis_reset doubled,"axis_remove, (text)",6,Clear delta — drop cached state (setup kept) | Clear all | Clear all (reset masters from font) | Reset all axes (keep masters),FontRig js/panels/delta-panel.js:247; TR TypeRig GUI/Panel/Delta.py:80; TR TypeRig GUI/Panel/DeltaNew.py:638; TR TypeRig GUI/Panel/DeltaNew.py:684; Glyphs TypeRig Delta Machine/trdm_window.py:294; Glyphs TypeRig Panel/Panel/Delta.py:412
-P1,new glyph,delta_live,Live Edit: Live Axis controls on the glyph canvas (now delta_machine / selection_basic),delta_machine + live dot,"delta_machine, selection_basic",5,Live Edit — show the Live Axis controls on the glyph canvas | Live Edit: show the Live Axis controls on the glyph canvas | Live Edit: show the controls on the glyph canvas | Live Edit: the Live Axis controls on the glyph (TypeRig Delta Live tool),FontRig js/panels/delta-panel.js:206; TR TypeRig GUI/Panel/DeltaNew.py:657; TR TypeRig GUI/Panel/MagicScale.py:123; Glyphs TypeRig Panel/Panel/Delta.py:260; Glyphs TypeRig Panel/Panel/DeltaLite.py:209
-P1,new glyph,axis_reseed,Reset all data: re-seed masters from the font / glyph (now refresh),layer_master + refresh,refresh,5,"Reset all (re-seed masters from glyph) | Reset all data | Reset all data (re-seed masters from font) | Reset all data: re-seed masters from the font, clear the Live Axis",FontRig js/panels/delta-panel.js:253; TR TypeRig GUI/Panel/Delta.py:135; TR TypeRig GUI/Panel/DeltaNew.py:689; TR TypeRig Tools/TR-DeltaPreview.py:567; Glyphs TypeRig Panel/Panel/Delta.py:414
-P1,new glyph,rename,"Rename: layer, glyph name, anchors, elements (FontRig already asks for it)",label + text cursor,"rename, (text), glyph_active",4,Rename layer | Rename selected anchors. | Rename | Set name for current glyph or multiple selected glyphs (TR Selection mode).,FontRig js/panels/layer-panel.js:1749; TR TypeRig GUI/Panel/Anchor.py:191; TR TypeRig GUI/Panel/ElementNew.py:249; TR TypeRig GUI/Panel/Glyph.py:74
-P1,new glyph,value_reset,Reset fields / controls to defaults (now refresh),"refresh, reversed, with a zero dot",refresh,4,Reset transform fields | Defaults: set every control to identity and revert,FontRig js/panels/contour-panel.js:405; TR TypeRig GUI/Panel/MagicScale.py:138; Glyphs TypeRig Panel/Panel/Contour.py:535; Glyphs TypeRig Panel/Panel/Layer.py:275
-P1,new glyph,glyph_capture,Capture / recapture the outline snapshot (now node_target / refresh / text),glyph + capture corners,"node_target, (text), refresh",4,Capture glyph: snapshot the current outline and detect stems | Capture | Recapture: rebuild the Live Axis from the current outline,TR TypeRig GUI/Panel/MagicScale.py:118; Glyphs TypeRig Delta Italic Lab/trdl_window.py:297; Glyphs TypeRig Panel/Panel/Delta.py:265; Glyphs TypeRig Panel/Panel/DeltaLite.py:213
-P1,new glyph,file_import,"Import from another format: SVG, UFO (now file_open); or adopt the unused file_download",file_open + arrow in,file_open,3,Import | Not yet implemented | UFO -> New Master...,FontRig index.html:48; FontRig index.html:50; FontRig index.html:51
-P1,new glyph,contour_match,Matchmaker: match contour order / start points between layers (now heart),contour + two-way arrow,heart,2,"Matchmaker: Match active to selected layer (Alt for test, Ctrl for selected contours only) | Matchmaker: match active to picked layer (Alt: dry run, Ctrl: selected contours only)",TR TypeRig GUI/Panel/Layer.py:282; Glyphs TypeRig Panel/Panel/Layer.py:240
-P1,new glyph,axis_swap,Swap axis masters (now contour_reverse),axis_set + swap arrows,contour_reverse,2,Swap axis masters,TR TypeRig GUI/Panel/Layer.py:309; Glyphs TypeRig Panel/Panel/Layer.py:296
-P1,new glyph,search_clear,Clear search / search results (now refresh or close),search + close,"close, refresh",2,Clear search | Clear search results,FontRig js/dialogs/fr-dialogs.js:366; TR TypeRig GUI/Panel/Explorer.py:374
-P1,new glyph,designspace_open,Open / read .designspace (now file_open),file_open + axis mark,file_open,2,"Load Designspace... | Read a .designspace file (axes, sources): sources named like a master in the font",FontRig index.html:34; Glyphs TypeRig Delta Machine/trdm_window.py:561
-P1,new glyph,axis_add,New axis (now axis_set or a text +),axis_set + plus,"axis_set, (text)",2,"New axis (Weight, Width, Optical size, ... first) | Add an axis",Glyphs TypeRig Delta Machine/trdm_window.py:542; Glyphs TypeRig Panel/Panel/Delta.py:324
-P1,new glyph,stroke_fake,Fake stroke: rebuild a clean stroke from two contours (button shows the letter S),channel_process,S,1,Fake stroke,TR TypeRig GUI/Panel/Node.py:263
-P1,new glyph,corner_radius,Corner value is a radius toggle (button shows the letter R),corner_round + dimension line,R,1,,Glyphs IconAssist/ia_panels/Corner.py:676
-P1,new glyph,glyph_duplicate,Duplicate glyph(s) (now uses align_group_to_group),layer_duplicate on glyph,align_group_to_group,1,Duplicate current glyph or multiple selected glyphs (TR Selection mode).,TR TypeRig GUI/Panel/Glyph.py:297
-P1,new glyph,glyph_unicode,Set glyph unicode values (now select_glyph),glyph + U+,select_glyph,1,Set glyph unicode values,TR TypeRig GUI/Panel/Glyph.py:110
-P1,new glyph,panel_delta,Delta sidebar tab (now axis_set),panel_* frame + delta,axis_set,1,Delta,FontRig js/panels/sidebar-init.js:137
-P1,new glyph,panel_sound,Sonification sidebar tab (now wave),panel_* frame + wave,wave,1,Sonification,FontRig js/panels/sonification-panel.js:427
-P1,new glyph,font_info,Font info sidebar tab (now file),file + info,file,1,Info,FontRig js/panels/sidebar-init.js:44
-P1,new glyph,font_new,New font (now file),font_open + plus,file,1,New Font...,FontRig index.html:25
-P1,new glyph,delta_commit,Commit delta results as real layers,delta_machine + layer_add,delta_machine,1,Commit delta results as real layers in the glyph,TR TypeRig Tools/TR-DeltaPreview.py:558
-P1,new glyph,designspace_save,Save .designspace (now file_save),file_save + axis mark,file_save,1,Save Designspace...,FontRig index.html:35
-P1,use existing,clipboard_copy,"Copy message / error (FontRig uses the Material name content_copy, not in font)",,content_copy,5,Copy | Copy error,FontRig js/panels/ai-agent-panel.js:885; FontRig js/panels/ai-agent-panel.js:893; FontRig js/panels/ai-agent-panel.js:933; FontRig js/panels/ai-agent-panel.js:1159; FontRig js/panels/ai-agent-panel.js:1165
-P1,use existing,view_list,List view toggle in the glyph widget (now align_group_to_group),,align_group_to_group,2,List view,FontRig js/panels/glyph-widget-panel.js:70; FontRig panels/detached-panel.html:540
-P1,use existing,font_open,Open font (now file); read axes / masters from the font (now refresh),,"file, refresh",2,Open Font | Read axes and masters from the font (new rows are kept),FontRig index.html:29; Glyphs TypeRig Delta Machine/trdm_window.py:556
-P1,use existing,alert,"Error header (FontRig uses Material name warning, not in font)",,warning,1,,FontRig js/panels/ai-agent-panel.js:1148
-P1,use existing,spark,"AI self-correcting header (FontRig uses Material name auto_fix_high, not in font)",,auto_fix_high,1,,FontRig js/panels/ai-agent-panel.js:1215
-P1,use existing,glyph,Glyph menu (now align_group_to_group),,align_group_to_group,1,Glyph,FontRig index.html:84
-P1,use existing,panel_python,Python sidebar tab (now action_play),,action_play,1,Python,FontRig js/panels/sidebar-init.js:72
-P1,use existing,panel_code,Scripts sidebar tab (now action_play),,action_play,1,Scripts,FontRig js/panels/sidebar-init.js:163
-P1,use existing,panel_layer,Layer sidebar tab (now layer_actions),,layer_actions,1,Layer,FontRig js/panels/sidebar-init.js:85
-P1,use existing,panel_node,Node sidebar tab (now node_add),,node_add,1,Node,FontRig js/panels/sidebar-init.js:98
-P1,use existing,panel_draw,Draw sidebar tab (now draw_line),,draw_line,1,Draw,FontRig js/panels/sidebar-init.js:111
-P1,use existing,panel_contour,Contour sidebar tab (now contour_close),,contour_close,1,Contour,FontRig js/panels/sidebar-init.js:124
-P2,new glyph,remove,"Generic list remove (-) for presets, inputs, targets (text now)",minus in house stroke,(text),15,Remove | &Remove | - | Remove the selected inputs,TR TypeRig GUI/Panel/AutoMetrics.py:58; TR TypeRig GUI/Panel/Corner.py:67; TR TypeRig GUI/Panel/ElementComposer.py:149; TR TypeRig GUI/Panel/ElementNew.py:231; Glyphs TypeRig Delta Italic Lab/trdl_window.py:127; Glyphs TypeRig Delta Machine/trdm_window.py:331; Glyphs TypeRig Delta Machine/trdm_window.py:342; Glyphs TypeRig Delta Machine/trdm_window.py:407; Glyphs TypeRig Delta Machine/trdm_window.py:483; Glyphs TypeRig Delta Machine/trdm_window.py:553; Glyphs TypeRig Kern/trk_tabs/Import.py:77; Glyphs TypeRig Kern/trk_tabs/Job.py:87; Glyphs TypeRig Panel/Panel/Delta.py:198; Glyphs TypeRig Panel/Panel/Delta.py:398; Glyphs TypeRig Panel/Panel/DeltaLite.py:151
-P2,new glyph,tag,"Glyph / node tags: set, copy, add (now label or text)",label,"label, (text)",8,Set glyph tags | Copy tags | Add tags to current glyph. | Add tags to all glyphs in current Glyph window.,TR TypeRig GUI/Panel/Glyph.py:100; TR TypeRig GUI/Panel/Glyph.py:335; TR TypeRig GUI/Panel/Guide.py:257; TR TypeRig GUI/Panel/Guide.py:258; TR TypeRig GUI/Panel/Guide.py:259; TR TypeRig GUI/Panel/Guide.py:261; TR TypeRig GUI/Panel/Guide.py:262; TR TypeRig GUI/Panel/Guide.py:263
-P2,new glyph,view_zoom,Cycle zoom / thumbnail / cell size (now search),search + plus/minus,search,5,Cycle icon size (Grid mode only) | Cycle zoom level | Cell size (px) | Cycle the thumbnail size,TR TypeRig GUI/Panel/Clipboard.py:308; TR TypeRig GUI/Panel/Explorer.py:399; TR TypeRig GUI/Panel/Explorer.py:439; TR TypeRig Tools/TR-DeltaPreview.py:513; Glyphs TypeRig Panel/Panel/Clipboard.py:149
-P2,new glyph,add,"Generic list add (+) for presets, inputs, rows (text now)",plus in house stroke,(text),5,Add | +,TR TypeRig GUI/Panel/AutoMetrics.py:57; TR TypeRig GUI/Panel/Corner.py:66; TR TypeRig GUI/Panel/ElementNew.py:233; Glyphs TypeRig Delta Machine/trdm_window.py:330; Glyphs TypeRig Kern/trk_tabs/Job.py:85
-P2,new glyph,transform,Transform controls / menu (now diagonal_bottom_up or arrows_expand),translate + scale + rotate,"arrows_expand, diagonal_bottom_up",4,Transform | Show transformation controls | Panel: Show transformation controls,FontRig index.html:299; TR TypeRig GUI/Panel/Glyph.py:346; TR TypeRig GUI/Panel/Layer.py:202; Glyphs TypeRig Panel/Panel/Layer.py:82
-P2,new glyph,select_none,Select none / deselect all (now select_option),"select_option, empty",select_option,3,Deselect all | Select none,TR TypeRig GUI/typerig-panel.py:78; Glyphs IconAssist/ia_configurator.py:118; Glyphs TypeRig Panel/configurator.py:143
-P2,new glyph,settings,Settings / config / preferences (now view_list or text),gear,"view_list, (text)",3,Config | Edit Rounding Settings… | Edit Squircle Settings…,FontRig js/panels/sidebar.js:174; Glyphs IconAssist/ia_panels/Corner.py:668; Glyphs IconAssist/ia_panels/Corner.py:696
-P2,new glyph,metrics_copy,Copy metrics / bbox width / height (text now),metrics_advance + clipboard_copy,(text),3,&Copy Metrics | &Copy Width | &Copy Height,TR TypeRig GUI/Panel/Metrics.py:218; TR TypeRig GUI/Panel/Metrics.py:317; TR TypeRig GUI/Panel/Metrics.py:318
-P2,new glyph,clipboard_save,Save clipboard / contour bank to file (now file_save),clipboard + file_save,file_save,2,"Save clipboard | Save the bank to a file (TypeRig XML, FL compatible)",TR TypeRig GUI/Panel/Clipboard.py:288; Glyphs TypeRig Panel/Panel/Clipboard.py:146
-P2,new glyph,clipboard_open,Load clipboard / bank file (now file_open),clipboard + file_open,file_open,2,Load clipboard | Load a bank file (adds to the bank),TR TypeRig GUI/Panel/Clipboard.py:293; Glyphs TypeRig Panel/Panel/Clipboard.py:147
-P2,new glyph,folder_open,"Browse for a file: tags, categories (now file_open)",folder,file_open,2,Browse for tags file | Browse for category file,TR TypeRig GUI/Panel/Explorer.py:502; TR TypeRig GUI/Panel/Explorer.py:517
-P2,new glyph,link,Copy links / metric and element links (now guide_zone or text),chain link,"(text), guide_zone",2,Link | Copy links,TR TypeRig GUI/Panel/ElementNew.py:254; TR TypeRig GUI/Panel/Glyph.py:326
-P2,new glyph,link_off,Unlink metric expressions / elements (text now),link + slash,(text),2,Unlink | &Unlink,TR TypeRig GUI/Panel/ElementNew.py:256; TR TypeRig GUI/Panel/Metrics.py:403
-P2,new glyph,component,Copy references / reference element (now shape or text),shape + link,"shape, (text)",2,Copy references | &Reference,TR TypeRig GUI/Panel/Glyph.py:314; TR TypeRig GUI/Panel/Metrics.py:402
-P2,new glyph,stem_center,Stem-center snap (now node_middle_top),stem_vertical + centre mark,node_middle_top,2,Stem-Center Snap,TR TypeRig Popups/popup-contour-cut.py:142; Glyphs TypeRig Toolbar/tr_toolbar.py:472
-P2,new glyph,scale_fit,Scale / fit pasted contours into the selection (now node_target_expand),bbox + arrows in,node_target_expand,2,Scale/Fit: unconstrained affine fit of pasted contours into selected shape bounds (no delta compensation) | Scale / Fit: affine fit of pasted contours into the selection bounds,TR TypeRig GUI/Panel/Clipboard.py:214; Glyphs TypeRig Panel/Panel/Clipboard.py:66
-P2,new glyph,revert,Revert to the captured outline (now undo or text),undo + bar,"undo, (text)",2,Reset: write the captured outline back | Revert,TR TypeRig GUI/Panel/MagicScale.py:133; Glyphs TypeRig Delta Italic Lab/trdl_window.py:299
-P2,new glyph,anchor_remove,Remove selected / all anchors (text now),icon_anchor + minus,(text),2,Remove | Remove All,TR TypeRig GUI/Panel/Anchor.py:187; TR TypeRig GUI/Panel/Anchor.py:188
-P2,new glyph,element_ungroup,Ungroup / ungroup all elements (text now),"element_group, split",(text),2,Ungroup | Ungroup all,TR TypeRig GUI/Panel/ElementNew.py:84; TR TypeRig GUI/Panel/ElementNew.py:88
-P2,new glyph,element_front,Element to front (text now),stack + fold_up,(text),2,Top | To front,TR TypeRig GUI/Panel/ElementNew.py:68; TR TypeRig GUI/Panel/ElementNew.py:106
-P2,new glyph,element_back,Element to back (text now),stack + fold_down,(text),2,Bottom | To back,TR TypeRig GUI/Panel/ElementNew.py:70; TR TypeRig GUI/Panel/ElementNew.py:108
-P2,new glyph,glyph_remove,Remove glyphs from a group (now close),glyph + minus (pair of glyph_add),close,1,Remove every glyph from the group,Glyphs TypeRig Delta Machine/trdm_window.py:485
-P2,new glyph,glyph_search,Add the glyphs that match a pattern (now search),glyph + search,search,1,Add the glyphs that match the pattern,Glyphs TypeRig Delta Machine/trdm_window.py:500
-P2,new glyph,view_padding,Cell padding (now view_icons),view_icons + inset frame,view_icons,1,Padding (%),TR TypeRig Tools/TR-DeltaPreview.py:516
-P2,new glyph,row_inherit,Delta Machine: override rows inherit from the general row (now refresh),select_list + arrow down,refresh,1,Selected override rows: inherit every cell from the general row again,Glyphs TypeRig Delta Machine/trdm_window.py:432
-P2,new glyph,row_fold,Delta Machine: fold rows of one layer into a general row (now viewport_merge),select_list + merge,viewport_merge,1,Fold the selected rows of one layer into one general row for all their groups (most,Glyphs TypeRig Delta Machine/trdm_window.py:428
-P2,new glyph,contour_color,Colorize contours by index (now flag),contour + colour fill,flag,1,Colorize contours by index,TR TypeRig Tools/TR-DeltaPreview.py:519
-P2,new glyph,glyph_key,Group leader: the reference glyph of a group (now flag),glyph + star / key,flag,1,Group leader: the selected glyph becomes the reference (Ref.) of the group.,Glyphs TypeRig Delta Machine/trdm_window.py:489
-P2,new glyph,undo_off,Disable undo for speed (now alert),undo + slash,alert,1,Disable UNDO for faster operation,TR TypeRig GUI/Panel/Glyph.py:341
-P2,new glyph,anchor_add,"Add anchor (Anchor panel, text now)",icon_anchor + plus,(text),1,Add,TR TypeRig GUI/Panel/Anchor.py:189
-P2,new glyph,anchor_copy,Copy anchors from layers (text now),icon_anchor + clipboard_copy,(text),1,Copy selected Anchors from layers chosen.,TR TypeRig GUI/Panel/Anchor.py:185
-P2,new glyph,anchor_paste,Paste anchors to layers (text now),icon_anchor + clipboard_paste,(text),1,Paste Anchors at layers chosen.,TR TypeRig GUI/Panel/Anchor.py:186
-P2,new glyph,anchor_move,Move anchor (text now),icon_anchor + translate,(text),1,Move,TR TypeRig GUI/Panel/Anchor.py:190
-P2,new glyph,element_group,"Group elements (Element panel, text now)",shape x2 in frame,(text),1,Group,TR TypeRig GUI/Panel/ElementNew.py:82
-P2,new glyph,element_forward,Move element forward one step (text now),stack + arrow_up,(text),1,Forward,TR TypeRig GUI/Panel/ElementNew.py:100
-P2,new glyph,element_backward,Move element backward one step (text now),stack + arrow_down,(text),1,Backward,TR TypeRig GUI/Panel/ElementNew.py:102
-P2,new glyph,undo_clear,Clear undo history (text now),undo + close,(text),1,Clear undo history,FontRig js/panels/undo-panel.js:68
-P2,use existing,clipboard_clear,Reset / empty the contour bank (now close),,close,2,Reset contour bank | Reset: empty the bank,TR TypeRig GUI/Panel/Clipboard.py:298; Glyphs TypeRig Panel/Panel/Clipboard.py:148
-P2,use existing,action_play,Sonify contours / segments (text now),,(text),2,Sonify all contours in active layer | Sonify only the segments touching selected nodes,FontRig js/panels/sonification-panel.js:41; FontRig js/panels/sonification-panel.js:51
-P2,use existing,stem_vertical_alt,Get / measure vertical stems menu action (text now),,(text),2,Get Vertical Stems | Measure V stem on selection,TR TypeRig GUI/Panel/Delta.py:81; TR TypeRig GUI/Panel/DeltaNew.py:636
-P2,use existing,stem_horizontal_alt,Get / measure horizontal stems menu action (text now),,(text),2,Get Horizontal Stems | Measure H stem on selection,TR TypeRig GUI/Panel/Delta.py:82; TR TypeRig GUI/Panel/DeltaNew.py:637
-P2,use existing,stem_detect_auto,Show stem detection settings (now search),,search,1,Show stem detection settings and report,TR TypeRig GUI/Panel/MagicScale.py:175
-P2,use existing,undo,Undo button (text now),,(text),1,Undo (Ctrl+Z),FontRig js/panels/undo-panel.js:60
-P2,use existing,redo,Redo button (text now),,(text),1,Redo (Ctrl+Shift+Z),FontRig js/panels/undo-panel.js:64
-P2,use existing,value_decrease_10,Value -10 step (text now),,(text),1,-10,FontRig js/widgets/fr-widgets.js:472
-P2,use existing,value_decrease_1,Value -1 step (text now),,(text),1,-1,FontRig js/widgets/fr-widgets.js:475
-P2,use existing,value_increase_1,Value +1 step (text now),,(text),1,+1,FontRig js/widgets/fr-widgets.js:478
-P2,use existing,value_increase_10,Value +10 step (text now),,(text),1,+10,FontRig js/widgets/fr-widgets.js:481
-P2,use existing,action_stop,Stop playback (text now),,(text),1,Stop playback,FontRig js/panels/sonification-panel.js:60
-P2,use existing,guide_drop,Drop guideline between two nodes (text now),,(text),1,Drop guideline between any two selected nodes.,TR TypeRig GUI/Panel/Guide.py:119
-P2,use existing,guide_drop_flip_h,Drop flipped guideline X (text now),,(text),1,Drop flipped guideline between any two selected nodes.,TR TypeRig GUI/Panel/Guide.py:120
-P2,use existing,guide_drop_flip_v,Drop flipped guideline Y (text now),,(text),1,Drop flipped guideline between any two selected nodes.,TR TypeRig GUI/Panel/Guide.py:121
-P2,use existing,guide_vertical,Drop vertical layer guide (text now),,(text),1,Vertical,TR TypeRig GUI/Panel/Guide.py:122
-P2,use existing,guide_horizontal,Drop horizontal layer guide (text now),,(text),1,Horizontal,TR TypeRig GUI/Panel/Guide.py:123
-P2,use existing,dimension_ascender,Set font ascender (text now),,(text),1,Set Ascender height,TR TypeRig GUI/Panel/Metrics.py:532
-P2,use existing,dimension_caps,Set font caps height (text now),,(text),1,Set Caps Height,TR TypeRig GUI/Panel/Metrics.py:533
-P2,use existing,dimension_xheight,Set font x-height (text now),,(text),1,Set X Height,TR TypeRig GUI/Panel/Metrics.py:535
-P2,use existing,dimension_descender,Set font descender (text now),,(text),1,Set Descender height,TR TypeRig GUI/Panel/Metrics.py:534
-P2,use existing,layer_push,IconAssist: push layer (text now),,(text),1,Push →,Glyphs IconAssist/ia_panels/Layer.py:284
-P2,use existing,layer_pull,IconAssist: pull layer (text now),,(text),1,Pull ←,Glyphs IconAssist/ia_panels/Layer.py:285
-P2,use existing,node_snap,Snap captured stems to targets (text now),,(text),1,Snap captured stems / strokes to their targets on every layer in scope.,Glyphs TypeRig Panel/Panel/StemSnap.py:339
-P2,use existing,slope_italic,Take italic angle from the master (text now),,(text),1,Take the italic angle from the current master.,Glyphs TypeRig Panel/Panel/Cleanup.py:162
-P2,use existing,font_save,Save Live Axis to font (text now),,(text),1,Save to font,Glyphs TypeRig Delta Italic Lab/trdl_window.py:301
-P3,new glyph,layer_wireframe,Layer menu: Set as wireframe,"layer_active, dashed",(text),1,Set as Wireframe,TR TypeRig GUI/Panel/Layer.py:342
-P3,new glyph,draw_polygon,Insert a regular polygon (now gem),"draw_square, five sides",gem,1,"Insert a pentagon (n-gon, n=5) at center",FontRig js/panels/draw-panel.js:91
-P3,new glyph,draw_squircle,Insert a squircle (now hyper),draw_square + corner_smart,hyper,1,Insert a squircle (Lamé curve) at center,FontRig js/panels/draw-panel.js:106
-P3,new glyph,gravity_x,MagicScale: ink gravity X (now wave),arrows_left_right + weight,wave,1,"Gravity X (x0.01): + moves ink left, - moves ink right",TR TypeRig GUI/Panel/MagicScale.py:261
-P3,new glyph,gravity_y,MagicScale: ink gravity Y (now wave),arrows_up_down + weight,wave,1,"Gravity Y (x0.01): + moves ink down, - moves ink up",TR TypeRig GUI/Panel/MagicScale.py:262
-P3,new glyph,centroid_x,MagicScale: centroid shift X (now delta_x),delta_x + centre dot,delta_x,1,Centroid shift X: solve gravity X so the ink centroid moves by this (0 = off),TR TypeRig GUI/Panel/MagicScale.py:263
-P3,new glyph,centroid_y,MagicScale: centroid shift Y (now delta_y),delta_y + centre dot,delta_y,1,Centroid shift Y: solve gravity Y so the ink centroid moves by this (0 = off),TR TypeRig GUI/Panel/MagicScale.py:264
-P3,new glyph,stem_compensation,Stem compensation intensity (now node_snap),stem_vertical + value_sliders,node_snap,1,Stem compensation intensity,TR TypeRig Tools/TR-DeltaPreview.py:590
-P3,new glyph,view_filled,View: filled preview (now shape),"circle, filled",shape,1,Filled,FontRig index.html:64
-P3,new glyph,view_outline,View: outline preview (now contour),"circle, outline",contour,1,Outline,FontRig index.html:65
-P3,new glyph,view_preview,Toggle black-and-white preview (now visible),visible + filled glyph,visible,1,Toggle BW preview (` + Space),FontRig index.html:147
-P3,new glyph,metrics_view,Show baseline and side bearings (now visible),metrics_advance + visible,visible,1,Show baseline and side bearings,TR TypeRig Tools/TR-DeltaPreview.py:522
-P3,new glyph,window_new,Open a new workplane window (now select_window),window + plus,select_window,1,Open a new workplane window,FontRig index.html:196
-P3,new glyph,curve_quadratic,Convert to quadratic (now curve_set),curve with one handle,curve_set,1,Convert to Quadratic,FontRig index.html:295
-P3,new glyph,hobby_to_bezier,Convert all Hobby splines to Beziers (now contour),token_hobby -> token_bezier,contour,1,Convert all Hobby splines to Beziers...,FontRig index.html:88
-P3,new glyph,glyph_insert,Insert source glyph contents into the active layer (now layer_add),glyph + clipboard_paste,layer_add,1,Copy contents of source glyph and insert them to current active glyph(s),TR TypeRig GUI/Panel/Glyph.py:380
-P3,new glyph,python_restart,Initialize / reset the Python runtime (now action_play),panel_python + refresh,action_play,1,Initialize / Reset Python runtime,FontRig index.html:105
-P3,use existing,clipboard_paste_nodes,Layer menu: Paste nodes / paste by layer,,(text),2,Paste Nodes | Paste by Layer,TR TypeRig GUI/Panel/Layer.py:374; TR TypeRig GUI/Panel/Layer.py:375
-P3,use existing,layer_add,Layer menu: New,,(text),1,New,TR TypeRig GUI/Panel/Layer.py:332
-P3,use existing,layer_duplicate,Layer menu: Duplicate,,(text),1,Duplicate,TR TypeRig GUI/Panel/Layer.py:333
-P3,use existing,layer_mask_add,Layer menu: Duplicate to mask,,(text),1,Duplicate to Mask,TR TypeRig GUI/Panel/Layer.py:334
-P3,use existing,layer_remove,Layer menu: Remove,,(text),1,Remove,TR TypeRig GUI/Panel/Layer.py:335
-P3,use existing,visible_toggle,Layer menu: Toggle visible,,(text),1,Toggle Visible,TR TypeRig GUI/Panel/Layer.py:336
-P3,use existing,visible,Layer menu: Set visible,,(text),1,Set Visible,TR TypeRig GUI/Panel/Layer.py:337
-P3,use existing,visible_off,Layer menu: Set invisible,,(text),1,Set Invisible,TR TypeRig GUI/Panel/Layer.py:338
-P3,use existing,layer_mask,Layer menu: Set as mask,,(text),1,Set as Mask,TR TypeRig GUI/Panel/Layer.py:341
-P3,use existing,layer_service,Layer menu: Set as service,,(text),1,Set as Service,TR TypeRig GUI/Panel/Layer.py:343
-P3,use existing,layer_swap,Layer menu: Swap elements,,(text),1,Swap Elements,TR TypeRig GUI/Panel/Layer.py:353
-P3,use existing,layer_pull,Layer menu: Pull elements,,(text),1,Pull Elements,TR TypeRig GUI/Panel/Layer.py:354
-P3,use existing,layer_push,Layer menu: Push elements,,(text),1,Push Elements,TR TypeRig GUI/Panel/Layer.py:355
-P3,use existing,layer_clean,Layer menu: Clean elements,,(text),1,Clean Elements,TR TypeRig GUI/Panel/Layer.py:356
-P3,use existing,layer_lock,Layer menu: Lock elements,,(text),1,Lock elements,TR TypeRig GUI/Panel/Layer.py:358
-P3,use existing,layer_lock_off,Layer menu: Unlock elements,,(text),1,Unlock elements,TR TypeRig GUI/Panel/Layer.py:357
-P3,use existing,nodes_pull,Layer menu: Pull nodes,,(text),1,Pull Nodes,TR TypeRig GUI/Panel/Layer.py:371
-P3,use existing,nodes_push,Layer menu: Push nodes,,(text),1,Push Nodes,TR TypeRig GUI/Panel/Layer.py:372
-P3,use existing,clipboard_copy_nodes,Layer menu: Copy nodes,,(text),1,Copy Nodes,TR TypeRig GUI/Panel/Layer.py:373
-P3,use existing,visible_sbs,Layer menu: Side by side,,(text),1,Side by side,TR TypeRig GUI/Panel/Layer.py:386
-P3,use existing,draw_square,Insert a square (now quad),,quad,1,Insert a square at center,FontRig js/panels/draw-panel.js:81
+﻿Group,Priority,Action,Glyph,Meaning,Draw from,Replaces,Count,Captions,Where,Origin
+Arrows & navigation,P1,exists,"arrow_left, arrow_right, arrow_up, arrow_down, chevron_left, chevron_right, fold_up, fold_down, arrows_expand, arrows_contract, node_next, node_previous","Straight arrows, chevrons, expand / contract; arrows_2up_left draws two up-right arrows (check the name)",,,0,,,catalog
+Arrows & navigation,P1,rename glyph,keyboard_arrows,Arrow-key nudge / keyboard capture (fix typo keyboard_arows; keep the old name as an alias until the 3 call sites move),keyboard_arows,keyboard_arows,3,"Movement | Capture keyboard: | Keyboard: arrow keys move selected nodes by per-master X / Y steps (Shift x10, Shift+Cmd x100); Option+click: set the steps",FontRig index.html:99; TR TypeRig GUI/Panel/Node.py:642; Glyphs TypeRig Toolbar/tr_toolbar.py:91,census
+Arrows & navigation,P1,new glyph,arrows_left_right,"Double-headed horizontal arrow: resize width, horizontal extent",width (arrow only),,0,,,catalog
+Arrows & navigation,P1,new glyph,arrows_up_down,"Double-headed vertical arrow: resize height, vertical extent",height (arrow only),,0,,,catalog
+Arrows & navigation,P1,new glyph,arrows_move,Four-way arrow: move / pan / drag,arrows_left_right + arrows_up_down,,0,,,catalog
+Arrows & navigation,P1,alias,chevron_up,"Chevron up - same drawing as fold_up, completes the chevron set",fold_up,,0,,,catalog
+Arrows & navigation,P1,alias,chevron_down,Chevron down - same drawing as fold_down,fold_down,,0,,,catalog
+Arrows & navigation,P2,new glyph,arrow_up_left,Diagonal arrow up-left,arrow_up rotated,,0,,,catalog
+Arrows & navigation,P2,new glyph,arrow_up_right,Diagonal arrow up-right,arrow_up rotated,,0,,,catalog
+Arrows & navigation,P2,new glyph,arrow_down_left,Diagonal arrow down-left,arrow_down rotated,,0,,,catalog
+Arrows & navigation,P2,new glyph,arrow_down_right,Diagonal arrow down-right,arrow_down rotated,,0,,,catalog
+Arrows & navigation,P2,new glyph,chevron_double_left,"Double chevron left: collapse side panel, previous page",chevron_left x2,,0,,,catalog
+Arrows & navigation,P2,new glyph,chevron_double_right,"Double chevron right: expand side panel, next page",chevron_right x2,,0,,,catalog
+Arrows & navigation,P2,new glyph,chevron_double_up,Double chevron up: collapse all sections,fold_up x2,,0,,,catalog
+Arrows & navigation,P2,new glyph,chevron_double_down,Double chevron down: expand all sections,fold_down x2,,0,,,catalog
+Arrows & navigation,P2,new glyph,arrow_first,"Jump to first (glyph, node, master): arrow to bar",arrow_left + bar,,0,,,catalog
+Arrows & navigation,P2,new glyph,arrow_last,Jump to last: arrow to bar,arrow_right + bar,,0,,,catalog
+Arrows & navigation,P2,new glyph,menu_dropdown,Small caret: drop-down / combo indicator,"fold_down, filled triangle",,0,,,catalog
+Arrows & navigation,P2,new glyph,arrow_external,Open outside / external link: arrow out of a box,window + arrow_up_right,,0,,,catalog
+Arrows & navigation,P2,new glyph,sort_ascending,"Sort list ascending (glyph lists, tables)",select_list + arrow_down,,0,,,catalog
+Arrows & navigation,P2,new glyph,sort_descending,Sort list descending,select_list + arrow_up,,0,,,catalog
+Arrows & navigation,P3,new glyph,drag_handle,"Grip dots: reorder rows, drag panels",six dots,,0,,,catalog
+Run & media,P1,exists,"action_play, action_play_reverse, action_stop, action_pause, action_rec",Transport basics,,,0,,,catalog
+Run & media,P1,new glyph,script_run,Run script / macro (not the same as play media or apply),code_tag + action_play,,0,,,catalog
+Run & media,P2,new glyph,script_stop,Stop running script,code_tag + action_stop,,0,,,catalog
+Run & media,P2,new glyph,script_new,New script,code_tag + plus,,0,,,catalog
+Run & media,P2,new glyph,action_batch,Run on all glyphs / batch process,action_play + glyph_stack,,0,,,catalog
+Run & media,P2,new glyph,action_eject,Eject: pull out / detach (also element eject in Element panel),triangle up + bar,,0,,,catalog
+Run & media,P2,new glyph,action_step_forward,Step forward one item (play to bar),action_play + bar,,0,,,catalog
+Run & media,P2,new glyph,action_step_back,Step back one item,action_play_reverse + bar,,0,,,catalog
+Run & media,P2,use existing,action_play,Sonify contours / segments (text now),,(text),2,Sonify all contours in active layer | Sonify only the segments touching selected nodes,FontRig js/panels/sonification-panel.js:41; FontRig js/panels/sonification-panel.js:51,census
+Run & media,P2,use existing,action_stop,Stop playback (text now),,(text),1,Stop playback,FontRig js/panels/sonification-panel.js:60,census
+Run & media,P3,new glyph,python_restart,Initialize / reset the Python runtime (now action_play),panel_python + refresh,action_play,1,Initialize / Reset Python runtime,FontRig index.html:105,census
+Run & media,P3,new glyph,action_skip_next,Skip to next (double triangle to bar),value_increase_double + bar,,0,,,catalog
+Run & media,P3,new glyph,action_skip_previous,Skip to previous,value_decrease_double + bar,,0,,,catalog
+Run & media,P3,new glyph,action_loop,Repeat / loop,"sync, single loop",,0,,,catalog
+History,P1,exists,"undo, redo, undo_snapshot","Undo, redo, make snapshot (to-do also adds undo_clear, undo_off, revert)",,,0,,,catalog
+History,P1,new glyph,history,History panel / list of actions: clock with back arrow,circle + undo arrow + hands,,0,,,catalog
+History,P2,new glyph,revert,Revert to the captured outline (now undo or text),undo + bar,"undo, (text)",2,Reset: write the captured outline back | Revert,TR TypeRig GUI/Panel/MagicScale.py:133; Glyphs TypeRig Delta Italic Lab/trdl_window.py:299,census
+History,P2,new glyph,undo_off,Disable undo for speed (now alert),undo + slash,alert,1,Disable UNDO for faster operation,TR TypeRig GUI/Panel/Glyph.py:341,census
+History,P2,new glyph,undo_clear,Clear undo history (text now),undo + close,(text),1,Clear undo history,FontRig js/panels/undo-panel.js:68,census
+History,P2,new glyph,snapshot_restore,Restore a snapshot,"undo_snapshot, arrow reversed",,0,,,catalog
+History,P2,use existing,undo,Undo button (text now),,(text),1,Undo (Ctrl+Z),FontRig js/panels/undo-panel.js:60,census
+History,P2,use existing,redo,Redo button (text now),,(text),1,Redo (Ctrl+Shift+Z),FontRig js/panels/undo-panel.js:64,census
+History,P3,new glyph,snapshot_compare,Compare current state with a snapshot,undo_snapshot + compare,,0,,,catalog
+History,P3,new glyph,backup,Backups / versions of the font file,file + history,,0,,,catalog
+Window & layout,P1,exists,"window, window_popup, panel_left, panel_right, panel_up, panel_down, panel_python, panel_code, panel_terminal, panel_node, panel_draw, panel_contour, panel_layer, widget, widget_add, widget_remove, widget_export, widget_import, viewport_single, viewport_double, viewport_quad, viewport_merge, view_icons, view_list, gui_mode_dark, gui_mode_light","Windows, side panels, widgets, viewports, view modes, themes",,,0,,,catalog
+Window & layout,P1,new glyph,panel_delta,Delta sidebar tab (now axis_set),panel_* frame + delta,axis_set,1,Delta,FontRig js/panels/sidebar-init.js:137,census
+Window & layout,P1,new glyph,panel_sound,Sonification sidebar tab (now wave),panel_* frame + wave,wave,1,Sonification,FontRig js/panels/sonification-panel.js:427,census
+Window & layout,P1,new glyph,menu,Hamburger menu,three bars,,0,,,catalog
+Window & layout,P1,new glyph,menu_more,More options: three dots horizontal,three dots,,0,,,catalog
+Window & layout,P1,new glyph,toggle_on,Switch on,pill + filled knob right,,0,,,catalog
+Window & layout,P1,new glyph,toggle_off,Switch off,pill + knob left,,0,,,catalog
+Window & layout,P1,new glyph,zoom_in,Zoom in,search + plus,,0,,,catalog
+Window & layout,P1,new glyph,zoom_out,Zoom out,search + minus,,0,,,catalog
+Window & layout,P1,new glyph,zoom_fit,Fit to view (FontRig uses arrows_expand now),search + frame corners,,0,,,catalog
+Window & layout,P1,new glyph,lock,"Generic lock (layers and nodes have their own; this is for panels, guides, fields)",lock element used by layer_lock,,0,,,catalog
+Window & layout,P1,new glyph,lock_off,Generic unlock,"lock, open shackle",,0,,,catalog
+Window & layout,P1,use existing,view_list,List view toggle in the glyph widget (now align_group_to_group),,align_group_to_group,2,List view,FontRig js/panels/glyph-widget-panel.js:70; FontRig panels/detached-panel.html:540,census
+Window & layout,P1,use existing,panel_python,Python sidebar tab (now action_play),,action_play,1,Python,FontRig js/panels/sidebar-init.js:72,census
+Window & layout,P1,use existing,panel_code,Scripts sidebar tab (now action_play),,action_play,1,Scripts,FontRig js/panels/sidebar-init.js:163,census
+Window & layout,P1,use existing,panel_layer,Layer sidebar tab (now layer_actions),,layer_actions,1,Layer,FontRig js/panels/sidebar-init.js:85,census
+Window & layout,P1,use existing,panel_node,Node sidebar tab (now node_add),,node_add,1,Node,FontRig js/panels/sidebar-init.js:98,census
+Window & layout,P1,use existing,panel_draw,Draw sidebar tab (now draw_line),,draw_line,1,Draw,FontRig js/panels/sidebar-init.js:111,census
+Window & layout,P1,use existing,panel_contour,Contour sidebar tab (now contour_close),,contour_close,1,Contour,FontRig js/panels/sidebar-init.js:124,census
+Window & layout,P2,new glyph,view_zoom,Cycle zoom / thumbnail / cell size (now search),search + plus/minus,search,5,Cycle icon size (Grid mode only) | Cycle zoom level | Cell size (px) | Cycle the thumbnail size,TR TypeRig GUI/Panel/Clipboard.py:308; TR TypeRig GUI/Panel/Explorer.py:399; TR TypeRig GUI/Panel/Explorer.py:439; TR TypeRig Tools/TR-DeltaPreview.py:513; Glyphs TypeRig Panel/Panel/Clipboard.py:149,census
+Window & layout,P2,new glyph,settings,Settings / config / preferences (now view_list or text),gear,"view_list, (text)",3,Config | Edit Rounding Settings… | Edit Squircle Settings…,FontRig js/panels/sidebar.js:174; Glyphs IconAssist/ia_panels/Corner.py:668; Glyphs IconAssist/ia_panels/Corner.py:696,census
+Window & layout,P2,new glyph,view_padding,Cell padding (now view_icons),view_icons + inset frame,view_icons,1,Padding (%),TR TypeRig Tools/TR-DeltaPreview.py:516,census
+Window & layout,P2,new glyph,menu_more_vertical,More options: three dots vertical (row context menu),menu_more rotated,,0,,,catalog
+Window & layout,P2,new glyph,zoom_actual,Actual size / 100%,search + 1:1,,0,,,catalog
+Window & layout,P2,new glyph,zoom_selection,Zoom to selection,search + selection_basic,,0,,,catalog
+Window & layout,P2,new glyph,panel_dock,Dock a floating panel,window_popup + arrow in,,0,,,catalog
+Window & layout,P2,new glyph,panel_undock,Float / detach a panel,window_popup + arrow out,,0,,,catalog
+Window & layout,P2,new glyph,tab_add,"New tab (glyph tab, text tab)",window tab + plus,,0,,,catalog
+Window & layout,P2,new glyph,keyboard,Keyboard shortcuts,"keyboard_arows, full keyboard",,0,,,catalog
+Window & layout,P3,new glyph,view_filled,View: filled preview (now shape),"circle, filled",shape,1,Filled,FontRig index.html:64,census
+Window & layout,P3,new glyph,view_outline,View: outline preview (now contour),"circle, outline",contour,1,Outline,FontRig index.html:65,census
+Window & layout,P3,new glyph,view_preview,Toggle black-and-white preview (now visible),visible + filled glyph,visible,1,Toggle BW preview (` + Space),FontRig index.html:147,census
+Window & layout,P3,new glyph,window_new,Open a new workplane window (now select_window),window + plus,select_window,1,Open a new workplane window,FontRig index.html:196,census
+Window & layout,P3,new glyph,window_maximize,Maximize window,"window, thick frame",,0,,,catalog
+Window & layout,P3,new glyph,window_minimize,Minimize window,bar at bottom,,0,,,catalog
+Window & layout,P3,new glyph,viewport_double_h,Two viewports stacked (rows),viewport_double rotated,,0,,,catalog
+Window & layout,P3,alias,fullscreen,Full screen,arrows_expand,,0,,,catalog
+Window & layout,P3,alias,fullscreen_exit,Exit full screen,arrows_contract,,0,,,catalog
+Dialog & status,P1,exists,"check, close, alert, info, help, question, refresh, sync, search","OK / apply, cancel / close, status, refresh",,,0,,,catalog
+Dialog & status,P1,new glyph,action_apply,"Apply current settings: transform, XML, warp update (now action_play)",check + action_play,action_play,6,Apply transform to selected contours | Apply | Update: warp the captured outline with the current controls | Refresh,FontRig js/panels/contour-panel.js:417; FontRig panels/detached-panel.html:520; TR TypeRig GUI/Panel/MagicScale.py:128; TR TypeRig GUI/Panel/Outline.py:74; Glyphs TypeRig Panel/Panel/Contour.py:540; Glyphs TypeRig Panel/Panel/Layer.py:278,census
+Dialog & status,P1,new glyph,value_reset,Reset fields / controls to defaults (now refresh),"refresh, reversed, with a zero dot",refresh,4,Reset transform fields | Defaults: set every control to identity and revert,FontRig js/panels/contour-panel.js:405; TR TypeRig GUI/Panel/MagicScale.py:138; Glyphs TypeRig Panel/Panel/Contour.py:535; Glyphs TypeRig Panel/Panel/Layer.py:275,census
+Dialog & status,P1,new glyph,search_clear,Clear search / search results (now refresh or close),search + close,"close, refresh",2,Clear search | Clear search results,FontRig js/dialogs/fr-dialogs.js:366; TR TypeRig GUI/Panel/Explorer.py:374,census
+Dialog & status,P1,new glyph,delete,"Delete permanently: trash can (remove = minus, clear = empty, delete = gone)",trash can,,0,,,catalog
+Dialog & status,P1,new glyph,clear,Clear / empty a field or list: backspace,backspace key + close,,0,,,catalog
+Dialog & status,P1,new glyph,warning,Warning: triangle with ! (FontRig already asks for this name),alert inside a triangle,,0,,,catalog
+Dialog & status,P1,new glyph,error,Error: X in a circle,alert circle + close,,0,,,catalog
+Dialog & status,P1,use existing,alert,"Error header (FontRig uses Material name warning, not in font; or draw the planned warning glyph)",,warning,1,,FontRig js/panels/ai-agent-panel.js:1148,census
+Dialog & status,P1,use existing,spark,"AI self-correcting header (FontRig uses Material name auto_fix_high, not in font)",,auto_fix_high,1,,FontRig js/panels/ai-agent-panel.js:1215,census
+Dialog & status,P2,new glyph,success,Done / passed: check in a circle,alert circle + check,,0,,,catalog
+Dialog & status,P2,new glyph,busy,Working / please wait: hourglass,hourglass,,0,,,catalog
+Dialog & status,P2,alias,ok,OK button,check,,0,,,catalog
+Dialog & status,P2,alias,cancel,Cancel button,close,,0,,,catalog
+Dialog & status,P3,new glyph,disabled,Not allowed / disabled: circle with slash,circle + slash,,0,,,catalog
+Dialog & status,P3,new glyph,notification,Notifications / messages: bell,bell,,0,,,catalog
+Edit & clipboard,P1,exists,"clipboard, clipboard_alt, clipboard_copy, clipboard_paste, clipboard_paste_exact, clipboard_clear, clipboard_copy_nodes, clipboard_paste_nodes, label, flag","Copy / paste, labels, flags",,,0,,,catalog
+Edit & clipboard,P1,new glyph,rename,"Rename: layer, glyph name, anchors, elements (FontRig already asks for it)",label + text cursor,"rename, (text), glyph_active",4,Rename layer | Rename selected anchors. | Rename | Set name for current glyph or multiple selected glyphs (TR Selection mode).,FontRig js/panels/layer-panel.js:1749; TR TypeRig GUI/Panel/Anchor.py:191; TR TypeRig GUI/Panel/ElementNew.py:249; TR TypeRig GUI/Panel/Glyph.py:74,census
+Edit & clipboard,P1,new glyph,edit,Edit: pencil (tool_line already looks like a pencil - keep them apart),"tool_line, simpler",,0,,,catalog
+Edit & clipboard,P1,new glyph,duplicate,Generic duplicate: two overlapping squares,"align_contour_to_contour, filled back",,0,,,catalog
+Edit & clipboard,P1,new glyph,filter,Filter list: funnel,funnel,,0,,,catalog
+Edit & clipboard,P1,use existing,clipboard_copy,"Copy message / error (FontRig uses the Material name content_copy, not in font)",,content_copy,5,Copy | Copy error,FontRig js/panels/ai-agent-panel.js:885; FontRig js/panels/ai-agent-panel.js:893; FontRig js/panels/ai-agent-panel.js:933; FontRig js/panels/ai-agent-panel.js:1159; FontRig js/panels/ai-agent-panel.js:1165,census
+Edit & clipboard,P2,new glyph,remove,"Generic list remove (-) for presets, inputs, targets (text now)",minus in house stroke,(text),15,Remove | &Remove | - | Remove the selected inputs,TR TypeRig GUI/Panel/AutoMetrics.py:58; TR TypeRig GUI/Panel/Corner.py:67; TR TypeRig GUI/Panel/ElementComposer.py:149; TR TypeRig GUI/Panel/ElementNew.py:231; Glyphs TypeRig Delta Italic Lab/trdl_window.py:127; Glyphs TypeRig Delta Machine/trdm_window.py:331; Glyphs TypeRig Delta Machine/trdm_window.py:342; Glyphs TypeRig Delta Machine/trdm_window.py:407; Glyphs TypeRig Delta Machine/trdm_window.py:483; Glyphs TypeRig Delta Machine/trdm_window.py:553; Glyphs TypeRig Kern/trk_tabs/Import.py:77; Glyphs TypeRig Kern/trk_tabs/Job.py:87; Glyphs TypeRig Panel/Panel/Delta.py:198; Glyphs TypeRig Panel/Panel/Delta.py:398; Glyphs TypeRig Panel/Panel/DeltaLite.py:151,census
+Edit & clipboard,P2,new glyph,tag,"Glyph / node tags: set, copy, add (now label or text)",label,"label, (text)",8,Set glyph tags | Copy tags | Add tags to current glyph. | Add tags to all glyphs in current Glyph window.,TR TypeRig GUI/Panel/Glyph.py:100; TR TypeRig GUI/Panel/Glyph.py:335; TR TypeRig GUI/Panel/Guide.py:257; TR TypeRig GUI/Panel/Guide.py:258; TR TypeRig GUI/Panel/Guide.py:259; TR TypeRig GUI/Panel/Guide.py:261; TR TypeRig GUI/Panel/Guide.py:262; TR TypeRig GUI/Panel/Guide.py:263,census
+Edit & clipboard,P2,new glyph,add,"Generic list add (+) for presets, inputs, rows (text now)",plus in house stroke,(text),5,Add | +,TR TypeRig GUI/Panel/AutoMetrics.py:57; TR TypeRig GUI/Panel/Corner.py:66; TR TypeRig GUI/Panel/ElementNew.py:233; Glyphs TypeRig Delta Machine/trdm_window.py:330; Glyphs TypeRig Kern/trk_tabs/Job.py:85,census
+Edit & clipboard,P2,new glyph,link,Copy links / metric and element links (now guide_zone or text),chain link,"(text), guide_zone",2,Link | Copy links,TR TypeRig GUI/Panel/ElementNew.py:254; TR TypeRig GUI/Panel/Glyph.py:326,census
+Edit & clipboard,P2,new glyph,link_off,Unlink metric expressions / elements (text now),link + slash,(text),2,Unlink | &Unlink,TR TypeRig GUI/Panel/ElementNew.py:256; TR TypeRig GUI/Panel/Metrics.py:403,census
+Edit & clipboard,P2,new glyph,clipboard_cut,Cut,scissors,,0,,,catalog
+Edit & clipboard,P2,new glyph,search_replace,Find and replace,search + swap arrows,,0,,,catalog
+Edit & clipboard,P2,new glyph,color_mark,Glyph / contour mark colour: swatch,flag swatch,,0,,,catalog
+Edit & clipboard,P2,new glyph,note,Note / comment on a glyph or layer,speech bubble,,0,,,catalog
+Edit & clipboard,P2,new glyph,tree_expand,Expand all tree rows,select_list + plus,,0,,,catalog
+Edit & clipboard,P2,new glyph,tree_collapse,Collapse all tree rows,select_list + minus,,0,,,catalog
+Edit & clipboard,P2,use existing,clipboard_clear,Reset / empty the contour bank (now close),,close,2,Reset contour bank | Reset: empty the bank,TR TypeRig GUI/Panel/Clipboard.py:298; Glyphs TypeRig Panel/Panel/Clipboard.py:148,census
+Edit & clipboard,P3,use existing,clipboard_paste_nodes,Layer menu: Paste nodes / paste by layer,,(text),2,Paste Nodes | Paste by Layer,TR TypeRig GUI/Panel/Layer.py:374; TR TypeRig GUI/Panel/Layer.py:375,census
+Edit & clipboard,P3,use existing,clipboard_copy_nodes,Layer menu: Copy nodes,,(text),1,Copy Nodes,TR TypeRig GUI/Panel/Layer.py:373,census
+Values & controls,P2,use existing,value_decrease_10,Value -10 step (text now),,(text),1,-10,FontRig js/widgets/fr-widgets.js:472,census
+Values & controls,P2,use existing,value_decrease_1,Value -1 step (text now),,(text),1,-1,FontRig js/widgets/fr-widgets.js:475,census
+Values & controls,P2,use existing,value_increase_1,Value +1 step (text now),,(text),1,+1,FontRig js/widgets/fr-widgets.js:478,census
+Values & controls,P2,use existing,value_increase_10,Value +10 step (text now),,(text),1,+10,FontRig js/widgets/fr-widgets.js:481,census
+Selection,P1,exists,"selection_basic, selection_lock, select_all, select_option, select_swap, select_list, select_glyph, select_window, tool_select, tool_select_alt, tool_pick, tool_pick_add, tool_pick_remove, tool_pick_set",Select modes and pickers (select_swap = invert); to-do adds select_none,,,0,,,catalog
+Selection,P2,new glyph,select_none,Select none / deselect all (now select_option),"select_option, empty",select_option,3,Deselect all | Select none,TR TypeRig GUI/typerig-panel.py:78; Glyphs IconAssist/ia_configurator.py:118; Glyphs TypeRig Panel/configurator.py:143,census
+Selection,P2,new glyph,tool_lasso,Lasso selection tool,"selection_basic, free loop",,0,,,catalog
+Selection,P3,new glyph,select_same,"Select similar (same node type, same contour direction)",select_all + equals,,0,,,catalog
+Nodes,P1,exists,"node_add (bgn, mid, end, extreme, single), node_remove, node_smooth, node_sharp, node_hobby, node_round, node_start, node_next, node_previous, node_copy, node_paste, node_clear, node_snap, node_target*, node_trace*, node_align_*, knot_add, knot_remove, nodes_lock, nodes_pull, nodes_push, line_to_curve, curve_to_line, curve_retract",Node insert / remove / type / align / copy,,,0,,,catalog
+Nodes,P1,new glyph,stroke_fake,Fake stroke: rebuild a clean stroke from two contours (button shows the letter S),channel_process,S,1,Fake stroke,TR TypeRig GUI/Panel/Node.py:263,census
+Nodes,P1,new glyph,corner_radius,Corner value is a radius toggle (button shows the letter R),corner_round + dimension line,R,1,,Glyphs IconAssist/ia_panels/Corner.py:676,census
+Nodes,P1,new glyph,node_merge,Merge selected nodes into one,two nodes -> one,,0,,,catalog
+Nodes,P2,new glyph,stem_center,Stem-center snap (now node_middle_top),stem_vertical + centre mark,node_middle_top,2,Stem-Center Snap,TR TypeRig Popups/popup-contour-cut.py:142; Glyphs TypeRig Toolbar/tr_toolbar.py:472,census
+Nodes,P2,new glyph,node_swap,Swap two nodes (positions / order),node x2 + arrows_swap_h,,0,,,catalog
+Nodes,P2,new glyph,node_smooth_toggle,Toggle smooth / sharp (FontRig context menu),node_smooth + node_sharp halves,,0,,,catalog
+Nodes,P2,new glyph,node_tangent,Tangent node type (line-to-curve joint),"node_smooth, square + line",,0,,,catalog
+Nodes,P2,new glyph,node_distribute_h,Distribute nodes horizontally,contour_distribute_h with nodes,,0,,,catalog
+Nodes,P2,new glyph,node_distribute_v,Distribute nodes vertically,contour_distribute_v with nodes,,0,,,catalog
+Nodes,P2,new glyph,node_simplify,Simplify: remove redundant nodes (Glyphs Cleanup panel),node_remove + curve,,0,,,catalog
+Nodes,P2,new glyph,node_add_intersection,Add nodes at intersections / overlaps,node_add on crossing lines,,0,,,catalog
+Nodes,P2,use existing,node_snap,Snap captured stems to targets (text now),,(text),1,Snap captured stems / strokes to their targets on every layer in scope.,Glyphs TypeRig Panel/Panel/StemSnap.py:339,census
+Nodes,P3,new glyph,curve_quadratic,Convert to quadratic (now curve_set),curve with one handle,curve_set,1,Convert to Quadratic,FontRig index.html:295,census
+Nodes,P3,new glyph,node_remove_smart,Remove node keeping the curve shape,node_remove + curve_tunni,,0,,,catalog
+Nodes,P3,use existing,nodes_pull,Layer menu: Pull nodes,,(text),1,Pull Nodes,TR TypeRig GUI/Panel/Layer.py:371,census
+Nodes,P3,use existing,nodes_push,Layer menu: Push nodes,,(text),1,Push Nodes,TR TypeRig GUI/Panel/Layer.py:372,census
+Contours,P1,exists,"contour, contour_close, contour_open, contour_cut, contour_reverse, contour_cw, contour_ccw, contour_align_*, contour_distribute_h/v, contour_sort_*, contour_union, contour_intersect, contour_difference, contour_subtract","Open / close / cut, direction, align, distribute, order, booleans (union = remove overlap)",,,0,,,catalog
+Contours,P1,rename glyph,pen_cap_butt,Rename pen_capp_butt (typo); no code uses it yet,pen_capp_butt,,0,,,census
+Contours,P1,rename glyph,pen_cap_angle,Rename pen_capp_angle (typo); no code uses it yet,pen_capp_angle,,0,,,census
+Contours,P1,new glyph,contour_match,Matchmaker: match contour order / start points between layers (now heart),contour + two-way arrow,heart,2,"Matchmaker: Match active to selected layer (Alt for test, Ctrl for selected contours only) | Matchmaker: match active to picked layer (Alt: dry run, Ctrl: selected contours only)",TR TypeRig GUI/Panel/Layer.py:282; Glyphs TypeRig Panel/Panel/Layer.py:240,census
+Contours,P1,new glyph,contour_remove,Delete selected contours,contour + minus,,0,,,catalog
+Contours,P1,new glyph,contour_duplicate,Duplicate selected contours,contour x2,,0,,,catalog
+Contours,P2,new glyph,contour_color,Colorize contours by index (now flag),contour + colour fill,flag,1,Colorize contours by index,TR TypeRig Tools/TR-DeltaPreview.py:519,census
+Contours,P2,new glyph,contour_join,Join two open contours,contour_open x2 -> one,,0,,,catalog
+Contours,P2,new glyph,contour_offset,Offset / inset outline,contour + parallel contour,,0,,,catalog
+Contours,P2,new glyph,contour_stroke_expand,Expand stroke to outline (IconAssist Expand Stroke),centerline -> contour,,0,,,catalog
+Contours,P2,new glyph,contour_next,Select next contour,contour + chevron_right,,0,,,catalog
+Contours,P2,new glyph,contour_previous,Select previous contour,contour + chevron_left,,0,,,catalog
+Contours,P3,new glyph,hobby_to_bezier,Convert all Hobby splines to Beziers (now contour),token_hobby -> token_bezier,contour,1,Convert all Hobby splines to Beziers...,FontRig index.html:88,census
+Contours,P3,new glyph,contour_to_front,Contour to front of the order,contour_sort_y + fold_up,,0,,,catalog
+Contours,P3,new glyph,contour_to_back,Contour to back of the order,contour_sort_y + fold_down,,0,,,catalog
+Elements & components,P1,exists,"shape, align_group_to_group, layer_swap, layer_pull, layer_push, layer_clean","Element shape, align groups, layer element ops (to-do adds element_group/ungroup/forward/backward/front/back, component, link)",,,0,,,catalog
+Elements & components,P1,new glyph,component_decompose,Decompose / flatten references into outlines,component -> contour,,0,,,catalog
+Elements & components,P2,new glyph,component,Copy references / reference element (now shape or text),shape + link,"shape, (text)",2,Copy references | &Reference,TR TypeRig GUI/Panel/Glyph.py:314; TR TypeRig GUI/Panel/Metrics.py:402,census
+Elements & components,P2,new glyph,element_ungroup,Ungroup / ungroup all elements (text now),"element_group, split",(text),2,Ungroup | Ungroup all,TR TypeRig GUI/Panel/ElementNew.py:84; TR TypeRig GUI/Panel/ElementNew.py:88,census
+Elements & components,P2,new glyph,element_front,Element to front (text now),stack + fold_up,(text),2,Top | To front,TR TypeRig GUI/Panel/ElementNew.py:68; TR TypeRig GUI/Panel/ElementNew.py:106,census
+Elements & components,P2,new glyph,element_back,Element to back (text now),stack + fold_down,(text),2,Bottom | To back,TR TypeRig GUI/Panel/ElementNew.py:70; TR TypeRig GUI/Panel/ElementNew.py:108,census
+Elements & components,P2,new glyph,element_group,"Group elements (Element panel, text now)",shape x2 in frame,(text),1,Group,TR TypeRig GUI/Panel/ElementNew.py:82,census
+Elements & components,P2,new glyph,element_forward,Move element forward one step (text now),stack + arrow_up,(text),1,Forward,TR TypeRig GUI/Panel/ElementNew.py:100,census
+Elements & components,P2,new glyph,element_backward,Move element backward one step (text now),stack + arrow_down,(text),1,Backward,TR TypeRig GUI/Panel/ElementNew.py:102,census
+Elements & components,P2,new glyph,component_add,Add a component / reference,component + plus,,0,,,catalog
+Elements & components,P2,new glyph,element_add,New element,shape + plus,,0,,,catalog
+Elements & components,P2,new glyph,element_remove,Remove element,shape + minus,,0,,,catalog
+Elements & components,P2,new glyph,element_duplicate,Duplicate element,shape x2,,0,,,catalog
+Elements & components,P2,new glyph,element_eject,"Eject element out of its group (Element panel ""Eject"")",shape + action_eject,,0,,,catalog
+Elements & components,P2,new glyph,element_split,Split element into islands / contours,shape cut in two,,0,,,catalog
+Elements & components,P2,new glyph,element_merge,Merge elements into one,two shapes -> one,,0,,,catalog
+Glyphs,P1,exists,"glyph, glyph_active, glyph_active_alt, glyph_add, glyph_stack, select_glyph, file_glyph","Glyph, active glyph, add, stack (to-do adds glyph_duplicate, glyph_unicode, glyph_remove, glyph_search, glyph_capture, glyph_key, glyph_insert, rename, tag)",,,0,,,catalog
+Glyphs,P1,new glyph,glyph_capture,Capture / recapture the outline snapshot (now node_target / refresh / text),glyph + capture corners,"node_target, (text), refresh",4,Capture glyph: snapshot the current outline and detect stems | Capture | Recapture: rebuild the Live Axis from the current outline,TR TypeRig GUI/Panel/MagicScale.py:118; Glyphs TypeRig Delta Italic Lab/trdl_window.py:297; Glyphs TypeRig Panel/Panel/Delta.py:265; Glyphs TypeRig Panel/Panel/DeltaLite.py:213,census
+Glyphs,P1,new glyph,glyph_duplicate,Duplicate glyph(s) (now uses align_group_to_group),layer_duplicate on glyph,align_group_to_group,1,Duplicate current glyph or multiple selected glyphs (TR Selection mode).,TR TypeRig GUI/Panel/Glyph.py:297,census
+Glyphs,P1,new glyph,glyph_unicode,Set glyph unicode values (now select_glyph),glyph + U+,select_glyph,1,Set glyph unicode values,TR TypeRig GUI/Panel/Glyph.py:110,census
+Glyphs,P1,new glyph,glyph_next,Next glyph,glyph + chevron_right,,0,,,catalog
+Glyphs,P1,new glyph,glyph_previous,Previous glyph,glyph + chevron_left,,0,,,catalog
+Glyphs,P1,use existing,glyph,Glyph menu (now align_group_to_group),,align_group_to_group,1,Glyph,FontRig index.html:84,census
+Glyphs,P2,new glyph,glyph_remove,Remove glyphs from a group (now close),glyph + minus (pair of glyph_add),close,1,Remove every glyph from the group,Glyphs TypeRig Delta Machine/trdm_window.py:485,census
+Glyphs,P2,new glyph,glyph_search,Add the glyphs that match a pattern (now search),glyph + search,search,1,Add the glyphs that match the pattern,Glyphs TypeRig Delta Machine/trdm_window.py:500,census
+Glyphs,P2,new glyph,glyph_key,Group leader: the reference glyph of a group (now flag),glyph + star / key,flag,1,Group leader: the selected glyph becomes the reference (Ref.) of the group.,Glyphs TypeRig Delta Machine/trdm_window.py:489,census
+Glyphs,P2,new glyph,glyph_open,Open glyph in a new tab / window,glyph + arrow_external,,0,,,catalog
+Glyphs,P2,new glyph,glyph_clear,Clear the outline of a glyph (keep the glyph),"glyph, empty + close",,0,,,catalog
+Glyphs,P2,new glyph,glyph_compose,Build composite / accented glyph from components,glyph + component,,0,,,catalog
+Glyphs,P2,new glyph,charset,Character set / encoding coverage,grid of cells + U,,0,,,catalog
+Glyphs,P2,new glyph,compare,Compare glyphs / layers / fonts side by side (TR-Comparator),two glyphs + equals,,0,,,catalog
+Glyphs,P3,new glyph,glyph_insert,Insert source glyph contents into the active layer (now layer_add),glyph + clipboard_paste,layer_add,1,Copy contents of source glyph and insert them to current active glyph(s),TR TypeRig GUI/Panel/Glyph.py:380,census
+Glyphs,P3,new glyph,glyph_sort,Sort glyphs in the font,glyph_stack + sort_ascending,,0,,,catalog
+Layers,P2,use existing,layer_push,IconAssist: push layer (text now),,(text),1,Push →,Glyphs IconAssist/ia_panels/Layer.py:284,census
+Layers,P2,use existing,layer_pull,IconAssist: pull layer (text now),,(text),1,Pull ←,Glyphs IconAssist/ia_panels/Layer.py:285,census
+Layers,P3,new glyph,layer_wireframe,Layer menu: Set as wireframe,"layer_active, dashed",(text),1,Set as Wireframe,TR TypeRig GUI/Panel/Layer.py:342,census
+Layers,P3,use existing,layer_add,Layer menu: New,,(text),1,New,TR TypeRig GUI/Panel/Layer.py:332,census
+Layers,P3,use existing,layer_duplicate,Layer menu: Duplicate,,(text),1,Duplicate,TR TypeRig GUI/Panel/Layer.py:333,census
+Layers,P3,use existing,layer_mask_add,Layer menu: Duplicate to mask,,(text),1,Duplicate to Mask,TR TypeRig GUI/Panel/Layer.py:334,census
+Layers,P3,use existing,layer_remove,Layer menu: Remove,,(text),1,Remove,TR TypeRig GUI/Panel/Layer.py:335,census
+Layers,P3,use existing,visible_toggle,Layer menu: Toggle visible,,(text),1,Toggle Visible,TR TypeRig GUI/Panel/Layer.py:336,census
+Layers,P3,use existing,visible,Layer menu: Set visible,,(text),1,Set Visible,TR TypeRig GUI/Panel/Layer.py:337,census
+Layers,P3,use existing,visible_off,Layer menu: Set invisible,,(text),1,Set Invisible,TR TypeRig GUI/Panel/Layer.py:338,census
+Layers,P3,use existing,layer_mask,Layer menu: Set as mask,,(text),1,Set as Mask,TR TypeRig GUI/Panel/Layer.py:341,census
+Layers,P3,use existing,layer_service,Layer menu: Set as service,,(text),1,Set as Service,TR TypeRig GUI/Panel/Layer.py:343,census
+Layers,P3,use existing,layer_swap,Layer menu: Swap elements,,(text),1,Swap Elements,TR TypeRig GUI/Panel/Layer.py:353,census
+Layers,P3,use existing,layer_pull,Layer menu: Pull elements,,(text),1,Pull Elements,TR TypeRig GUI/Panel/Layer.py:354,census
+Layers,P3,use existing,layer_push,Layer menu: Push elements,,(text),1,Push Elements,TR TypeRig GUI/Panel/Layer.py:355,census
+Layers,P3,use existing,layer_clean,Layer menu: Clean elements,,(text),1,Clean Elements,TR TypeRig GUI/Panel/Layer.py:356,census
+Layers,P3,use existing,layer_lock,Layer menu: Lock elements,,(text),1,Lock elements,TR TypeRig GUI/Panel/Layer.py:358,census
+Layers,P3,use existing,layer_lock_off,Layer menu: Unlock elements,,(text),1,Unlock elements,TR TypeRig GUI/Panel/Layer.py:357,census
+Layers,P3,use existing,visible_sbs,Layer menu: Side by side,,(text),1,Side by side,TR TypeRig GUI/Panel/Layer.py:386,census
+Anchors,P2,new glyph,anchor_remove,Remove selected / all anchors (text now),icon_anchor + minus,(text),2,Remove | Remove All,TR TypeRig GUI/Panel/Anchor.py:187; TR TypeRig GUI/Panel/Anchor.py:188,census
+Anchors,P2,new glyph,anchor_add,"Add anchor (Anchor panel, text now)",icon_anchor + plus,(text),1,Add,TR TypeRig GUI/Panel/Anchor.py:189,census
+Anchors,P2,new glyph,anchor_copy,Copy anchors from layers (text now),icon_anchor + clipboard_copy,(text),1,Copy selected Anchors from layers chosen.,TR TypeRig GUI/Panel/Anchor.py:185,census
+Anchors,P2,new glyph,anchor_paste,Paste anchors to layers (text now),icon_anchor + clipboard_paste,(text),1,Paste Anchors at layers chosen.,TR TypeRig GUI/Panel/Anchor.py:186,census
+Anchors,P2,new glyph,anchor_move,Move anchor (text now),icon_anchor + translate,(text),1,Move,TR TypeRig GUI/Panel/Anchor.py:190,census
+Swap & exchange,P1,exists,"select_swap, layer_swap, sync, flip_horizontal, flip_vertical","Invert selection, swap layer elements, sync, flip (to-do adds axis_swap)",,,0,,,catalog
+Swap & exchange,P1,new glyph,arrows_swap_h,Generic swap left <-> right: two opposite arrows,arrow_left + arrow_right offset,,0,,,catalog
+Swap & exchange,P1,new glyph,arrows_swap_v,Generic swap up <-> down,arrow_up + arrow_down offset,,0,,,catalog
+Swap & exchange,P3,new glyph,swap_xy,Exchange X and Y values,coordinates + arrows_swap_h,,0,,,catalog
+Transform,P1,exists,"translate_x, translate_y, scale_x, scale_y, scale_lock, skew, rotate, flip_horizontal, flip_vertical","Move, scale, skew, rotate, flip (to-do adds transform, scale_fit)",,,0,,,catalog
+Transform,P2,new glyph,transform,Transform controls / menu (now diagonal_bottom_up or arrows_expand),translate + scale + rotate,"arrows_expand, diagonal_bottom_up",4,Transform | Show transformation controls | Panel: Show transformation controls,FontRig index.html:299; TR TypeRig GUI/Panel/Glyph.py:346; TR TypeRig GUI/Panel/Layer.py:202; Glyphs TypeRig Panel/Panel/Layer.py:82,census
+Transform,P2,new glyph,scale_fit,Scale / fit pasted contours into the selection (now node_target_expand),bbox + arrows in,node_target_expand,2,Scale/Fit: unconstrained affine fit of pasted contours into selected shape bounds (no delta compensation) | Scale / Fit: affine fit of pasted contours into the selection bounds,TR TypeRig GUI/Panel/Clipboard.py:214; Glyphs TypeRig Panel/Panel/Clipboard.py:66,census
+Transform,P2,new glyph,rotate_cw_90,Rotate 90 degrees clockwise,rotate + quarter arc,,0,,,catalog
+Transform,P2,new glyph,rotate_ccw_90,Rotate 90 degrees counter-clockwise,rotate mirrored,,0,,,catalog
+Transform,P2,new glyph,transform_reset,"Reset transformation (Element panel ""Reset TX"")",transform + refresh,,0,,,catalog
+Transform,P2,new glyph,transform_pivot,Pick transform origin / pivot,node_center + crosshair,,0,,,catalog
+Transform,P3,new glyph,transform_round,"Round transformation values (Element panel ""Round TX"")",transform + node_round,,0,,,catalog
+Guides & measurement,P1,exists,"guide_horizontal, guide_vertical, guide_zone, guide_drop, guide_drop_flip_h, guide_drop_flip_v, dimension_*, tool_ruler, tool_calipers, distance, coordinates, width, width_x, width_y, height, bbox, bbox_percent, angle*, metrics_lsb, metrics_rsb, metrics_advance*, stem_*, kern_class*","Guides, font dimensions, measuring, metrics, stems, kern classes",,,0,,,catalog
+Guides & measurement,P1,new glyph,guide_remove,Remove guides,guide_horizontal + minus,,0,,,catalog
+Guides & measurement,P1,new glyph,grid,Show grid,grid of lines,,0,,,catalog
+Guides & measurement,P1,new glyph,snap,Snapping on / off: magnet (node_snap is node-specific),magnet,,0,,,catalog
+Guides & measurement,P2,new glyph,metrics_copy,Copy metrics / bbox width / height (text now),metrics_advance + clipboard_copy,(text),3,&Copy Metrics | &Copy Width | &Copy Height,TR TypeRig GUI/Panel/Metrics.py:218; TR TypeRig GUI/Panel/Metrics.py:317; TR TypeRig GUI/Panel/Metrics.py:318,census
+Guides & measurement,P2,new glyph,guide_lock,Lock guides,guide_horizontal + lock,,0,,,catalog
+Guides & measurement,P2,new glyph,guide_angled,Angled guide (italic / slope guide),guide_vertical slanted,,0,,,catalog
+Guides & measurement,P2,new glyph,ruler,Show rulers (tool_ruler is the measuring tool),ruler edges of a frame,,0,,,catalog
+Guides & measurement,P2,new glyph,metrics_center,Center glyph / equalize side bearings,"metrics_lsb + metrics_rsb, equal",,0,,,catalog
+Guides & measurement,P2,new glyph,kern_pair,Kerning pair (A V),two letters + arrows,,0,,,catalog
+Guides & measurement,P2,use existing,stem_vertical_alt,Get / measure vertical stems menu action (text now),,(text),2,Get Vertical Stems | Measure V stem on selection,TR TypeRig GUI/Panel/Delta.py:81; TR TypeRig GUI/Panel/DeltaNew.py:636,census
+Guides & measurement,P2,use existing,stem_horizontal_alt,Get / measure horizontal stems menu action (text now),,(text),2,Get Horizontal Stems | Measure H stem on selection,TR TypeRig GUI/Panel/Delta.py:82; TR TypeRig GUI/Panel/DeltaNew.py:637,census
+Guides & measurement,P2,use existing,stem_detect_auto,Show stem detection settings (now search),,search,1,Show stem detection settings and report,TR TypeRig GUI/Panel/MagicScale.py:175,census
+Guides & measurement,P2,use existing,guide_drop,Drop guideline between two nodes (text now),,(text),1,Drop guideline between any two selected nodes.,TR TypeRig GUI/Panel/Guide.py:119,census
+Guides & measurement,P2,use existing,guide_drop_flip_h,Drop flipped guideline X (text now),,(text),1,Drop flipped guideline between any two selected nodes.,TR TypeRig GUI/Panel/Guide.py:120,census
+Guides & measurement,P2,use existing,guide_drop_flip_v,Drop flipped guideline Y (text now),,(text),1,Drop flipped guideline between any two selected nodes.,TR TypeRig GUI/Panel/Guide.py:121,census
+Guides & measurement,P2,use existing,guide_vertical,Drop vertical layer guide (text now),,(text),1,Vertical,TR TypeRig GUI/Panel/Guide.py:122,census
+Guides & measurement,P2,use existing,guide_horizontal,Drop horizontal layer guide (text now),,(text),1,Horizontal,TR TypeRig GUI/Panel/Guide.py:123,census
+Guides & measurement,P2,use existing,dimension_ascender,Set font ascender (text now),,(text),1,Set Ascender height,TR TypeRig GUI/Panel/Metrics.py:532,census
+Guides & measurement,P2,use existing,dimension_caps,Set font caps height (text now),,(text),1,Set Caps Height,TR TypeRig GUI/Panel/Metrics.py:533,census
+Guides & measurement,P2,use existing,dimension_xheight,Set font x-height (text now),,(text),1,Set X Height,TR TypeRig GUI/Panel/Metrics.py:535,census
+Guides & measurement,P2,use existing,dimension_descender,Set font descender (text now),,(text),1,Set Descender height,TR TypeRig GUI/Panel/Metrics.py:534,census
+Guides & measurement,P2,use existing,slope_italic,Take italic angle from the master (text now),,(text),1,Take the italic angle from the current master.,Glyphs TypeRig Panel/Panel/Cleanup.py:162,census
+Guides & measurement,P3,new glyph,metrics_view,Show baseline and side bearings (now visible),metrics_advance + visible,visible,1,Show baseline and side bearings,TR TypeRig Tools/TR-DeltaPreview.py:522,census
+Guides & measurement,P3,new glyph,area,Measured / sampled area (AutoMetrics),filled region + dimension,,0,,,catalog
+Delta & axes,P1,new glyph,axis_reset,Reset axis: neutral controls for this layer (now axis_remove),axis_set + refresh,axis_remove,8,Reset axis | Axis reset: neutral controls for this layer,TR TypeRig GUI/Panel/Delta.py:130; TR TypeRig GUI/Panel/DeltaNew.py:2135; TR TypeRig GUI/Panel/Layer.py:304; TR TypeRig Tools/TR-DeltaPreview.py:566; Glyphs TypeRig Delta Live/delta_live_controller.py:102; Glyphs TypeRig Panel/Panel/Delta.py:269; Glyphs TypeRig Panel/Panel/DeltaLite.py:217; Glyphs TypeRig Panel/Panel/Layer.py:293,census
+Delta & axes,P1,new glyph,delta_bake,"Execute / bake delta targets (now action_play, shared with apply / run)",delta_machine + action_play,action_play,6,Execute delta — bake targets | Execute delta scale | Execute delta (bake targets) | Execute delta to Target Layers,FontRig js/panels/delta-panel.js:201; TR TypeRig GUI/Panel/Delta.py:105; TR TypeRig GUI/Panel/DeltaNew.py:652; TR TypeRig Tools/TR-DeltaPreview.py:554; Glyphs TypeRig Delta Machine/trdm_window.py:280; Glyphs TypeRig Panel/Panel/Delta.py:401,census
+Delta & axes,P1,new glyph,axis_reset_all,Reset all axes / new setup / clear delta state (now axis_remove or text),axis_reset doubled,"axis_remove, (text)",6,Clear delta — drop cached state (setup kept) | Clear all | Clear all (reset masters from font) | Reset all axes (keep masters),FontRig js/panels/delta-panel.js:247; TR TypeRig GUI/Panel/Delta.py:80; TR TypeRig GUI/Panel/DeltaNew.py:638; TR TypeRig GUI/Panel/DeltaNew.py:684; Glyphs TypeRig Delta Machine/trdm_window.py:294; Glyphs TypeRig Panel/Panel/Delta.py:412,census
+Delta & axes,P1,new glyph,delta_live,Live Edit: Live Axis controls on the glyph canvas (now delta_machine / selection_basic),delta_machine + live dot,"delta_machine, selection_basic",5,Live Edit — show the Live Axis controls on the glyph canvas | Live Edit: show the Live Axis controls on the glyph canvas | Live Edit: show the controls on the glyph canvas | Live Edit: the Live Axis controls on the glyph (TypeRig Delta Live tool),FontRig js/panels/delta-panel.js:206; TR TypeRig GUI/Panel/DeltaNew.py:657; TR TypeRig GUI/Panel/MagicScale.py:123; Glyphs TypeRig Panel/Panel/Delta.py:260; Glyphs TypeRig Panel/Panel/DeltaLite.py:209,census
+Delta & axes,P1,new glyph,axis_reseed,Reset all data: re-seed masters from the font / glyph (now refresh),layer_master + refresh,refresh,5,"Reset all (re-seed masters from glyph) | Reset all data | Reset all data (re-seed masters from font) | Reset all data: re-seed masters from the font, clear the Live Axis",FontRig js/panels/delta-panel.js:253; TR TypeRig GUI/Panel/Delta.py:135; TR TypeRig GUI/Panel/DeltaNew.py:689; TR TypeRig Tools/TR-DeltaPreview.py:567; Glyphs TypeRig Panel/Panel/Delta.py:414,census
+Delta & axes,P1,new glyph,axis_swap,Swap axis masters (now contour_reverse),axis_set + swap arrows,contour_reverse,2,Swap axis masters,TR TypeRig GUI/Panel/Layer.py:309; Glyphs TypeRig Panel/Panel/Layer.py:296,census
+Delta & axes,P1,new glyph,axis_add,New axis (now axis_set or a text +),axis_set + plus,"axis_set, (text)",2,"New axis (Weight, Width, Optical size, ... first) | Add an axis",Glyphs TypeRig Delta Machine/trdm_window.py:542; Glyphs TypeRig Panel/Panel/Delta.py:324,census
+Delta & axes,P1,new glyph,delta_commit,Commit delta results as real layers,delta_machine + layer_add,delta_machine,1,Commit delta results as real layers in the glyph,TR TypeRig Tools/TR-DeltaPreview.py:558,census
+Delta & axes,P2,new glyph,row_inherit,Delta Machine: override rows inherit from the general row (now refresh),select_list + arrow down,refresh,1,Selected override rows: inherit every cell from the general row again,Glyphs TypeRig Delta Machine/trdm_window.py:432,census
+Delta & axes,P2,new glyph,row_fold,Delta Machine: fold rows of one layer into a general row (now viewport_merge),select_list + merge,viewport_merge,1,Fold the selected rows of one layer into one general row for all their groups (most,Glyphs TypeRig Delta Machine/trdm_window.py:428,census
+Delta & axes,P3,new glyph,gravity_x,MagicScale: ink gravity X (now wave),arrows_left_right + weight,wave,1,"Gravity X (x0.01): + moves ink left, - moves ink right",TR TypeRig GUI/Panel/MagicScale.py:261,census
+Delta & axes,P3,new glyph,gravity_y,MagicScale: ink gravity Y (now wave),arrows_up_down + weight,wave,1,"Gravity Y (x0.01): + moves ink down, - moves ink up",TR TypeRig GUI/Panel/MagicScale.py:262,census
+Delta & axes,P3,new glyph,centroid_x,MagicScale: centroid shift X (now delta_x),delta_x + centre dot,delta_x,1,Centroid shift X: solve gravity X so the ink centroid moves by this (0 = off),TR TypeRig GUI/Panel/MagicScale.py:263,census
+Delta & axes,P3,new glyph,centroid_y,MagicScale: centroid shift Y (now delta_y),delta_y + centre dot,delta_y,1,Centroid shift Y: solve gravity Y so the ink centroid moves by this (0 = off),TR TypeRig GUI/Panel/MagicScale.py:264,census
+Delta & axes,P3,new glyph,stem_compensation,Stem compensation intensity (now node_snap),stem_vertical + value_sliders,node_snap,1,Stem compensation intensity,TR TypeRig Tools/TR-DeltaPreview.py:590,census
+Tools,P1,exists,"tool_select, tool_select_alt, tool_pick*, tool_line, tool_polyline, tool_bezier, tool_hobby, tool_ruler, tool_calipers, tool_pin, tool_cutter, tool_eraser, draw_*","Pointer, pen, Hobby, ruler, calipers, pin, knife, eraser, shape drawing",,,0,,,catalog
+Tools,P1,new glyph,tool_hand,Hand / pan tool,hand,,0,,,catalog
+Tools,P1,new glyph,tool_zoom,Zoom tool,zoom_in,,0,,,catalog
+Tools,P1,new glyph,tool_text,Text / string tool,T with serifs,,0,,,catalog
+Tools,P2,new glyph,tool_rotate,Rotate tool,rotate + pointer,,0,,,catalog
+Tools,P2,new glyph,tool_scale,Scale tool,scale_x + pointer,,0,,,catalog
+Tools,P2,new glyph,tool_metrics,Metrics / side-bearing tool,metrics_advance + pointer,,0,,,catalog
+Tools,P2,new glyph,tool_kern,Kerning tool,kern_pair + pointer,,0,,,catalog
+Tools,P2,new glyph,tool_anchor,Anchor tool,icon_anchor + pointer,,0,,,catalog
+Tools,P3,new glyph,draw_polygon,Insert a regular polygon (now gem),"draw_square, five sides",gem,1,"Insert a pentagon (n-gon, n=5) at center",FontRig js/panels/draw-panel.js:91,census
+Tools,P3,new glyph,draw_squircle,Insert a squircle (now hyper),draw_square + corner_smart,hyper,1,Insert a squircle (Lamé curve) at center,FontRig js/panels/draw-panel.js:106,census
+Tools,P3,new glyph,tool_brush,Brush / calligraphic stroke tool,"tool_line, broad nib",,0,,,catalog
+Tools,P3,use existing,draw_square,Insert a square (now quad),,quad,1,Insert a square at center,FontRig js/panels/draw-panel.js:81,census
+Files & fonts,P1,exists,"file, file_open, file_save, file_glyph, file_meta, file_download, file_upload, font_open, font_save, kern_class_open, kern_class_save","Files; font_open / font_save show VFC (to-do adds font_new, font_info, file_export/import, designspace_*, config_*, folder_open)",,,0,,,catalog
+Files & fonts,P1,new glyph,config_save,Save setup / configuration / layout / options (now file_save or text),file_save + value_sliders,"file_save, (text)",11,Save setup as JSON | Save configuration to JSON | Save layout | Save axis data to external file,FontRig js/panels/delta-panel.js:284; FontRig js/panels/scripting-panel.js:96; FontRig panels/workplane.html:218; TR TypeRig GUI/Panel/Delta.py:140; TR TypeRig GUI/Panel/DeltaNew.py:694; TR TypeRig GUI/typerig-panel.py:93; TR TypeRig Tools/TR-DeltaPreview.py:568; Glyphs IconAssist/ia_configurator.py:124; Glyphs TypeRig Delta Machine/trdm_window.py:289; Glyphs TypeRig Panel/Panel/Delta.py:410; Glyphs TypeRig Panel/configurator.py:150,census
+Files & fonts,P1,new glyph,config_open,Load setup / configuration / layout (now file_open or text),file_open + value_sliders,"file_open, (text)",9,Load setup from JSON | Load configuration from JSON | Load layout | Load axis data from external file,FontRig js/panels/delta-panel.js:289; FontRig js/panels/scripting-panel.js:95; FontRig panels/workplane.html:221; TR TypeRig GUI/Panel/Delta.py:145; TR TypeRig GUI/Panel/DeltaNew.py:699; TR TypeRig GUI/typerig-panel.py:98; TR TypeRig Tools/TR-DeltaPreview.py:569; Glyphs TypeRig Delta Machine/trdm_window.py:290; Glyphs TypeRig Panel/Panel/Delta.py:408,census
+Files & fonts,P1,new glyph,file_export,"Export to another format: SVG, UFO (now file_save); or adopt the unused file_upload",file_save + arrow out,file_save,7,Export | SVG -> Current Layer | SVG -> Current Layer (Debug color) | SVG -> All layers...,FontRig index.html:37; FontRig index.html:39; FontRig index.html:40; FontRig index.html:42; FontRig index.html:43; FontRig index.html:45; Glyphs TypeRig Delta Machine/trdm_window.py:565,census
+Files & fonts,P1,new glyph,file_import,"Import from another format: SVG, UFO (now file_open); or adopt the unused file_download",file_open + arrow in,file_open,3,Import | Not yet implemented | UFO -> New Master...,FontRig index.html:48; FontRig index.html:50; FontRig index.html:51,census
+Files & fonts,P1,new glyph,designspace_open,Open / read .designspace (now file_open),file_open + axis mark,file_open,2,"Load Designspace... | Read a .designspace file (axes, sources): sources named like a master in the font",FontRig index.html:34; Glyphs TypeRig Delta Machine/trdm_window.py:561,census
+Files & fonts,P1,new glyph,font_info,Font info sidebar tab (now file),file + info,file,1,Info,FontRig js/panels/sidebar-init.js:44,census
+Files & fonts,P1,new glyph,font_new,New font (now file),font_open + plus,file,1,New Font...,FontRig index.html:25,census
+Files & fonts,P1,new glyph,designspace_save,Save .designspace (now file_save),file_save + axis mark,file_save,1,Save Designspace...,FontRig index.html:35,census
+Files & fonts,P1,new glyph,file_new,New file / document,file + plus,,0,,,catalog
+Files & fonts,P1,new glyph,font_export,"Generate / export font binaries (OTF, TTF, variable)",font_save with OTF,,0,,,catalog
+Files & fonts,P1,use existing,font_open,Open font (now file); read axes / masters from the font (now refresh),,"file, refresh",2,Open Font | Read axes and masters from the font (new rows are kept),FontRig index.html:29; Glyphs TypeRig Delta Machine/trdm_window.py:556,census
+Files & fonts,P2,new glyph,clipboard_save,Save clipboard / contour bank to file (now file_save),clipboard + file_save,file_save,2,"Save clipboard | Save the bank to a file (TypeRig XML, FL compatible)",TR TypeRig GUI/Panel/Clipboard.py:288; Glyphs TypeRig Panel/Panel/Clipboard.py:146,census
+Files & fonts,P2,new glyph,clipboard_open,Load clipboard / bank file (now file_open),clipboard + file_open,file_open,2,Load clipboard | Load a bank file (adds to the bank),TR TypeRig GUI/Panel/Clipboard.py:293; Glyphs TypeRig Panel/Panel/Clipboard.py:147,census
+Files & fonts,P2,new glyph,folder_open,"Browse for a file: tags, categories (now file_open)",folder,file_open,2,Browse for tags file | Browse for category file,TR TypeRig GUI/Panel/Explorer.py:502; TR TypeRig GUI/Panel/Explorer.py:517,census
+Files & fonts,P2,new glyph,font,"Generic font (fonts list, font window) without the VFC label",Aa in a frame,,0,,,catalog
+Files & fonts,P2,new glyph,file_reload,Reload from disk (refresh is for UI state),file + refresh,,0,,,catalog
+Files & fonts,P2,new glyph,font_features,OpenType features,code_tag + fea,,0,,,catalog
+Files & fonts,P2,new glyph,master_add,Add a master,layer_master + plus,,0,,,catalog
+Files & fonts,P2,new glyph,instance,Instances / named styles to export,"layer_master, outline + star",,0,,,catalog
+Files & fonts,P2,new glyph,audit,Check / validate the font (problems report),glyph + check in shield,,0,,,catalog
+Files & fonts,P2,new glyph,image,Background image / tracing template,frame + mountain + sun,,0,,,catalog
+Files & fonts,P2,use existing,font_save,Save Live Axis to font (text now),,(text),1,Save to font,Glyphs TypeRig Delta Italic Lab/trdl_window.py:301,census
+Files & fonts,P3,new glyph,font_close,Close font,font + close,,0,,,catalog
+Files & fonts,P3,new glyph,plugin,Plugins / extensions: puzzle piece,puzzle piece,,0,,,catalog

@@ -6,23 +6,51 @@
 #	python scripts/glyph_todo.py [usage.csv] [out.csv]
 # The proposals live in TODO below; each rule picks its census rows, so 'Where' stays current
 # when the census is regenerated. A census row goes to the first rule that matches it.
+# Planned glyphs without call sites (the rest of a font-editor UI) live in glyph_catalog.py.
 # -----------------------------------------------------------
 
 import csv
+import json
 import os
 import re
 import sys
 from collections import OrderedDict
 
+from glyph_catalog import *
+
 # - Init --------------------------------------------------
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 USAGE_CSV = os.path.join(ROOT, 'lists', 'icon_usage.csv')
 TODO_CSV = os.path.join(ROOT, 'lists', 'glyph_todo.csv')
+FONT_VFJ = os.path.join(ROOT, 'sources', 'typerig-icons.vfj')
 
-COLUMNS = ['Priority', 'Action', 'Glyph', 'Meaning', 'Draw from', 'Replaces', 'Count', 'Captions', 'Where']
-ACTION_ORDER = ['add to font', 'rename glyph', 'new glyph', 'use existing']
+COLUMNS = ['Group', 'Priority', 'Action', 'Glyph', 'Meaning', 'Draw from', 'Replaces', 'Count', 'Captions', 'Where', 'Origin']
+ACTION_ORDER = ['exists', 'rename glyph', 'new glyph', 'alias', 'use existing']
 
-NEW, REN, USE, ADD = 'new glyph', 'rename glyph', 'use existing', 'add to font'
+REN, USE = 'rename glyph', 'use existing'
+
+VALUES, LAYERS, ANCHORS, DELTA = 'Values & controls', 'Layers', 'Anchors', 'Delta & axes'
+GROUP_ORDER = [ARROWS, RUN, HISTORY, WINDOW, DIALOG, EDIT, VALUES, SELECT, NODES, CONTOURS, ELEMENTS, GLYPHS,
+		LAYERS, ANCHORS, SWAP, TRANSFORM, MEASURE, DELTA, TOOLS, FILES]
+
+# Group of a TODO glyph by name; first match wins
+GROUP_RULES = [
+	(r'^(arrow|chevron|keyboard)', ARROWS), (r'^(action_(?!apply)|script|python)', RUN),
+	(r'^(undo|redo|revert|snapshot)', HISTORY), (r'^(panel|window|view|zoom|menu|toggle|settings)', WINDOW),
+	(r'^(alert|warning|spark|check|close|search_clear|action_apply|value_reset)', DIALOG), (r'^value_', VALUES),
+	(r'^(clipboard_(?!save|open)|tag|rename|add$|remove$|link)', EDIT), (r'^select', SELECT),
+	(r'^(node|curve|corner|stem_center|stroke_fake)', NODES), (r'^(contour|hobby|pen_|cap_)', CONTOURS),
+	(r'^(element|component)', ELEMENTS), (r'^glyph', GLYPHS), (r'^(layer|visible)', LAYERS), (r'^anchor', ANCHORS),
+	(r'^(axis|delta|row_|gravity|centroid|stem_compensation)', DELTA), (r'swap', SWAP), (r'^(transform|scale|rotate|skew|translate|flip)', TRANSFORM),
+	(r'^(guide|dimension|metrics|stem|kern|slope)', MEASURE),
+	(r'^(tool|draw)', TOOLS),
+	(r'^(file|font|config|designspace|folder|clipboard)', FILES),
+]
+
+def group_of(glyph):
+	for pattern, group in GROUP_RULES:
+		if re.search(pattern, glyph): return group
+	return EDIT
 
 # Rule keys (all given keys must match a census row):
 #	icon - current icon (str or tuple), '' = text-only button
@@ -32,13 +60,13 @@ NEW, REN, USE, ADD = 'new glyph', 'rename glyph', 'use existing', 'add to font'
 # (priority, action, glyph, meaning, draw from, [rules])
 TODO = [
 	# - P1: broken, missing or placeholder icons ----------------------
-	('P1', REN, 'keyboard_arrows', 'Arrow-key nudge / keyboard capture (fix typo keyboard_arows, update the call sites)', 'keyboard_arows', [
+	('P1', REN, 'keyboard_arrows', 'Arrow-key nudge / keyboard capture (fix typo keyboard_arows; keep the old name as an alias until the 3 call sites move)', 'keyboard_arows', [
 		dict(icon='keyboard_arows')]),
 	('P1', REN, 'pen_cap_butt', 'Rename pen_capp_butt (typo); no code uses it yet', 'pen_capp_butt', []),
 	('P1', REN, 'pen_cap_angle', 'Rename pen_capp_angle (typo); no code uses it yet', 'pen_capp_angle', []),
 	('P1', USE, 'clipboard_copy', 'Copy message / error (FontRig uses the Material name content_copy, not in font)', '', [
 		dict(icon='content_copy')]),
-	('P1', USE, 'alert', 'Error header (FontRig uses Material name warning, not in font)', '', [
+	('P1', USE, 'alert', 'Error header (FontRig uses Material name warning, not in font; or draw the planned warning glyph)', '', [
 		dict(icon='warning')]),
 	('P1', USE, 'spark', 'AI self-correcting header (FontRig uses Material name auto_fix_high, not in font)', '', [
 		dict(icon='auto_fix_high')]),
@@ -296,19 +324,36 @@ def main():
 			'Count': len(found),
 			'Captions': ' | '.join(list(captions)[:4]),
 			'Where': '; '.join(short_src(r) for r in found),
+			'Group': group_of(glyph), 'Origin': 'census',
 		})
 
-	table.sort(key=lambda t: (t['Priority'], ACTION_ORDER.index(t['Action']), -t['Count']))
+	# - Planned glyphs: names must not clash with the font or the census proposals
+	with open(FONT_VFJ, encoding='utf-8') as f:
+		in_font = {g['name'] for g in json.load(f)['font']['glyphs']}
+	proposed = {t['Glyph'] for t in table}
+
+	for prio, action, glyph, meaning, base, group in CATALOG:
+		if action != EXISTS and (glyph in in_font or glyph in proposed):
+			print('! catalog glyph %s already %s' % (glyph, 'in font' if glyph in in_font else 'proposed'), file=sys.stderr)
+		if action == ALIAS and base not in in_font:
+			print('! alias %s points to missing %s' % (glyph, base), file=sys.stderr)
+		proposed.add(glyph)
+		table.append({
+			'Group': group, 'Priority': prio, 'Action': action, 'Glyph': glyph, 'Meaning': meaning, 'Draw from': base,
+			'Replaces': '', 'Count': 0, 'Captions': '', 'Where': '', 'Origin': 'catalog',
+		})
+
+	table.sort(key=lambda t: (GROUP_ORDER.index(t['Group']), t['Priority'], ACTION_ORDER.index(t['Action']), -t['Count']))
 
 	with open(out, 'w', encoding='utf-8-sig', newline='') as f:
 		w = csv.DictWriter(f, fieldnames=COLUMNS)
 		w.writeheader()
 		w.writerows(table)
 
-	new = [t for t in table if t['Action'] == NEW]
+	count = lambda action, origin=None: sum(t['Action'] == action and origin in (None, t['Origin']) for t in table)
 	print('-- %d entries -> %s' % (len(table), out))
-	print('-- %d new glyphs, %d renames, %d use-existing; %d census rows covered' % (
-		len(new), sum(t['Action'] == REN for t in table), sum(t['Action'] == USE for t in table), sum(t['Count'] for t in table)))
+	print('-- new glyphs: %d from the census + %d planned; %d aliases, %d renames, %d use-existing; %d census rows covered' % (
+		count(NEW, 'census'), count(NEW, 'catalog'), count(ALIAS), count(REN), count(USE), sum(t['Count'] for t in table)))
 
 if __name__ == '__main__':
 	main()
