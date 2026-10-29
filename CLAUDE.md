@@ -10,6 +10,9 @@ Home of TypeRig Icons, the icon font of the TypeRig GUI (FontLab).
   - `icon_draw.py` — library: house-style stroke elements, `circle`, `arc_to`, `glyph`, `off_grid`, `save_proof`.
   - `render_vfj.py <vfj> <out.png> [names|patterns] [--cols N] [--mask]` — PNG contact sheet of glyphs (visual check).
   - `vfj_tool.py list|dump|stats|merge` — inspect the VFJ, profile its style, merge proof glyphs into it.
+  - `icon_usage.py [out.csv]` — census of buttons / captions / icons in Typerig-Glyphs, TypeRig Scripts and FontRig
+    editor → `lists/icon_usage.csv` (with heuristic mismatch flags).
+  - `glyph_todo.py` — glyph backlog rules over the census → `lists/glyph_todo.csv` (new / rename / use existing, P1–P3).
 - **Drawing new icons:** follow `Memory/project_drawing_workflow.md`; temporary proofs and PNGs go to the scratchpad,
   not the repo.
 - Related tooling (Figma → FontLab import, live-stroke research): `D:\Remote\GitHub\IconRig`.
