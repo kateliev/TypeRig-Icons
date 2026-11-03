@@ -1,7 +1,7 @@
 {
   "version":8,
   "font":{
-    "glyphsCount":457,
+    "glyphsCount":528,
     "upm":960,
     "glyphs":[
       {
@@ -6082,161 +6082,6 @@
         ]
       },
       {
-        "name":"node_round",
-        "openTypeGlyphClass":2,
-        "layers":[
-          {
-            "name":"Regular",
-            "flags":0,
-            "advanceWidth":960,
-            "elements":[
-              {
-                "elementData":{
-                  "contours":[
-                    {
-                      "open":true,
-                      "nodes":[
-                        "256 96",
-                        "256 864"
-                      ]
-                    },
-                    {
-                      "open":true,
-                      "nodes":[
-                        "96 704",
-                        "480 704",
-                        "480 96"
-                      ]
-                    },
-                    {
-                      "open":true,
-                      "nodes":[
-                        "864 256",
-                        "96 256"
-                      ]
-                    },
-                    {
-                      "nodes":[
-                        "256 480",
-                        "480 480",
-                        "480 256",
-                        "256 256"
-                      ]
-                    },
-                    {
-                      "open":true,
-                      "nodes":[
-                        "704 96",
-                        "704 480",
-                        "96 480"
-                      ]
-                    }
-                  ]
-                },
-                "pen":{
-                  "penCapStyle":0,
-                  "penJoinStyle":0,
-                  "penWidth":64,
-                  "penMiterLimit":3
-                },
-                "stroke":{
-                  "remove_overlap":false,
-                  "thickness":64
-                }
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name":"node_round_alt",
-        "openTypeGlyphClass":2,
-        "layers":[
-          {
-            "name":"Regular",
-            "flags":0,
-            "advanceWidth":960,
-            "elements":[
-              {
-                "elementData":{
-                  "contours":[
-                    {
-                      "open":true,
-                      "nodes":[
-                        "256 96",
-                        "256 864"
-                      ]
-                    },
-                    {
-                      "open":true,
-                      "nodes":[
-                        "96 704",
-                        "480 704"
-                      ]
-                    },
-                    {
-                      "open":true,
-                      "nodes":[
-                        "864 256",
-                        "96 256"
-                      ]
-                    },
-                    {
-                      "nodes":[
-                        "256 480",
-                        "480 480",
-                        "480 256",
-                        "256 256"
-                      ]
-                    },
-                    {
-                      "open":true,
-                      "nodes":[
-                        "640 800",
-                        "640 640",
-                        "800 640"
-                      ]
-                    },
-                    {
-                      "open":true,
-                      "nodes":[
-                        "834 835",
-                        "640 640"
-                      ]
-                    },
-                    {
-                      "open":true,
-                      "nodes":[
-                        "480 96",
-                        "480 480",
-                        "96 480"
-                      ]
-                    },
-                    {
-                      "open":true,
-                      "nodes":[
-                        "704 480",
-                        "704 96"
-                      ]
-                    }
-                  ]
-                },
-                "pen":{
-                  "penCapStyle":0,
-                  "penJoinStyle":0,
-                  "penWidth":64,
-                  "penMiterLimit":3
-                },
-                "stroke":{
-                  "remove_overlap":false,
-                  "thickness":64
-                }
-              }
-            ]
-          }
-        ]
-      },
-      {
         "name":"selection_basic",
         "openTypeGlyphClass":2,
         "layers":[
@@ -6574,7 +6419,7 @@
                                   ]
                                 },
                                 "stroke":{
-                                  "join":"bevel",
+                                  "join":"round",
                                   "miter_limit":10.1
                                 }
                               }
@@ -7489,10 +7334,10 @@
                       "open":true,
                       "nodes":[
                         "771 770",
-                        "771 830 s",
-                        "771 854  759 866  735 866 s",
-                        "709 866 s",
-                        "685 866  673 854  673 830 s",
+                        "771 829.723 s",
+                        "771 854.029  759.029 866  734.724 866 s",
+                        "709.276 866 s",
+                        "684.971 866  673 854.029  673 829.723 s",
                         "673 770"
                       ]
                     },
@@ -7551,7 +7396,7 @@
                   "penMiterLimit":10.1
                 },
                 "stroke":{
-                  "join":"round",
+                  "join":"bevel",
                   "miter_limit":10.1,
                   "thickness":48
                 }
@@ -8635,66 +8480,6 @@
         ]
       },
       {
-        "name":"search",
-        "layers":[
-          {
-            "name":"Regular",
-            "advanceWidth":960,
-            "elements":[
-              {
-                "elementData":{
-                  "contours":[
-                    {
-                      "nodes":[
-                        "160 576 s",
-                        "160 452  263 352  384 352 s",
-                        "508 352  608 452  608 576 s",
-                        "608 697  508 800  384 800 s",
-                        "263 800  160 697 c"
-                      ]
-                    }
-                  ]
-                },
-                "pen":{
-                  "penCapStyle":0,
-                  "penJoinStyle":0,
-                  "penWidth":64
-                },
-                "brush":{
-                  "style":0
-                },
-                "stroke":{
-                  "miter_limit":2,
-                  "thickness":64
-                }
-              },
-              {
-                "elementData":{
-                  "contours":[
-                    {
-                      "open":true,
-                      "nodes":[
-                        "544 416",
-                        "799 160"
-                      ]
-                    }
-                  ]
-                },
-                "pen":{
-                  "penCapStyle":0,
-                  "penJoinStyle":0,
-                  "penWidth":96
-                },
-                "stroke":{
-                  "miter_limit":2,
-                  "thickness":96
-                }
-              }
-            ]
-          }
-        ]
-      },
-      {
         "name":"label",
         "unicode":"1f3f7",
         "openTypeGlyphClass":1,
@@ -8766,9 +8551,9 @@
                       "nodes":[
                         "224 128",
                         "224 800",
-                        "736 800",
-                        "608 576",
-                        "736 352",
+                        "768 800",
+                        "640 576",
+                        "768 352",
                         "288 352"
                       ]
                     }
@@ -8891,146 +8676,6 @@
               }
             ],
             "color":"#bac000"
-          }
-        ]
-      },
-      {
-        "name":"refresh",
-        "layers":[
-          {
-            "name":"Regular",
-            "advanceWidth":960,
-            "elements":[
-              {
-                "elementData":{
-                  "contours":[
-                    {
-                      "open":true,
-                      "nodes":[
-                        "257 448",
-                        "257 309  372 192  513 192 s",
-                        "652 192  769 309  769 448 s",
-                        "769 589  652 704  513 704 s",
-                        "416 704"
-                      ]
-                    }
-                  ]
-                },
-                "pen":{
-                  "penCapStyle":0,
-                  "penJoinStyle":0,
-                  "penWidth":64
-                },
-                "brush":{
-                  "style":0
-                },
-                "stroke":{
-                  "miter_limit":2,
-                  "thickness":64
-                }
-              },
-              {
-                "elementData":{
-                  "contours":[
-                    {
-                      "open":true,
-                      "nodes":[
-                        "513 576",
-                        "385 704",
-                        "513 832"
-                      ]
-                    }
-                  ]
-                },
-                "pen":{
-                  "penCapStyle":0,
-                  "penJoinStyle":0,
-                  "penWidth":64
-                },
-                "stroke":{
-                  "miter_limit":2,
-                  "thickness":64
-                }
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name":"sync",
-        "layers":[
-          {
-            "name":"Regular",
-            "advanceWidth":960,
-            "elements":[
-              {
-                "elementData":{
-                  "contours":[
-                    {
-                      "open":true,
-                      "nodes":[
-                        "332 628 s",
-                        "285 581  256 517  256 448 s",
-                        "256 307  373 192  512 192 s",
-                        "576 192"
-                      ]
-                    },
-                    {
-                      "open":true,
-                      "nodes":[
-                        "692 268",
-                        "739 315  768 379  768 448 s",
-                        "768 589  651 704  512 704 s",
-                        "448 704"
-                      ]
-                    },
-                    {
-                      "open":true,
-                      "nodes":[
-                        "532 576",
-                        "404 704",
-                        "532 832"
-                      ]
-                    }
-                  ]
-                },
-                "pen":{
-                  "penCapStyle":0,
-                  "penJoinStyle":0,
-                  "penWidth":64
-                },
-                "brush":{
-                  "style":0
-                },
-                "stroke":{
-                  "miter_limit":2,
-                  "thickness":64
-                }
-              },
-              {
-                "elementData":{
-                  "contours":[
-                    {
-                      "open":true,
-                      "nodes":[
-                        "492 320",
-                        "620 192",
-                        "492 64"
-                      ]
-                    }
-                  ]
-                },
-                "pen":{
-                  "penCapStyle":0,
-                  "penJoinStyle":0,
-                  "penWidth":64
-                },
-                "stroke":{
-                  "miter_limit":2,
-                  "thickness":64
-                }
-              }
-            ]
           }
         ]
       },
@@ -9551,56 +9196,6 @@
                   "yScale":-1,
                   "xOffset":937,
                   "yOffset":1024
-                }
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name":"code_tag",
-        "openTypeGlyphClass":2,
-        "layers":[
-          {
-            "name":"Regular",
-            "advanceWidth":960,
-            "elements":[
-              {
-                "elementData":{
-                  "contours":[
-                    {
-                      "open":true,
-                      "nodes":[
-                        "320 672",
-                        "128 480",
-                        "288 320"
-                      ]
-                    },
-                    {
-                      "open":true,
-                      "nodes":[
-                        "640 288",
-                        "832 480",
-                        "672 640"
-                      ]
-                    },
-                    {
-                      "open":true,
-                      "nodes":[
-                        "576 768",
-                        "384 192"
-                      ]
-                    }
-                  ]
-                },
-                "pen":{
-                  "penCapStyle":0,
-                  "penJoinStyle":0,
-                  "penWidth":64
-                },
-                "stroke":{
-                  "miter_limit":2,
-                  "thickness":64
                 }
               }
             ]
@@ -10523,7 +10118,7 @@
                 "transform":{
                   "xScale":-1,
                   "yScale":-1,
-                  "xOffset":984,
+                  "xOffset":1056,
                   "yOffset":960
                 }
               }
@@ -10545,10 +10140,10 @@
                   "contours":[
                     {
                       "nodes":[
-                        "672 288",
-                        "672 672",
-                        "288 672",
-                        "288 288"
+                        "688 272",
+                        "688 688",
+                        "272 688",
+                        "272 272"
                       ]
                     }
                   ]
@@ -10581,9 +10176,12 @@
                   "contours":[
                     {
                       "nodes":[
-                        "640 480",
-                        "320 704",
-                        "320 256"
+                        "736 464",
+                        "736 496",
+                        "352 704",
+                        "320 684",
+                        "320 276",
+                        "352 256"
                       ]
                     }
                   ]
@@ -10638,18 +10236,18 @@
                   "contours":[
                     {
                       "nodes":[
-                        "384 288",
-                        "384 672",
-                        "288 672",
-                        "288 288"
+                        "384 273",
+                        "384 688",
+                        "256 688",
+                        "256 273"
                       ]
                     },
                     {
                       "nodes":[
-                        "672 288",
-                        "672 672",
-                        "576 672",
-                        "576 288"
+                        "704 273",
+                        "704 688",
+                        "576 688",
+                        "576 273"
                       ]
                     }
                   ]
@@ -10683,11 +10281,11 @@
                   "contours":[
                     {
                       "nodes":[
-                        "688 480 s",
-                        "688 595  595 688  480 688 s",
-                        "365 688  272 595  272 480 s",
-                        "272 365  365 272  480 272 s",
-                        "595 272  688 365 c"
+                        "704 480 s",
+                        "704 604  604 704  480 704 s",
+                        "356 704  256 604  256 480 s",
+                        "256 356  356 256  480 256 s",
+                        "604 256  704 356 c"
                       ]
                     }
                   ]
@@ -11265,7 +10863,7 @@
                 "stroke":{
                   "cap0":"fixed",
                   "cap1":"fixed",
-                  "join":"bevel",
+                  "join":"round",
                   "miter_limit":2,
                   "thickness":64
                 }
@@ -13989,7 +13587,7 @@
                   ]
                 },
                 "stroke":{
-                  "join":"round",
+                  "join":"bevel",
                   "miter_limit":2
                 }
               }
@@ -14360,7 +13958,7 @@
                   ]
                 },
                 "stroke":{
-                  "join":"bevel",
+                  "join":"round",
                   "miter_limit":2
                 }
               }
@@ -14463,7 +14061,7 @@
                   ]
                 },
                 "stroke":{
-                  "join":"round",
+                  "join":"bevel",
                   "miter_limit":2
                 }
               }
@@ -14558,7 +14156,7 @@
                   ]
                 },
                 "stroke":{
-                  "join":"bevel",
+                  "join":"round",
                   "miter_limit":2
                 }
               }
@@ -14655,7 +14253,7 @@
                   ]
                 },
                 "stroke":{
-                  "join":"bevel",
+                  "join":"round",
                   "miter_limit":2
                 }
               }
@@ -14758,7 +14356,7 @@
                   ]
                 },
                 "stroke":{
-                  "join":"round",
+                  "join":"bevel",
                   "miter_limit":2
                 }
               }
@@ -14862,7 +14460,7 @@
                   ]
                 },
                 "stroke":{
-                  "join":"bevel",
+                  "join":"round",
                   "miter_limit":2
                 }
               }
@@ -16851,7 +16449,7 @@
                   "style":0
                 },
                 "stroke":{
-                  "join":"bevel",
+                  "join":"round",
                   "thickness":64
                 }
               }
@@ -19615,196 +19213,6 @@
         ]
       },
       {
-        "name":"axis_set",
-        "openTypeGlyphClass":2,
-        "layers":[
-          {
-            "name":"Regular",
-            "flags":0,
-            "advanceWidth":960,
-            "elements":[
-              {
-                "elementData":{
-                  "contours":[
-                    {
-                      "open":true,
-                      "nodes":[
-                        "480 448",
-                        "192 160"
-                      ]
-                    },
-                    {
-                      "open":true,
-                      "nodes":[
-                        "832 800",
-                        "640 608"
-                      ]
-                    },
-                    {
-                      "nodes":[
-                        "640 608",
-                        "448 608",
-                        "448 416",
-                        "640 416"
-                      ]
-                    },
-                    {
-                      "open":true,
-                      "nodes":[
-                        "128 768",
-                        "224 672",
-                        "384 832"
-                      ]
-                    }
-                  ]
-                },
-                "pen":{
-                  "penCapStyle":0,
-                  "penJoinStyle":0,
-                  "penWidth":64,
-                  "penMiterLimit":3
-                },
-                "brush":{
-                  "style":0
-                },
-                "stroke":{
-                  "thickness":64
-                }
-              },
-              {
-                "elementData":{
-                  "contours":[
-                    {
-                      "nodes":[
-                        "832 800",
-                        "704 800",
-                        "704 672",
-                        "832 672"
-                      ]
-                    },
-                    {
-                      "nodes":[
-                        "319 287",
-                        "191 287",
-                        "191 159",
-                        "319 159"
-                      ]
-                    }
-                  ]
-                },
-                "pen":{
-                  "penCapStyle":0,
-                  "penJoinStyle":0,
-                  "penWidth":64
-                },
-                "stroke":{
-                  "miter_limit":2,
-                  "thickness":64
-                }
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name":"axis_remove",
-        "openTypeGlyphClass":2,
-        "layers":[
-          {
-            "name":"Regular",
-            "flags":0,
-            "advanceWidth":960,
-            "elements":[
-              {
-                "elementData":{
-                  "contours":[
-                    {
-                      "open":true,
-                      "nodes":[
-                        "480 448",
-                        "192 160"
-                      ]
-                    },
-                    {
-                      "open":true,
-                      "nodes":[
-                        "832 800",
-                        "640 608"
-                      ]
-                    },
-                    {
-                      "nodes":[
-                        "640 608",
-                        "448 608",
-                        "448 416",
-                        "640 416"
-                      ]
-                    },
-                    {
-                      "open":true,
-                      "nodes":[
-                        "128 640",
-                        "320 832"
-                      ]
-                    },
-                    {
-                      "open":true,
-                      "nodes":[
-                        "128 832",
-                        "320 640"
-                      ]
-                    }
-                  ]
-                },
-                "pen":{
-                  "penCapStyle":0,
-                  "penJoinStyle":0,
-                  "penWidth":64,
-                  "penMiterLimit":3
-                },
-                "brush":{
-                  "style":0
-                },
-                "stroke":{
-                  "thickness":64
-                }
-              },
-              {
-                "elementData":{
-                  "contours":[
-                    {
-                      "nodes":[
-                        "832 800",
-                        "704 800",
-                        "704 672",
-                        "832 672"
-                      ]
-                    },
-                    {
-                      "nodes":[
-                        "319 287",
-                        "191 287",
-                        "191 159",
-                        "319 159"
-                      ]
-                    }
-                  ]
-                },
-                "pen":{
-                  "penCapStyle":0,
-                  "penJoinStyle":0,
-                  "penWidth":64
-                },
-                "stroke":{
-                  "miter_limit":2,
-                  "thickness":64
-                }
-              }
-            ]
-          }
-        ]
-      },
-      {
         "name":"stem_vertical",
         "openTypeGlyphClass":2,
         "layers":[
@@ -20321,7 +19729,7 @@
                 "stroke":{
                   "cap0":"horizontal",
                   "cap1":"horizontal",
-                  "join":"bevel",
+                  "join":"round",
                   "thickness":64
                 }
               }
@@ -20486,7 +19894,7 @@
                 "stroke":{
                   "cap0":"horizontal",
                   "cap1":"horizontal",
-                  "join":"bevel",
+                  "join":"round",
                   "proportion":0,
                   "thickness":64
                 }
@@ -24207,67 +23615,6 @@
         ]
       },
       {
-        "name":"delta_machine",
-        "openTypeGlyphClass":2,
-        "layers":[
-          {
-            "name":"Regular",
-            "flags":0,
-            "advanceWidth":960,
-            "elements":[
-              {
-                "elementData":{
-                  "contours":[
-                    {
-                      "nodes":[
-                        "832 256",
-                        "608 640",
-                        "482 416",
-                        "576 256"
-                      ]
-                    }
-                  ]
-                },
-                "pen":{
-                  "penCapStyle":0,
-                  "penJoinStyle":0,
-                  "penWidth":64,
-                  "penMiterLimit":3
-                },
-                "stroke":{
-                  "thickness":64
-                }
-              },
-              {
-                "elementData":{
-                  "contours":[
-                    {
-                      "nodes":[
-                        "544 256",
-                        "320 640",
-                        "128 256"
-                      ]
-                    }
-                  ]
-                },
-                "pen":{
-                  "penCapStyle":0,
-                  "penJoinStyle":0,
-                  "penWidth":64,
-                  "penMiterLimit":3
-                },
-                "brush":{
-                  "style":0
-                },
-                "stroke":{
-                  "thickness":64
-                }
-              }
-            ]
-          }
-        ]
-      },
-      {
         "name":"scale_x",
         "openTypeGlyphClass":2,
         "layers":[
@@ -25201,10 +24548,10 @@
                       "nodes":[
                         "128 160",
                         "608 160",
-                        "608 322",
-                        "735 338  832 445  832 576 s",
+                        "608 321.956",
+                        "734.745 337.573  832 444.843  832 576 s",
                         "832 718  718 832  576 832 s",
-                        "445 832  338 735  322 608",
+                        "444.843 832  337.573 734.745  321.956 608",
                         "128 608"
                       ]
                     },
@@ -25212,18 +24559,18 @@
                       "nodes":[
                         "192 224",
                         "192 544",
-                        "322 544",
-                        "336 428  428 336  544 322",
+                        "321.956 544",
+                        "336.282 427.733  427.733 336.282  544 321.956",
                         "544 224"
                       ]
                     },
                     {
                       "nodes":[
                         "608 608",
-                        "387 608",
-                        "402 699  481 768  576 768 s",
+                        "386.657 608",
+                        "401.902 698.781  480.902 768  576 768 s",
                         "682 768  768 682  768 576 s",
-                        "768 481  699 402  608 387"
+                        "768 480.902  698.781 401.902  608 386.657"
                       ]
                     }
                   ],
@@ -26412,45 +25759,45 @@
                     {
                       "nodes":[
                         "480 256 s",
-                        "531 256  582 264  631 280",
+                        "530.89 256  582.099 263.875  630.538 279.694",
                         "782 128",
                         "828 174",
-                        "696 307",
-                        "648 355",
-                        "564 439",
-                        "436 567",
-                        "376 627",
-                        "325 678",
+                        "695.525 306.678",
+                        "647.639 354.637",
+                        "563.688 438.717",
+                        "435.85 566.751",
+                        "375.887 626.806",
+                        "324.726 678.045",
                         "175 828",
                         "129 782",
-                        "261 650",
-                        "191 613  131 556  92 480",
+                        "260.729 650.069",
+                        "190.691 612.578  130.878 555.71  92 480",
                         "165 331  324 256 c"
                       ]
                     },
                     {
                       "nodes":[
-                        "390 521",
-                        "384 508  381 495  381 480 s",
+                        "389.993 520.607",
+                        "384.224 508.273  381 494.511  381 480 s",
                         "381 427  424 384  477 384 s",
-                        "491 384  505 387  517 393",
-                        "579 331",
-                        "548 324  515 320  480 320 s",
+                        "491.459 384  505.174 387.2  517.474 392.931",
+                        "578.927 331.384",
+                        "548.297 324.084  515.236 320  480 320 s",
                         "352 320  230 377  165 480",
-                        "200 534  250 575  308 602"
+                        "200.264 533.686  250.21 575.182  308.277 602.448"
                       ]
                     },
                     {
                       "nodes":[
-                        "398 697",
-                        "455 639",
-                        "464 640  472 640  480 640 s",
+                        "397.814 696.915",
+                        "455.36 639.281",
+                        "463.532 639.759  471.75 640  480 640 s",
                         "633 640  745 562  795 480",
-                        "775 447  745 415  706 388",
-                        "752 342",
-                        "800 377  840 423  868 480",
+                        "774.985 446.774  745.034 414.51  706.495 387.762",
+                        "752.388 341.798",
+                        "800.09 376.961  840.256 422.992  868 480",
                         "794 629  637 704  480 704 s",
-                        "452 704  425 702 c"
+                        "452.458 704  424.916 701.631 c"
                       ]
                     }
                   ],
@@ -28513,20 +27860,20 @@
                         "344 464 s",
                         "344 451  355 440  368 440 s",
                         "472 440",
-                        "615 297",
+                        "615.047 296.953",
                         "480 199",
                         "247 368",
                         "299 406",
                         "253 451",
                         "137 368",
                         "480 121",
-                        "661 251",
+                        "660.802 251.198",
                         "784 128",
                         "830 174",
-                        "714 290",
-                        "668 336",
+                        "714.286 289.714",
+                        "668.371 335.629",
                         "564 440",
-                        "345 659",
+                        "345.066 658.934",
                         "174 830"
                       ]
                     },
@@ -28545,8 +27892,8 @@
                     },
                     {
                       "nodes":[
-                        "676 421",
-                        "768 328",
+                        "675.5 420.5",
+                        "767.771 328.229",
                         "823 368",
                         "707 452"
                       ]
@@ -30424,7 +29771,7 @@
                         "800 204",
                         "684 320",
                         "564 440",
-                        "345 659",
+                        "345.066 658.934",
                         "174 830",
                         "128 784"
                       ]
@@ -34663,6 +34010,59 @@
         ]
       },
       {
+        "name":"edit",
+        "openTypeGlyphClass":1,
+        "layers":[
+          {
+            "name":"Regular",
+            "advanceWidth":960,
+            "elements":[
+              {
+                "elementData":{
+                  "contours":[
+                    {
+                      "open":true,
+                      "nodes":[
+                        "416 640",
+                        "576 480"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "512 224",
+                        "832 224"
+                      ]
+                    },
+                    {
+                      "nodes":[
+                        "160 384",
+                        "160 224",
+                        "320 224",
+                        "704 608",
+                        "544 768"
+                      ]
+                    }
+                  ]
+                },
+                "pen":{
+                  "penCapStyle":0,
+                  "penJoinStyle":0,
+                  "penWidth":64,
+                  "penMiterLimit":3
+                },
+                "brush":{
+                  "style":0
+                },
+                "stroke":{
+                  "thickness":64
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
         "name":"tool_line",
         "openTypeGlyphClass":2,
         "layers":[
@@ -36320,10 +35720,10 @@
                       "nodes":[
                         "128 160",
                         "608 160",
-                        "608 322",
-                        "735 338  832 445  832 576 s",
+                        "608 321.956",
+                        "734.745 337.573  832 444.843  832 576 s",
                         "832 718  718 832  576 832 s",
-                        "445 832  338 735  322 608",
+                        "444.843 832  337.573 734.745  321.956 608",
                         "128 608"
                       ]
                     },
@@ -36331,18 +35731,18 @@
                       "nodes":[
                         "192 224",
                         "192 544",
-                        "322 544",
-                        "336 428  428 336  544 322",
+                        "321.956 544",
+                        "336.282 427.733  427.733 336.282  544 321.956",
                         "544 224"
                       ]
                     },
                     {
                       "nodes":[
                         "608 608",
-                        "387 608",
-                        "402 699  481 768  576 768 s",
+                        "386.657 608",
+                        "401.902 698.781  480.902 768  576 768 s",
                         "682 768  768 682  768 576 s",
-                        "768 481  699 402  608 387"
+                        "768 480.902  698.781 401.902  608 386.657"
                       ]
                     }
                   ],
@@ -37368,6 +36768,87 @@
         ]
       },
       {
+        "name":"glyph_capture",
+        "openTypeGlyphClass":1,
+        "layers":[
+          {
+            "name":"Regular",
+            "advanceWidth":960,
+            "elements":[
+              {
+                "elementData":{
+                  "contours":[
+                    {
+                      "open":true,
+                      "nodes":[
+                        "160 352",
+                        "160 160",
+                        "352 160"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "608 160",
+                        "800 160",
+                        "800 352"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "800 608",
+                        "800 800",
+                        "608 800"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "352 800",
+                        "160 800",
+                        "160 608"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "608 384",
+                        "384 320",
+                        "352 352",
+                        "352 480",
+                        "608 480"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "352 608",
+                        "576 640",
+                        "608 608",
+                        "608 288"
+                      ]
+                    }
+                  ]
+                },
+                "pen":{
+                  "penCapStyle":0,
+                  "penJoinStyle":0,
+                  "penWidth":64,
+                  "penMiterLimit":3
+                },
+                "brush":{
+                  "style":0
+                },
+                "stroke":{
+                  "thickness":64
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
         "name":"glyph_stack",
         "openTypeGlyphClass":2,
         "layers":[
@@ -37435,6 +36916,187 @@
         ]
       },
       {
+        "name":"glyph_duplicate",
+        "openTypeGlyphClass":2,
+        "layers":[
+          {
+            "name":"Regular",
+            "flags":0,
+            "advanceWidth":960,
+            "elements":[
+              {
+                "elementData":{
+                  "contours":[
+                    {
+                      "open":true,
+                      "nodes":[
+                        "560 322",
+                        "336 258",
+                        "304 290",
+                        "304 418",
+                        "560 418"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "304 546",
+                        "528 578",
+                        "560 546",
+                        "560 226"
+                      ]
+                    },
+                    {
+                      "nodes":[
+                        "160 704",
+                        "160 128",
+                        "704 128",
+                        "704 704"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "832 224",
+                        "832 832",
+                        "256 832"
+                      ]
+                    }
+                  ]
+                },
+                "pen":{
+                  "penCapStyle":0,
+                  "penJoinStyle":0,
+                  "penWidth":64,
+                  "penMiterLimit":3
+                },
+                "brush":{
+                  "style":0
+                },
+                "stroke":{
+                  "remove_overlap":false,
+                  "thickness":64
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name":"glyph_next",
+        "openTypeGlyphClass":1,
+        "layers":[
+          {
+            "name":"Regular",
+            "advanceWidth":960,
+            "elements":[
+              {
+                "elementData":{
+                  "contours":[
+                    {
+                      "open":true,
+                      "nodes":[
+                        "416 384",
+                        "192 320",
+                        "160 352",
+                        "160 480",
+                        "416 480"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "160 608",
+                        "384 640",
+                        "416 608",
+                        "416 288"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "608 672",
+                        "800 480",
+                        "608 288"
+                      ]
+                    }
+                  ]
+                },
+                "pen":{
+                  "penCapStyle":0,
+                  "penJoinStyle":0,
+                  "penWidth":64,
+                  "penMiterLimit":3
+                },
+                "brush":{
+                  "style":0
+                },
+                "stroke":{
+                  "thickness":64
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name":"glyph_previous",
+        "openTypeGlyphClass":1,
+        "layers":[
+          {
+            "name":"Regular",
+            "advanceWidth":960,
+            "elements":[
+              {
+                "elementData":{
+                  "contours":[
+                    {
+                      "open":true,
+                      "nodes":[
+                        "800 384",
+                        "576 320",
+                        "544 352",
+                        "544 480",
+                        "800 480"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "544 608",
+                        "768 640",
+                        "800 608",
+                        "800 288"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "352 672",
+                        "160 480",
+                        "352 288"
+                      ]
+                    }
+                  ]
+                },
+                "pen":{
+                  "penCapStyle":0,
+                  "penJoinStyle":0,
+                  "penWidth":64,
+                  "penMiterLimit":3
+                },
+                "brush":{
+                  "style":0
+                },
+                "stroke":{
+                  "thickness":64
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
         "name":"glyph_add",
         "openTypeGlyphClass":2,
         "layers":[
@@ -37492,6 +37154,4867 @@
                 },
                 "stroke":{
                   "remove_overlap":false,
+                  "thickness":64
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name":"glyph_remove",
+        "layers":[
+          {
+            "name":"Regular",
+            "flags":0,
+            "advanceWidth":960,
+            "elements":[
+              {
+                "elementData":{
+                  "contours":[
+                    {
+                      "open":true,
+                      "nodes":[
+                        "736 224",
+                        "448 160",
+                        "416 192",
+                        "416 352",
+                        "736 352"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "416 512",
+                        "704 544",
+                        "736 512",
+                        "736 128"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "128 672",
+                        "448 672"
+                      ]
+                    }
+                  ]
+                },
+                "pen":{
+                  "penCapStyle":0,
+                  "penJoinStyle":0,
+                  "penWidth":64,
+                  "penMiterLimit":3
+                },
+                "brush":{
+                  "style":0
+                },
+                "stroke":{
+                  "remove_overlap":false,
+                  "thickness":64
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name":"arrows_left_right",
+        "openTypeGlyphClass":1,
+        "layers":[
+          {
+            "name":"Regular",
+            "advanceWidth":960,
+            "elements":[
+              {
+                "elementData":{
+                  "contours":[
+                    {
+                      "open":true,
+                      "nodes":[
+                        "192 480",
+                        "768 480"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "384 672",
+                        "192 480",
+                        "384 288"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "576 672",
+                        "768 480",
+                        "576 288"
+                      ]
+                    }
+                  ]
+                },
+                "pen":{
+                  "penCapStyle":0,
+                  "penJoinStyle":0,
+                  "penWidth":64,
+                  "penMiterLimit":3
+                },
+                "brush":{
+                  "style":0
+                },
+                "stroke":{
+                  "thickness":64
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name":"arrows_up_down",
+        "openTypeGlyphClass":1,
+        "layers":[
+          {
+            "name":"Regular",
+            "advanceWidth":960,
+            "elements":[
+              {
+                "elementData":{
+                  "contours":[
+                    {
+                      "open":true,
+                      "nodes":[
+                        "480 192",
+                        "480 768"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "288 384",
+                        "480 192",
+                        "672 384"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "288 576",
+                        "480 768",
+                        "672 576"
+                      ]
+                    }
+                  ]
+                },
+                "pen":{
+                  "penCapStyle":0,
+                  "penJoinStyle":0,
+                  "penWidth":64,
+                  "penMiterLimit":3
+                },
+                "brush":{
+                  "style":0
+                },
+                "stroke":{
+                  "thickness":64
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name":"arrows_move",
+        "openTypeGlyphClass":1,
+        "layers":[
+          {
+            "name":"Regular",
+            "advanceWidth":960,
+            "elements":[
+              {
+                "elementData":{
+                  "contours":[
+                    {
+                      "open":true,
+                      "nodes":[
+                        "160 480",
+                        "800 480"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "480 160",
+                        "480 800"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "288 608",
+                        "160 480",
+                        "288 352"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "672 608",
+                        "800 480",
+                        "672 352"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "352 672",
+                        "480 800",
+                        "608 672"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "352 288",
+                        "480 160",
+                        "608 288"
+                      ]
+                    }
+                  ]
+                },
+                "pen":{
+                  "penCapStyle":0,
+                  "penJoinStyle":0,
+                  "penWidth":64,
+                  "penMiterLimit":3
+                },
+                "brush":{
+                  "style":0
+                },
+                "stroke":{
+                  "thickness":64
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name":"arrows_swap_h",
+        "openTypeGlyphClass":1,
+        "layers":[
+          {
+            "name":"Regular",
+            "advanceWidth":960,
+            "elements":[
+              {
+                "elementData":{
+                  "contours":[
+                    {
+                      "open":true,
+                      "nodes":[
+                        "160 640",
+                        "800 640"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "640 800",
+                        "800 640",
+                        "640 480"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "800 320",
+                        "160 320"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "320 480",
+                        "160 320",
+                        "320 160"
+                      ]
+                    }
+                  ]
+                },
+                "pen":{
+                  "penCapStyle":0,
+                  "penJoinStyle":0,
+                  "penWidth":64,
+                  "penMiterLimit":3
+                },
+                "brush":{
+                  "style":0
+                },
+                "stroke":{
+                  "thickness":64
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name":"arrows_swap_v",
+        "openTypeGlyphClass":1,
+        "layers":[
+          {
+            "name":"Regular",
+            "advanceWidth":960,
+            "elements":[
+              {
+                "elementData":{
+                  "contours":[
+                    {
+                      "open":true,
+                      "nodes":[
+                        "640 800",
+                        "640 160"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "800 320",
+                        "640 160",
+                        "480 320"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "320 160",
+                        "320 800"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "480 640",
+                        "320 800",
+                        "160 640"
+                      ]
+                    }
+                  ]
+                },
+                "pen":{
+                  "penCapStyle":0,
+                  "penJoinStyle":0,
+                  "penWidth":64,
+                  "penMiterLimit":3
+                },
+                "brush":{
+                  "style":0
+                },
+                "stroke":{
+                  "thickness":64
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name":"menu",
+        "openTypeGlyphClass":1,
+        "layers":[
+          {
+            "name":"Regular",
+            "advanceWidth":960,
+            "elements":[
+              {
+                "elementData":{
+                  "contours":[
+                    {
+                      "open":true,
+                      "nodes":[
+                        "192 672",
+                        "768 672"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "192 480",
+                        "768 480"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "192 288",
+                        "768 288"
+                      ]
+                    }
+                  ]
+                },
+                "pen":{
+                  "penCapStyle":0,
+                  "penJoinStyle":0,
+                  "penWidth":64,
+                  "penMiterLimit":3
+                },
+                "brush":{
+                  "style":0
+                },
+                "stroke":{
+                  "thickness":64
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name":"menu_more",
+        "openTypeGlyphClass":1,
+        "layers":[
+          {
+            "name":"Regular",
+            "advanceWidth":960,
+            "elements":[
+              {
+                "elementData":{
+                  "contours":[
+                    {
+                      "nodes":[
+                        "160 480 s",
+                        "160 515  189 544  224 544 s",
+                        "259 544  288 515  288 480 s",
+                        "288 445  259 416  224 416 s",
+                        "189 416  160 445 c"
+                      ]
+                    },
+                    {
+                      "nodes":[
+                        "416 480 s",
+                        "416 515  445 544  480 544 s",
+                        "515 544  544 515  544 480 s",
+                        "544 445  515 416  480 416 s",
+                        "445 416  416 445 c"
+                      ]
+                    },
+                    {
+                      "nodes":[
+                        "672 480 s",
+                        "672 515  701 544  736 544 s",
+                        "771 544  800 515  800 480 s",
+                        "800 445  771 416  736 416 s",
+                        "701 416  672 445 c"
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name":"toggle_on",
+        "openTypeGlyphClass":1,
+        "layers":[
+          {
+            "name":"Regular",
+            "advanceWidth":960,
+            "elements":[
+              {
+                "elementData":{
+                  "contours":[
+                    {
+                      "nodes":[
+                        "352 704",
+                        "608 704",
+                        "731 704  832 604  832 480 s",
+                        "832 356  731 256  608 256 s",
+                        "352 256",
+                        "229 256  128 356  128 480 s",
+                        "128 604  229 704 c"
+                      ]
+                    }
+                  ]
+                },
+                "pen":{
+                  "penCapStyle":0,
+                  "penJoinStyle":0,
+                  "penWidth":64,
+                  "penMiterLimit":3
+                },
+                "brush":{
+                  "style":0
+                },
+                "stroke":{
+                  "thickness":64
+                }
+              },
+              {
+                "elementData":{
+                  "contours":[
+                    {
+                      "nodes":[
+                        "480 480 s",
+                        "480 551  537 608  608 608 s",
+                        "679 608  736 551  736 480 s",
+                        "736 409  679 352  608 352 s",
+                        "537 352  480 409 c"
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name":"toggle_off",
+        "openTypeGlyphClass":1,
+        "layers":[
+          {
+            "name":"Regular",
+            "advanceWidth":960,
+            "elements":[
+              {
+                "elementData":{
+                  "contours":[
+                    {
+                      "nodes":[
+                        "352 704",
+                        "608 704",
+                        "731 704  832 604  832 480 s",
+                        "832 356  731 256  608 256 s",
+                        "352 256",
+                        "229 256  128 356  128 480 s",
+                        "128 604  229 704 c"
+                      ]
+                    }
+                  ]
+                },
+                "pen":{
+                  "penCapStyle":0,
+                  "penJoinStyle":0,
+                  "penWidth":64,
+                  "penMiterLimit":3
+                },
+                "brush":{
+                  "style":0
+                },
+                "stroke":{
+                  "thickness":64
+                }
+              },
+              {
+                "elementData":{
+                  "contours":[
+                    {
+                      "nodes":[
+                        "256 480 s",
+                        "256 533  300 576  352 576 s",
+                        "405 576  448 533  448 480 s",
+                        "448 428  405 384  352 384 s",
+                        "300 384  256 428 c"
+                      ]
+                    }
+                  ]
+                },
+                "pen":{
+                  "penCapStyle":0,
+                  "penJoinStyle":0,
+                  "penWidth":64,
+                  "penMiterLimit":3
+                },
+                "brush":{
+                  "style":0
+                },
+                "stroke":{
+                  "thickness":64
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name":"lock",
+        "openTypeGlyphClass":1,
+        "layers":[
+          {
+            "name":"Regular",
+            "advanceWidth":960,
+            "elements":[
+              {
+                "elementData":{
+                  "contours":[
+                    {
+                      "nodes":[
+                        "224 160",
+                        "736 160",
+                        "736 480",
+                        "224 480"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "480 256",
+                        "480 384"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "320 480",
+                        "320 640",
+                        "320 728  392 800  480 800 s",
+                        "568 800  640 728  640 640 s",
+                        "640 480"
+                      ]
+                    }
+                  ]
+                },
+                "pen":{
+                  "penCapStyle":0,
+                  "penJoinStyle":0,
+                  "penWidth":64,
+                  "penMiterLimit":3
+                },
+                "brush":{
+                  "style":0
+                },
+                "stroke":{
+                  "thickness":64
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name":"lock_off",
+        "openTypeGlyphClass":1,
+        "layers":[
+          {
+            "name":"Regular",
+            "advanceWidth":960,
+            "elements":[
+              {
+                "elementData":{
+                  "contours":[
+                    {
+                      "nodes":[
+                        "224 160",
+                        "736 160",
+                        "736 480",
+                        "224 480"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "480 256",
+                        "480 384"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "320 640",
+                        "320 728  392 800  480 800 s",
+                        "568 800  640 728  640 640 s",
+                        "640 480"
+                      ]
+                    }
+                  ]
+                },
+                "pen":{
+                  "penCapStyle":0,
+                  "penJoinStyle":0,
+                  "penWidth":64,
+                  "penMiterLimit":3
+                },
+                "brush":{
+                  "style":0
+                },
+                "stroke":{
+                  "thickness":64
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name":"delete",
+        "openTypeGlyphClass":1,
+        "layers":[
+          {
+            "name":"Regular",
+            "advanceWidth":960,
+            "elements":[
+              {
+                "elementData":{
+                  "contours":[
+                    {
+                      "open":true,
+                      "nodes":[
+                        "160 672",
+                        "800 672"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "384 672",
+                        "384 768",
+                        "414 800",
+                        "576 800",
+                        "608 768",
+                        "608 672"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "256 576",
+                        "288 160",
+                        "672 160",
+                        "704 576"
+                      ]
+                    }
+                  ]
+                },
+                "pen":{
+                  "penCapStyle":0,
+                  "penJoinStyle":0,
+                  "penWidth":64,
+                  "penMiterLimit":3
+                },
+                "brush":{
+                  "style":0
+                },
+                "stroke":{
+                  "thickness":64
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name":"clear",
+        "openTypeGlyphClass":1,
+        "layers":[
+          {
+            "name":"Regular",
+            "advanceWidth":960,
+            "elements":[
+              {
+                "elementData":{
+                  "contours":[
+                    {
+                      "nodes":[
+                        "160 480",
+                        "352 736",
+                        "800 736",
+                        "800 224",
+                        "352 224"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "416 352",
+                        "672 608"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "416 608",
+                        "672 352"
+                      ]
+                    }
+                  ]
+                },
+                "pen":{
+                  "penCapStyle":0,
+                  "penJoinStyle":0,
+                  "penWidth":64,
+                  "penMiterLimit":3
+                },
+                "brush":{
+                  "style":0
+                },
+                "stroke":{
+                  "thickness":64
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name":"warning",
+        "openTypeGlyphClass":1,
+        "layers":[
+          {
+            "name":"Regular",
+            "advanceWidth":960,
+            "elements":[
+              {
+                "elementData":{
+                  "contours":[
+                    {
+                      "nodes":[
+                        "148 192",
+                        "812 192",
+                        "832 224",
+                        "496 844",
+                        "464 844",
+                        "128 224"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "480 416",
+                        "480 640"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "480 288",
+                        "480 352"
+                      ]
+                    }
+                  ]
+                },
+                "pen":{
+                  "penCapStyle":0,
+                  "penJoinStyle":0,
+                  "penWidth":64,
+                  "penMiterLimit":3
+                },
+                "brush":{
+                  "style":0
+                },
+                "stroke":{
+                  "thickness":64
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name":"error",
+        "openTypeGlyphClass":1,
+        "layers":[
+          {
+            "name":"Regular",
+            "advanceWidth":960,
+            "elements":[
+              {
+                "elementData":{
+                  "contours":[
+                    {
+                      "nodes":[
+                        "160 512 s",
+                        "160 689  303 832  480 832 s",
+                        "657 832  800 689  800 512 s",
+                        "800 335  657 192  480 192 s",
+                        "303 192  160 335 c"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "352 384",
+                        "608 640"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "352 640",
+                        "608 384"
+                      ]
+                    }
+                  ]
+                },
+                "pen":{
+                  "penCapStyle":0,
+                  "penJoinStyle":0,
+                  "penWidth":64,
+                  "penMiterLimit":3
+                },
+                "brush":{
+                  "style":0
+                },
+                "stroke":{
+                  "thickness":64
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name":"sync",
+        "layers":[
+          {
+            "name":"Regular",
+            "advanceWidth":960,
+            "elements":[
+              {
+                "elementData":{
+                  "contours":[
+                    {
+                      "open":true,
+                      "nodes":[
+                        "332 628 s",
+                        "285 581  256 517  256 448 s",
+                        "256 307  373 192  512 192 s",
+                        "576 192"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "692 268",
+                        "739 315  768 379  768 448 s",
+                        "768 589  651 704  512 704 s",
+                        "448 704"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "532 576",
+                        "404 704",
+                        "532 832"
+                      ]
+                    }
+                  ]
+                },
+                "pen":{
+                  "penCapStyle":0,
+                  "penJoinStyle":0,
+                  "penWidth":64
+                },
+                "brush":{
+                  "style":0
+                },
+                "stroke":{
+                  "miter_limit":2,
+                  "thickness":64
+                }
+              },
+              {
+                "elementData":{
+                  "contours":[
+                    {
+                      "open":true,
+                      "nodes":[
+                        "492 320",
+                        "620 192",
+                        "492 64"
+                      ]
+                    }
+                  ]
+                },
+                "pen":{
+                  "penCapStyle":0,
+                  "penJoinStyle":0,
+                  "penWidth":64
+                },
+                "stroke":{
+                  "miter_limit":2,
+                  "thickness":64
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name":"refresh",
+        "layers":[
+          {
+            "name":"Regular",
+            "advanceWidth":960,
+            "elements":[
+              {
+                "elementData":{
+                  "contours":[
+                    {
+                      "open":true,
+                      "nodes":[
+                        "224 448",
+                        "224 309  339 192  480 192 s",
+                        "619 192  736 309  736 448 s",
+                        "736 589  619 704  480 704 s",
+                        "352 704"
+                      ]
+                    }
+                  ]
+                },
+                "pen":{
+                  "penCapStyle":0,
+                  "penJoinStyle":0,
+                  "penWidth":64
+                },
+                "brush":{
+                  "style":0
+                },
+                "stroke":{
+                  "miter_limit":2,
+                  "thickness":64
+                }
+              },
+              {
+                "elementData":{
+                  "contours":[
+                    {
+                      "open":true,
+                      "nodes":[
+                        "449 576",
+                        "321 704",
+                        "449 832"
+                      ]
+                    }
+                  ]
+                },
+                "pen":{
+                  "penCapStyle":0,
+                  "penJoinStyle":0,
+                  "penWidth":64
+                },
+                "stroke":{
+                  "miter_limit":2,
+                  "thickness":64
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name":"value_reset",
+        "openTypeGlyphClass":1,
+        "layers":[
+          {
+            "name":"Regular",
+            "advanceWidth":960,
+            "elements":[
+              {
+                "elementData":{
+                  "contours":[
+                    {
+                      "open":true,
+                      "nodes":[
+                        "736 448",
+                        "736 307  621 192  480 192 s",
+                        "339 192  224 307  224 448 s",
+                        "224 589  339 704  480 704 s",
+                        "704 704"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "576 576",
+                        "704 704",
+                        "576 832"
+                      ]
+                    }
+                  ]
+                },
+                "pen":{
+                  "penCapStyle":0,
+                  "penJoinStyle":0,
+                  "penWidth":64,
+                  "penMiterLimit":3
+                },
+                "brush":{
+                  "style":0
+                },
+                "stroke":{
+                  "thickness":64
+                }
+              },
+              {
+                "elementData":{
+                  "contours":[
+                    {
+                      "nodes":[
+                        "416 448 s",
+                        "416 483  445 512  480 512 s",
+                        "515 512  544 483  544 448 s",
+                        "544 413  515 384  480 384 s",
+                        "445 384  416 413 c"
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name":"history",
+        "openTypeGlyphClass":1,
+        "layers":[
+          {
+            "name":"Regular",
+            "advanceWidth":960,
+            "elements":[
+              {
+                "elementData":{
+                  "contours":[
+                    {
+                      "open":true,
+                      "nodes":[
+                        "352 576",
+                        "192 576",
+                        "192 768"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "468 628",
+                        "468 468",
+                        "596 372"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "192 478",
+                        "192 319  321 190  480 190 s",
+                        "639 190  768 319  768 478",
+                        "768 637  639 766  480 766",
+                        "364 766  263 697  218 597"
+                      ]
+                    }
+                  ]
+                },
+                "pen":{
+                  "penCapStyle":0,
+                  "penJoinStyle":0,
+                  "penWidth":64,
+                  "penMiterLimit":3
+                },
+                "brush":{
+                  "style":0
+                },
+                "stroke":{
+                  "thickness":64
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name":"rename",
+        "openTypeGlyphClass":1,
+        "layers":[
+          {
+            "name":"Regular",
+            "advanceWidth":960,
+            "elements":[
+              {
+                "elementData":{
+                  "contours":[
+                    {
+                      "nodes":[
+                        "160 320",
+                        "800 320",
+                        "800 640",
+                        "160 640"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "256 480",
+                        "512 480"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "640 192",
+                        "640 768"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "576 768",
+                        "704 768"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "576 192",
+                        "704 192"
+                      ]
+                    }
+                  ]
+                },
+                "pen":{
+                  "penCapStyle":0,
+                  "penJoinStyle":0,
+                  "penWidth":64,
+                  "penMiterLimit":3
+                },
+                "brush":{
+                  "style":0
+                },
+                "stroke":{
+                  "thickness":64
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name":"duplicate",
+        "openTypeGlyphClass":1,
+        "layers":[
+          {
+            "name":"Regular",
+            "advanceWidth":960,
+            "elements":[
+              {
+                "elementData":{
+                  "contours":[
+                    {
+                      "nodes":[
+                        "160 160",
+                        "640 160",
+                        "640 640",
+                        "160 640"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "320 800",
+                        "800 800",
+                        "800 320"
+                      ]
+                    }
+                  ]
+                },
+                "pen":{
+                  "penCapStyle":0,
+                  "penJoinStyle":0,
+                  "penWidth":64,
+                  "penMiterLimit":3
+                },
+                "brush":{
+                  "style":0
+                },
+                "stroke":{
+                  "thickness":64
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name":"filter",
+        "openTypeGlyphClass":1,
+        "layers":[
+          {
+            "name":"Regular",
+            "advanceWidth":960,
+            "elements":[
+              {
+                "elementData":{
+                  "contours":[
+                    {
+                      "nodes":[
+                        "160 768",
+                        "800 768",
+                        "544 448",
+                        "544 160",
+                        "416 224",
+                        "416 448"
+                      ]
+                    }
+                  ]
+                },
+                "pen":{
+                  "penCapStyle":0,
+                  "penJoinStyle":0,
+                  "penWidth":64,
+                  "penMiterLimit":3
+                },
+                "brush":{
+                  "style":0
+                },
+                "stroke":{
+                  "thickness":64
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name":"search",
+        "layers":[
+          {
+            "name":"Regular",
+            "advanceWidth":960,
+            "elements":[
+              {
+                "elementData":{
+                  "contours":[
+                    {
+                      "open":true,
+                      "nodes":[
+                        "576 384",
+                        "799 160"
+                      ]
+                    },
+                    {
+                      "nodes":[
+                        "160 545 s",
+                        "160 403  278 288  415 288 s",
+                        "557 288  672 403  672 545 s",
+                        "672 682  557 800  415 800 s",
+                        "278 800  160 682 c"
+                      ]
+                    }
+                  ]
+                },
+                "pen":{
+                  "penCapStyle":0,
+                  "penJoinStyle":0,
+                  "penWidth":64
+                },
+                "brush":{
+                  "style":0
+                },
+                "stroke":{
+                  "thickness":64
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name":"search_clear",
+        "openTypeGlyphClass":1,
+        "layers":[
+          {
+            "name":"Regular",
+            "advanceWidth":960,
+            "elements":[
+              {
+                "elementData":{
+                  "contours":[
+                    {
+                      "open":true,
+                      "nodes":[
+                        "325 635",
+                        "507 453"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "325 453",
+                        "507 635"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "576 384",
+                        "799 160"
+                      ]
+                    },
+                    {
+                      "nodes":[
+                        "160 545 s",
+                        "160 403  278 288  415 288 s",
+                        "557 288  672 403  672 545 s",
+                        "672 682  557 800  415 800 s",
+                        "278 800  160 682 c"
+                      ]
+                    }
+                  ]
+                },
+                "pen":{
+                  "penCapStyle":0,
+                  "penJoinStyle":0,
+                  "penWidth":64
+                },
+                "brush":{
+                  "style":0
+                },
+                "stroke":{
+                  "miter_limit":2,
+                  "thickness":64
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name":"zoom_in",
+        "openTypeGlyphClass":1,
+        "layers":[
+          {
+            "name":"Regular",
+            "advanceWidth":960,
+            "elements":[
+              {
+                "elementData":{
+                  "contours":[
+                    {
+                      "open":true,
+                      "nodes":[
+                        "288 544",
+                        "544 544"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "416 416",
+                        "416 672"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "576 384",
+                        "799 160"
+                      ]
+                    },
+                    {
+                      "nodes":[
+                        "160 545 s",
+                        "160 403  278 288  415 288 s",
+                        "557 288  672 403  672 545 s",
+                        "672 682  557 800  415 800 s",
+                        "278 800  160 682 c"
+                      ]
+                    }
+                  ]
+                },
+                "pen":{
+                  "penCapStyle":0,
+                  "penJoinStyle":0,
+                  "penWidth":64
+                },
+                "brush":{
+                  "style":0
+                },
+                "stroke":{
+                  "miter_limit":2,
+                  "thickness":64
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name":"tool_zoom",
+        "openTypeGlyphClass":1,
+        "layers":[
+          {
+            "name":"Regular",
+            "advanceWidth":960,
+            "elements":[
+              {
+                "elementData":{
+                  "contours":[
+                    {
+                      "open":true,
+                      "nodes":[
+                        "288 544",
+                        "544 544"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "416 416",
+                        "416 672"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "576 384",
+                        "799 160"
+                      ]
+                    },
+                    {
+                      "nodes":[
+                        "160 545 s",
+                        "160 403  278 288  415 288 s",
+                        "557 288  672 403  672 545 s",
+                        "672 682  557 800  415 800 s",
+                        "278 800  160 682 c"
+                      ]
+                    }
+                  ]
+                },
+                "pen":{
+                  "penCapStyle":0,
+                  "penJoinStyle":0,
+                  "penWidth":64
+                },
+                "brush":{
+                  "style":0
+                },
+                "stroke":{
+                  "miter_limit":2,
+                  "thickness":64
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name":"zoom_out",
+        "openTypeGlyphClass":1,
+        "layers":[
+          {
+            "name":"Regular",
+            "advanceWidth":960,
+            "elements":[
+              {
+                "elementData":{
+                  "contours":[
+                    {
+                      "open":true,
+                      "nodes":[
+                        "288 544",
+                        "544 544"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "576 384",
+                        "799 160"
+                      ]
+                    },
+                    {
+                      "nodes":[
+                        "160 545 s",
+                        "160 403  278 288  415 288 s",
+                        "557 288  672 403  672 545 s",
+                        "672 682  557 800  415 800 s",
+                        "278 800  160 682 c"
+                      ]
+                    }
+                  ]
+                },
+                "pen":{
+                  "penCapStyle":0,
+                  "penJoinStyle":0,
+                  "penWidth":64
+                },
+                "brush":{
+                  "style":0
+                },
+                "stroke":{
+                  "miter_limit":2,
+                  "thickness":64
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name":"zoom_fit",
+        "openTypeGlyphClass":1,
+        "layers":[
+          {
+            "name":"Regular",
+            "advanceWidth":960,
+            "elements":[
+              {
+                "elementData":{
+                  "contours":[
+                    {
+                      "open":true,
+                      "nodes":[
+                        "160 352",
+                        "160 160",
+                        "352 160"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "608 160",
+                        "800 160",
+                        "800 352"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "800 608",
+                        "800 800",
+                        "608 800"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "352 800",
+                        "160 800",
+                        "160 608"
+                      ]
+                    },
+                    {
+                      "nodes":[
+                        "320 512 s",
+                        "320 583  377 640  448 640 s",
+                        "519 640  576 583  576 512 s",
+                        "576 441  519 384  448 384 s",
+                        "377 384  320 441 c"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "544 416",
+                        "640 320"
+                      ]
+                    }
+                  ]
+                },
+                "pen":{
+                  "penCapStyle":0,
+                  "penJoinStyle":0,
+                  "penWidth":64,
+                  "penMiterLimit":3
+                },
+                "brush":{
+                  "style":0
+                },
+                "stroke":{
+                  "thickness":64
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name":"script_run",
+        "openTypeGlyphClass":1,
+        "layers":[
+          {
+            "name":"Regular",
+            "advanceWidth":960,
+            "elements":[
+              {
+                "elementData":{
+                  "contours":[
+                    {
+                      "open":true,
+                      "nodes":[
+                        "288 672",
+                        "96 480",
+                        "288 288"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "672 672",
+                        "864 480",
+                        "672 288"
+                      ]
+                    }
+                  ]
+                },
+                "pen":{
+                  "penCapStyle":0,
+                  "penJoinStyle":0,
+                  "penWidth":64,
+                  "penMiterLimit":3
+                },
+                "brush":{
+                  "style":0
+                },
+                "stroke":{
+                  "thickness":64
+                }
+              },
+              {
+                "elementData":{
+                  "contours":[
+                    {
+                      "nodes":[
+                        "416 608",
+                        "608 480",
+                        "416 352"
+                      ]
+                    }
+                  ]
+                },
+                "pen":{
+                  "penCapStyle":0,
+                  "penJoinStyle":0,
+                  "penWidth":64,
+                  "penMiterLimit":3
+                },
+                "stroke":{
+                  "thickness":64
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name":"code_tag",
+        "openTypeGlyphClass":2,
+        "layers":[
+          {
+            "name":"Regular",
+            "advanceWidth":960,
+            "elements":[
+              {
+                "elementData":{
+                  "contours":[
+                    {
+                      "open":true,
+                      "nodes":[
+                        "320 672",
+                        "128 480",
+                        "288 320"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "640 288",
+                        "832 480",
+                        "672 640"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "576 768",
+                        "384 192"
+                      ]
+                    }
+                  ]
+                },
+                "pen":{
+                  "penCapStyle":0,
+                  "penJoinStyle":0,
+                  "penWidth":64
+                },
+                "stroke":{
+                  "miter_limit":2,
+                  "thickness":64
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name":"glyph_unicode",
+        "openTypeGlyphClass":1,
+        "layers":[
+          {
+            "name":"Regular",
+            "advanceWidth":960,
+            "elements":[
+              {
+                "elementData":{
+                  "contours":[
+                    {
+                      "open":true,
+                      "nodes":[
+                        "160 768",
+                        "160 384",
+                        "160 313  217 256  288 256 s",
+                        "359 256  416 313  416 384 s",
+                        "416 768"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "512 512",
+                        "768 512"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "640 384",
+                        "640 640"
+                      ]
+                    }
+                  ]
+                },
+                "pen":{
+                  "penCapStyle":0,
+                  "penJoinStyle":0,
+                  "penWidth":64,
+                  "penMiterLimit":3
+                },
+                "brush":{
+                  "style":0
+                },
+                "stroke":{
+                  "thickness":64
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name":"node_round",
+        "openTypeGlyphClass":2,
+        "layers":[
+          {
+            "name":"Regular",
+            "flags":0,
+            "advanceWidth":960,
+            "elements":[
+              {
+                "elementData":{
+                  "contours":[
+                    {
+                      "open":true,
+                      "nodes":[
+                        "256 96",
+                        "256 864"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "96 704",
+                        "480 704",
+                        "480 96"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "864 256",
+                        "96 256"
+                      ]
+                    },
+                    {
+                      "nodes":[
+                        "256 480",
+                        "480 480",
+                        "480 256",
+                        "256 256"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "704 96",
+                        "704 480",
+                        "96 480"
+                      ]
+                    }
+                  ]
+                },
+                "pen":{
+                  "penCapStyle":0,
+                  "penJoinStyle":0,
+                  "penWidth":64,
+                  "penMiterLimit":3
+                },
+                "stroke":{
+                  "remove_overlap":false,
+                  "thickness":64
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name":"node_round_alt",
+        "openTypeGlyphClass":2,
+        "layers":[
+          {
+            "name":"Regular",
+            "flags":0,
+            "advanceWidth":960,
+            "elements":[
+              {
+                "elementData":{
+                  "contours":[
+                    {
+                      "open":true,
+                      "nodes":[
+                        "256 96",
+                        "256 864"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "96 704",
+                        "480 704"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "864 256",
+                        "96 256"
+                      ]
+                    },
+                    {
+                      "nodes":[
+                        "256 480",
+                        "480 480",
+                        "480 256",
+                        "256 256"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "640 800",
+                        "640 640",
+                        "800 640"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "834 835",
+                        "640 640"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "480 96",
+                        "480 480",
+                        "96 480"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "704 480",
+                        "704 96"
+                      ]
+                    }
+                  ]
+                },
+                "pen":{
+                  "penCapStyle":0,
+                  "penJoinStyle":0,
+                  "penWidth":64,
+                  "penMiterLimit":3
+                },
+                "stroke":{
+                  "remove_overlap":false,
+                  "thickness":64
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name":"grid",
+        "openTypeGlyphClass":1,
+        "layers":[
+          {
+            "name":"Regular",
+            "advanceWidth":960,
+            "elements":[
+              {
+                "elementData":{
+                  "contours":[
+                    {
+                      "open":true,
+                      "nodes":[
+                        "373 160",
+                        "373 800"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "587 160",
+                        "587 800"
+                      ]
+                    },
+                    {
+                      "nodes":[
+                        "160 160",
+                        "800 160",
+                        "800 800",
+                        "160 800"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "160 373",
+                        "800 373"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "160 587",
+                        "800 587"
+                      ]
+                    }
+                  ]
+                },
+                "pen":{
+                  "penCapStyle":0,
+                  "penJoinStyle":0,
+                  "penWidth":64,
+                  "penMiterLimit":3
+                },
+                "brush":{
+                  "style":0
+                },
+                "stroke":{
+                  "thickness":64
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name":"snap",
+        "openTypeGlyphClass":2,
+        "layers":[
+          {
+            "name":"Regular",
+            "flags":0,
+            "advanceWidth":960,
+            "elements":[
+              {
+                "elementData":{
+                  "contours":[
+                    {
+                      "nodes":[
+                        "586 234 s",
+                        "800 448",
+                        "690 558",
+                        "475 343 s",
+                        "456 324  435 314  409 314 s",
+                        "353 314  312 353  312 409 s",
+                        "312 434  322 454  340 472 s",
+                        "558 690",
+                        "448 800",
+                        "233 585 s",
+                        "184 536  160 478  160 408 s",
+                        "160 264  264 160  409 160 s",
+                        "479 160  537 185 c"
+                      ]
+                    }
+                  ]
+                },
+                "pen":{
+                  "penCapStyle":0,
+                  "penJoinStyle":0,
+                  "penWidth":64,
+                  "penMiterLimit":3
+                },
+                "brush":{
+                  "style":0
+                },
+                "stroke":{
+                  "thickness":64
+                }
+              },
+              {
+                "elementData":{
+                  "contours":[
+                    {
+                      "nodes":[
+                        "446 578",
+                        "336 688",
+                        "448 800",
+                        "558 690"
+                      ]
+                    },
+                    {
+                      "nodes":[
+                        "688 336",
+                        "578 446",
+                        "690 558",
+                        "800 448"
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name":"tool_text",
+        "openTypeGlyphClass":1,
+        "layers":[
+          {
+            "name":"Regular",
+            "advanceWidth":960,
+            "elements":[
+              {
+                "elementData":{
+                  "contours":[
+                    {
+                      "open":true,
+                      "nodes":[
+                        "480 192",
+                        "480 736"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "800 544",
+                        "800 736",
+                        "160 736",
+                        "160 544"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "672 223",
+                        "288 223"
+                      ]
+                    }
+                  ]
+                },
+                "pen":{
+                  "penCapStyle":0,
+                  "penJoinStyle":0,
+                  "penWidth":64
+                },
+                "stroke":{
+                  "miter_limit":2,
+                  "thickness":64
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name":"chevron_up",
+        "openTypeGlyphClass":1,
+        "layers":[
+          {
+            "name":"Regular",
+            "advanceWidth":960,
+            "elements":[
+              {
+                "component":{
+                  "glyphName":"fold_up"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name":"chevron_down",
+        "openTypeGlyphClass":1,
+        "layers":[
+          {
+            "name":"Regular",
+            "advanceWidth":960,
+            "elements":[
+              {
+                "component":{
+                  "glyphName":"fold_down"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name":"delta_machine",
+        "openTypeGlyphClass":2,
+        "layers":[
+          {
+            "name":"Regular",
+            "flags":0,
+            "advanceWidth":960,
+            "elements":[
+              {
+                "elementData":{
+                  "contours":[
+                    {
+                      "nodes":[
+                        "562 224",
+                        "812 224",
+                        "832 256",
+                        "627 672",
+                        "595 672",
+                        "469 409"
+                      ]
+                    }
+                  ]
+                },
+                "pen":{
+                  "penCapStyle":0,
+                  "penJoinStyle":0,
+                  "penWidth":64,
+                  "penMiterLimit":3
+                },
+                "stroke":{
+                  "thickness":64
+                }
+              },
+              {
+                "elementData":{
+                  "contours":[
+                    {
+                      "nodes":[
+                        "562 224",
+                        "336 672",
+                        "304 672",
+                        "96 256",
+                        "116 224"
+                      ]
+                    }
+                  ]
+                },
+                "pen":{
+                  "penCapStyle":0,
+                  "penJoinStyle":0,
+                  "penWidth":64,
+                  "penMiterLimit":3
+                },
+                "brush":{
+                  "style":0
+                },
+                "stroke":{
+                  "thickness":64
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name":"panel_delta",
+        "openTypeGlyphClass":1,
+        "layers":[
+          {
+            "name":"Regular",
+            "advanceWidth":960,
+            "elements":[
+              {
+                "component":{
+                  "glyphName":"delta_machine"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name":"delta_bake",
+        "openTypeGlyphClass":1,
+        "layers":[
+          {
+            "name":"Regular",
+            "advanceWidth":960,
+            "elements":[
+              {
+                "elementData":{
+                  "contours":[
+                    {
+                      "nodes":[
+                        "780 224",
+                        "800 256",
+                        "608 608",
+                        "576 608",
+                        "384 256",
+                        "404 224"
+                      ]
+                    }
+                  ]
+                },
+                "pen":{
+                  "penCapStyle":0,
+                  "penJoinStyle":0,
+                  "penWidth":64,
+                  "penMiterLimit":3
+                },
+                "brush":{
+                  "style":0
+                },
+                "stroke":{
+                  "thickness":64
+                }
+              },
+              {
+                "elementData":{
+                  "contours":[
+                    {
+                      "nodes":[
+                        "160 800",
+                        "160 544",
+                        "176 544",
+                        "400 660",
+                        "400 684",
+                        "176 800"
+                      ]
+                    }
+                  ]
+                },
+                "pen":{
+                  "penCapStyle":0,
+                  "penJoinStyle":0,
+                  "penWidth":64,
+                  "penMiterLimit":3
+                },
+                "stroke":{
+                  "thickness":64
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name":"delta_live",
+        "openTypeGlyphClass":1,
+        "layers":[
+          {
+            "name":"Regular",
+            "advanceWidth":960,
+            "elements":[
+              {
+                "elementData":{
+                  "contours":[
+                    {
+                      "nodes":[
+                        "780 224",
+                        "800 256",
+                        "608 608",
+                        "576 608",
+                        "384 256",
+                        "404 224"
+                      ]
+                    },
+                    {
+                      "nodes":[
+                        "448 704",
+                        "414 640  344 608  272 608 s",
+                        "200 608  130 641  96 704",
+                        "131 765  200 800  272 800 s",
+                        "344 800  413 766 c"
+                      ]
+                    }
+                  ]
+                },
+                "pen":{
+                  "penCapStyle":0,
+                  "penJoinStyle":0,
+                  "penWidth":64,
+                  "penMiterLimit":3
+                },
+                "brush":{
+                  "style":0
+                },
+                "stroke":{
+                  "thickness":64
+                }
+              },
+              {
+                "elementData":{
+                  "contours":[
+                    {
+                      "nodes":[
+                        "224 704 s",
+                        "224 678  246 655  272 655 s",
+                        "298 655  320 678  320 704 s",
+                        "320 731  298 751  272 751 s",
+                        "246 751  224 731 c"
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name":"delta_commit",
+        "openTypeGlyphClass":1,
+        "layers":[
+          {
+            "name":"Regular",
+            "advanceWidth":960,
+            "elements":[
+              {
+                "elementData":{
+                  "contours":[
+                    {
+                      "nodes":[
+                        "780 224",
+                        "800 256",
+                        "608 608",
+                        "576 608",
+                        "384 256",
+                        "404 224"
+                      ]
+                    }
+                  ]
+                },
+                "pen":{
+                  "penCapStyle":0,
+                  "penJoinStyle":0,
+                  "penWidth":64,
+                  "penMiterLimit":3
+                },
+                "brush":{
+                  "style":0
+                },
+                "stroke":{
+                  "thickness":64
+                }
+              },
+              {
+                "elementData":{
+                  "contours":[
+                    {
+                      "open":true,
+                      "nodes":[
+                        "128 704",
+                        "256 576",
+                        "480 800"
+                      ]
+                    }
+                  ]
+                },
+                "pen":{
+                  "penCapStyle":0,
+                  "penJoinStyle":0,
+                  "penWidth":64,
+                  "penMiterLimit":3
+                },
+                "brush":{
+                  "style":0
+                },
+                "stroke":{
+                  "thickness":64
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name":"delta_add",
+        "layers":[
+          {
+            "name":"Regular",
+            "advanceWidth":960,
+            "elements":[
+              {
+                "elementData":{
+                  "contours":[
+                    {
+                      "nodes":[
+                        "780 224",
+                        "800 256",
+                        "608 608",
+                        "576 608",
+                        "384 256",
+                        "404 224"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "128 672",
+                        "448 672"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "288 832",
+                        "288 512"
+                      ]
+                    }
+                  ]
+                },
+                "pen":{
+                  "penCapStyle":0,
+                  "penJoinStyle":0,
+                  "penWidth":64,
+                  "penMiterLimit":3
+                },
+                "brush":{
+                  "style":0
+                },
+                "stroke":{
+                  "thickness":64
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name":"delta_remove",
+        "layers":[
+          {
+            "name":"Regular",
+            "advanceWidth":960,
+            "elements":[
+              {
+                "elementData":{
+                  "contours":[
+                    {
+                      "nodes":[
+                        "780 224",
+                        "800 256",
+                        "608 608",
+                        "576 608",
+                        "384 256",
+                        "404 224"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "128 704",
+                        "416 704"
+                      ]
+                    }
+                  ]
+                },
+                "pen":{
+                  "penCapStyle":0,
+                  "penJoinStyle":0,
+                  "penWidth":64,
+                  "penMiterLimit":3
+                },
+                "brush":{
+                  "style":0
+                },
+                "stroke":{
+                  "thickness":64
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name":"delta_clear",
+        "layers":[
+          {
+            "name":"Regular",
+            "advanceWidth":960,
+            "elements":[
+              {
+                "elementData":{
+                  "contours":[
+                    {
+                      "nodes":[
+                        "780 224",
+                        "800 256",
+                        "608 608",
+                        "576 608",
+                        "384 256",
+                        "404 224"
+                      ]
+                    }
+                  ]
+                },
+                "pen":{
+                  "penCapStyle":0,
+                  "penJoinStyle":0,
+                  "penWidth":64,
+                  "penMiterLimit":3
+                },
+                "brush":{
+                  "style":0
+                },
+                "stroke":{
+                  "thickness":64
+                }
+              },
+              {
+                "elementData":{
+                  "contours":[
+                    {
+                      "open":true,
+                      "nodes":[
+                        "175 785",
+                        "401 559"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "401 785",
+                        "175 559"
+                      ]
+                    }
+                  ]
+                },
+                "pen":{
+                  "penCapStyle":0,
+                  "penJoinStyle":0,
+                  "penWidth":64,
+                  "penMiterLimit":3
+                },
+                "stroke":{
+                  "thickness":64
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name":"file_export",
+        "openTypeGlyphClass":1,
+        "layers":[
+          {
+            "name":"Regular",
+            "advanceWidth":960,
+            "elements":[
+              {
+                "component":{
+                  "glyphName":"file_upload"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name":"file_import",
+        "openTypeGlyphClass":1,
+        "layers":[
+          {
+            "name":"Regular",
+            "advanceWidth":960,
+            "elements":[
+              {
+                "component":{
+                  "glyphName":"file_download"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name":"action_apply",
+        "openTypeGlyphClass":1,
+        "layers":[
+          {
+            "name":"Regular",
+            "advanceWidth":960,
+            "elements":[
+              {
+                "elementData":{
+                  "contours":[
+                    {
+                      "open":true,
+                      "nodes":[
+                        "128 544",
+                        "288 352",
+                        "608 736"
+                      ]
+                    }
+                  ]
+                },
+                "pen":{
+                  "penCapStyle":0,
+                  "penJoinStyle":0,
+                  "penWidth":64,
+                  "penMiterLimit":3
+                },
+                "brush":{
+                  "style":0
+                },
+                "stroke":{
+                  "thickness":64
+                }
+              },
+              {
+                "elementData":{
+                  "contours":[
+                    {
+                      "nodes":[
+                        "608 416",
+                        "608 160",
+                        "800 288"
+                      ]
+                    }
+                  ]
+                },
+                "pen":{
+                  "penCapStyle":0,
+                  "penJoinStyle":0,
+                  "penWidth":64,
+                  "penMiterLimit":3
+                },
+                "stroke":{
+                  "thickness":64
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name":"panel_sound",
+        "openTypeGlyphClass":1,
+        "layers":[
+          {
+            "name":"Regular",
+            "advanceWidth":960,
+            "elements":[
+              {
+                "elementData":{
+                  "contours":[
+                    {
+                      "nodes":[
+                        "160 384",
+                        "288 384",
+                        "448 224",
+                        "448 736",
+                        "288 576",
+                        "160 576"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "561 367",
+                        "624 429  624 531  561 593 s"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "674 254",
+                        "799 379  799 581  674 706 s"
+                      ]
+                    }
+                  ]
+                },
+                "pen":{
+                  "penCapStyle":0,
+                  "penJoinStyle":0,
+                  "penWidth":64,
+                  "penMiterLimit":3
+                },
+                "brush":{
+                  "style":0
+                },
+                "stroke":{
+                  "thickness":64
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name":"stroke_fake",
+        "openTypeGlyphClass":1,
+        "layers":[
+          {
+            "name":"Regular",
+            "advanceWidth":960,
+            "elements":[
+              {
+                "elementData":{
+                  "contours":[
+                    {
+                      "nodes":[
+                        "480 800",
+                        "480 800",
+                        "568 800  640 728  640 640 s",
+                        "640 320",
+                        "640 232  568 160  480 160 s",
+                        "480 160",
+                        "392 160  320 232  320 320 s",
+                        "320 640",
+                        "320 728  392 800 c"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "480 320",
+                        "480 640"
+                      ]
+                    }
+                  ]
+                },
+                "pen":{
+                  "penCapStyle":0,
+                  "penJoinStyle":0,
+                  "penWidth":64,
+                  "penMiterLimit":3
+                },
+                "brush":{
+                  "style":0
+                },
+                "stroke":{
+                  "thickness":64
+                }
+              },
+              {
+                "elementData":{
+                  "contours":[
+                    {
+                      "nodes":[
+                        "432 272",
+                        "528 272",
+                        "528 368",
+                        "432 368"
+                      ]
+                    },
+                    {
+                      "nodes":[
+                        "432 592",
+                        "528 592",
+                        "528 688",
+                        "432 688"
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name":"corner_radius",
+        "openTypeGlyphClass":1,
+        "layers":[
+          {
+            "name":"Regular",
+            "advanceWidth":960,
+            "elements":[
+              {
+                "elementData":{
+                  "contours":[
+                    {
+                      "open":true,
+                      "nodes":[
+                        "800 224",
+                        "480 224",
+                        "339 224  224 339  224 480 s",
+                        "224 800"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "480 480",
+                        "320 320"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "320 448",
+                        "320 320",
+                        "448 320"
+                      ]
+                    }
+                  ]
+                },
+                "pen":{
+                  "penCapStyle":0,
+                  "penJoinStyle":0,
+                  "penWidth":64,
+                  "penMiterLimit":3
+                },
+                "brush":{
+                  "style":0
+                },
+                "stroke":{
+                  "thickness":64
+                }
+              },
+              {
+                "elementData":{
+                  "contours":[
+                    {
+                      "nodes":[
+                        "432 480 s",
+                        "432 506  454 528  480 528 s",
+                        "506 528  528 506  528 480 s",
+                        "528 454  506 432  480 432 s",
+                        "454 432  432 454 c"
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name":"node_merge",
+        "openTypeGlyphClass":1,
+        "layers":[
+          {
+            "name":"Regular",
+            "advanceWidth":960,
+            "elements":[
+              {
+                "elementData":{
+                  "contours":[
+                    {
+                      "nodes":[
+                        "192 608",
+                        "320 608",
+                        "320 736",
+                        "192 736"
+                      ]
+                    },
+                    {
+                      "nodes":[
+                        "640 608",
+                        "768 608",
+                        "768 736",
+                        "640 736"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "256 608",
+                        "480 384",
+                        "704 608"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "480 384",
+                        "480 320"
+                      ]
+                    }
+                  ]
+                },
+                "pen":{
+                  "penCapStyle":0,
+                  "penJoinStyle":0,
+                  "penWidth":64,
+                  "penMiterLimit":3
+                },
+                "brush":{
+                  "style":0
+                },
+                "stroke":{
+                  "thickness":64
+                }
+              },
+              {
+                "elementData":{
+                  "contours":[
+                    {
+                      "nodes":[
+                        "416 160",
+                        "544 160",
+                        "544 288",
+                        "416 288"
+                      ]
+                    }
+                  ]
+                },
+                "pen":{
+                  "penCapStyle":0,
+                  "penJoinStyle":0,
+                  "penWidth":64,
+                  "penMiterLimit":3
+                },
+                "stroke":{
+                  "thickness":64
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name":"axis_set",
+        "openTypeGlyphClass":2,
+        "layers":[
+          {
+            "name":"Regular",
+            "flags":0,
+            "advanceWidth":960,
+            "elements":[
+              {
+                "elementData":{
+                  "contours":[
+                    {
+                      "open":true,
+                      "nodes":[
+                        "480 448",
+                        "192 160"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "832 800",
+                        "640 608"
+                      ]
+                    },
+                    {
+                      "nodes":[
+                        "640 608",
+                        "448 608",
+                        "448 416",
+                        "640 416"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "109 755",
+                        "224 640",
+                        "416 832"
+                      ]
+                    }
+                  ]
+                },
+                "pen":{
+                  "penCapStyle":0,
+                  "penJoinStyle":0,
+                  "penWidth":64,
+                  "penMiterLimit":3
+                },
+                "brush":{
+                  "style":0
+                },
+                "stroke":{
+                  "thickness":64
+                }
+              },
+              {
+                "elementData":{
+                  "contours":[
+                    {
+                      "nodes":[
+                        "832 800",
+                        "704 800",
+                        "704 672",
+                        "832 672"
+                      ]
+                    },
+                    {
+                      "nodes":[
+                        "319 287",
+                        "191 287",
+                        "191 159",
+                        "319 159"
+                      ]
+                    }
+                  ]
+                },
+                "pen":{
+                  "penCapStyle":0,
+                  "penJoinStyle":0,
+                  "penWidth":64
+                },
+                "stroke":{
+                  "miter_limit":2,
+                  "thickness":64
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name":"axis_remove",
+        "openTypeGlyphClass":2,
+        "layers":[
+          {
+            "name":"Regular",
+            "flags":0,
+            "advanceWidth":960,
+            "elements":[
+              {
+                "elementData":{
+                  "contours":[
+                    {
+                      "open":true,
+                      "nodes":[
+                        "480 448",
+                        "192 160"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "832 800",
+                        "640 608"
+                      ]
+                    },
+                    {
+                      "nodes":[
+                        "640 608",
+                        "448 608",
+                        "448 416",
+                        "640 416"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "96 608",
+                        "320 832"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "96 832",
+                        "320 608"
+                      ]
+                    }
+                  ]
+                },
+                "pen":{
+                  "penCapStyle":0,
+                  "penJoinStyle":0,
+                  "penWidth":64,
+                  "penMiterLimit":3
+                },
+                "brush":{
+                  "style":0
+                },
+                "stroke":{
+                  "thickness":64
+                }
+              },
+              {
+                "elementData":{
+                  "contours":[
+                    {
+                      "nodes":[
+                        "832 800",
+                        "704 800",
+                        "704 672",
+                        "832 672"
+                      ]
+                    },
+                    {
+                      "nodes":[
+                        "319 287",
+                        "191 287",
+                        "191 159",
+                        "319 159"
+                      ]
+                    }
+                  ]
+                },
+                "pen":{
+                  "penCapStyle":0,
+                  "penJoinStyle":0,
+                  "penWidth":64
+                },
+                "stroke":{
+                  "miter_limit":2,
+                  "thickness":64
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name":"axis_add",
+        "openTypeGlyphClass":1,
+        "layers":[
+          {
+            "name":"Regular",
+            "advanceWidth":960,
+            "elements":[
+              {
+                "elementData":{
+                  "contours":[
+                    {
+                      "open":true,
+                      "nodes":[
+                        "480 448",
+                        "192 160"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "832 800",
+                        "640 608"
+                      ]
+                    },
+                    {
+                      "nodes":[
+                        "448 416",
+                        "640 416",
+                        "640 608",
+                        "448 608"
+                      ]
+                    }
+                  ]
+                },
+                "pen":{
+                  "penCapStyle":0,
+                  "penJoinStyle":0,
+                  "penWidth":64,
+                  "penMiterLimit":3
+                },
+                "brush":{
+                  "style":0
+                },
+                "stroke":{
+                  "thickness":64
+                }
+              },
+              {
+                "elementData":{
+                  "contours":[
+                    {
+                      "nodes":[
+                        "704 672",
+                        "832 672",
+                        "832 800",
+                        "704 800"
+                      ]
+                    },
+                    {
+                      "nodes":[
+                        "191 159",
+                        "319 159",
+                        "319 287",
+                        "191 287"
+                      ]
+                    }
+                  ]
+                },
+                "pen":{
+                  "penCapStyle":0,
+                  "penJoinStyle":0,
+                  "penWidth":64,
+                  "penMiterLimit":3
+                },
+                "stroke":{
+                  "thickness":64
+                }
+              },
+              {
+                "elementData":{
+                  "contours":[
+                    {
+                      "open":true,
+                      "nodes":[
+                        "80 720",
+                        "368 720"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "224 576",
+                        "224 864"
+                      ]
+                    }
+                  ]
+                },
+                "pen":{
+                  "penCapStyle":0,
+                  "penJoinStyle":0,
+                  "penWidth":64,
+                  "penMiterLimit":3
+                },
+                "brush":{
+                  "style":0
+                },
+                "stroke":{
+                  "thickness":64
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name":"axis_reset",
+        "openTypeGlyphClass":1,
+        "layers":[
+          {
+            "name":"Regular",
+            "advanceWidth":960,
+            "elements":[
+              {
+                "elementData":{
+                  "contours":[
+                    {
+                      "open":true,
+                      "nodes":[
+                        "480 448",
+                        "192 160"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "832 800",
+                        "640 608"
+                      ]
+                    },
+                    {
+                      "nodes":[
+                        "448 416",
+                        "640 416",
+                        "640 608",
+                        "448 608"
+                      ]
+                    }
+                  ]
+                },
+                "pen":{
+                  "penCapStyle":0,
+                  "penJoinStyle":0,
+                  "penWidth":64,
+                  "penMiterLimit":3
+                },
+                "brush":{
+                  "style":0
+                },
+                "stroke":{
+                  "thickness":64
+                }
+              },
+              {
+                "elementData":{
+                  "contours":[
+                    {
+                      "nodes":[
+                        "704 672",
+                        "832 672",
+                        "832 800",
+                        "704 800"
+                      ]
+                    },
+                    {
+                      "nodes":[
+                        "191 159",
+                        "319 159",
+                        "319 287",
+                        "191 287"
+                      ]
+                    }
+                  ]
+                },
+                "pen":{
+                  "penCapStyle":0,
+                  "penJoinStyle":0,
+                  "penWidth":64,
+                  "penMiterLimit":3
+                },
+                "stroke":{
+                  "thickness":64
+                }
+              },
+              {
+                "elementData":{
+                  "contours":[
+                    {
+                      "open":true,
+                      "nodes":[
+                        "272 512",
+                        "193 512  128 577  128 656 s",
+                        "128 735  193 800  272 800 s",
+                        "416 800"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "320 896",
+                        "416 800",
+                        "320 704"
+                      ]
+                    }
+                  ]
+                },
+                "pen":{
+                  "penCapStyle":0,
+                  "penJoinStyle":0,
+                  "penWidth":64,
+                  "penMiterLimit":3
+                },
+                "brush":{
+                  "style":0
+                },
+                "stroke":{
+                  "thickness":64
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name":"axis_reset_all",
+        "openTypeGlyphClass":1,
+        "layers":[
+          {
+            "name":"Regular",
+            "advanceWidth":960,
+            "elements":[
+              {
+                "elementData":{
+                  "contours":[
+                    {
+                      "open":true,
+                      "nodes":[
+                        "480 448",
+                        "192 160"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "832 800",
+                        "640 608"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "448 416",
+                        "640 608"
+                      ]
+                    }
+                  ]
+                },
+                "pen":{
+                  "penCapStyle":0,
+                  "penJoinStyle":0,
+                  "penWidth":64,
+                  "penMiterLimit":3
+                },
+                "brush":{
+                  "style":0
+                },
+                "stroke":{
+                  "thickness":64
+                }
+              },
+              {
+                "elementData":{
+                  "contours":[
+                    {
+                      "nodes":[
+                        "704 672",
+                        "832 672",
+                        "832 800",
+                        "704 800"
+                      ]
+                    },
+                    {
+                      "nodes":[
+                        "191 159",
+                        "319 159",
+                        "319 287",
+                        "191 287"
+                      ]
+                    }
+                  ]
+                },
+                "pen":{
+                  "penCapStyle":0,
+                  "penJoinStyle":0,
+                  "penWidth":64,
+                  "penMiterLimit":3
+                },
+                "brush":{
+                  "style":0
+                },
+                "stroke":{
+                  "thickness":64
+                }
+              },
+              {
+                "elementData":{
+                  "contours":[
+                    {
+                      "open":true,
+                      "nodes":[
+                        "256 832",
+                        "309 832  352 789  352 736 s",
+                        "352 683  309 640  256 640 s",
+                        "203 640  160 683  160 736 s"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "96 672",
+                        "160 736",
+                        "224 672"
+                      ]
+                    }
+                  ]
+                },
+                "pen":{
+                  "penCapStyle":0,
+                  "penJoinStyle":0,
+                  "penWidth":64,
+                  "penMiterLimit":3
+                },
+                "brush":{
+                  "style":0
+                },
+                "stroke":{
+                  "thickness":64
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name":"axis_swap",
+        "openTypeGlyphClass":1,
+        "layers":[
+          {
+            "name":"Regular",
+            "advanceWidth":960,
+            "elements":[
+              {
+                "elementData":{
+                  "contours":[
+                    {
+                      "open":true,
+                      "nodes":[
+                        "480 448",
+                        "192 160"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "832 800",
+                        "640 608"
+                      ]
+                    },
+                    {
+                      "nodes":[
+                        "448 416",
+                        "640 416",
+                        "640 608",
+                        "448 608"
+                      ]
+                    }
+                  ]
+                },
+                "pen":{
+                  "penCapStyle":0,
+                  "penJoinStyle":0,
+                  "penWidth":64,
+                  "penMiterLimit":3
+                },
+                "brush":{
+                  "style":0
+                },
+                "stroke":{
+                  "thickness":64
+                }
+              },
+              {
+                "elementData":{
+                  "contours":[
+                    {
+                      "nodes":[
+                        "704 672",
+                        "832 672",
+                        "832 800",
+                        "704 800"
+                      ]
+                    },
+                    {
+                      "nodes":[
+                        "191 159",
+                        "319 159",
+                        "319 287",
+                        "191 287"
+                      ]
+                    }
+                  ]
+                },
+                "pen":{
+                  "penCapStyle":0,
+                  "penJoinStyle":0,
+                  "penWidth":64,
+                  "penMiterLimit":3
+                },
+                "stroke":{
+                  "thickness":64
+                }
+              },
+              {
+                "elementData":{
+                  "contours":[
+                    {
+                      "open":true,
+                      "nodes":[
+                        "128 800",
+                        "384 800",
+                        "320 864"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "384 672",
+                        "128 672",
+                        "192 608"
+                      ]
+                    }
+                  ]
+                },
+                "pen":{
+                  "penCapStyle":0,
+                  "penJoinStyle":0,
+                  "penWidth":64,
+                  "penMiterLimit":3
+                },
+                "brush":{
+                  "style":0
+                },
+                "stroke":{
+                  "thickness":64
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name":"axis_reseed",
+        "openTypeGlyphClass":1,
+        "layers":[
+          {
+            "name":"Regular",
+            "advanceWidth":960,
+            "elements":[
+              {
+                "elementData":{
+                  "contours":[
+                    {
+                      "nodes":[
+                        "544 224",
+                        "860 451",
+                        "544 677",
+                        "227 451"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "228 290",
+                        "544 64",
+                        "861 290"
+                      ]
+                    }
+                  ]
+                },
+                "pen":{
+                  "penCapStyle":0,
+                  "penJoinStyle":0,
+                  "penWidth":64,
+                  "penMiterLimit":3
+                },
+                "brush":{
+                  "style":0
+                },
+                "stroke":{
+                  "cap0":"vertical",
+                  "cap1":"vertical",
+                  "proportion":100,
+                  "thickness":64
+                }
+              },
+              {
+                "elementData":{
+                  "contours":[
+                    {
+                      "open":true,
+                      "nodes":[
+                        "256 832",
+                        "309 832  352 789  352 736 s",
+                        "352 683  309 640  256 640 s",
+                        "203 640  160 683  160 736 s"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "96 672",
+                        "160 736",
+                        "224 672"
+                      ]
+                    }
+                  ]
+                },
+                "pen":{
+                  "penCapStyle":0,
+                  "penJoinStyle":0,
+                  "penWidth":64,
+                  "penMiterLimit":3
+                },
+                "brush":{
+                  "style":0
+                },
+                "stroke":{
+                  "thickness":64
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name":"contour_match",
+        "openTypeGlyphClass":1,
+        "layers":[
+          {
+            "name":"Regular",
+            "flags":0,
+            "advanceWidth":960,
+            "elements":[
+              {
+                "elementData":{
+                  "contours":[
+                    {
+                      "open":true,
+                      "nodes":[
+                        "480 554",
+                        "480 652  539 734  640 734 s",
+                        "732 734  800 673  800 590 s",
+                        "800 446  643 302  480 194",
+                        "317 302  160 446  160 590 s",
+                        "160 673  228 734  320 734 s",
+                        "421 734  480 652  480 554"
+                      ]
+                    }
+                  ]
+                },
+                "pen":{
+                  "penCapStyle":64,
+                  "penJoinStyle":0,
+                  "penWidth":64,
+                  "penMiterLimit":3
+                },
+                "brush":{
+                  "style":0
+                },
+                "stroke":{
+                  "thickness":64
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name":"contour_remove",
+        "openTypeGlyphClass":1,
+        "layers":[
+          {
+            "name":"Regular",
+            "advanceWidth":960,
+            "elements":[
+              {
+                "elementData":{
+                  "contours":[
+                    {
+                      "nodes":[
+                        "384 192",
+                        "768 192",
+                        "768 576",
+                        "384 576"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "96 736",
+                        "416 736"
+                      ]
+                    }
+                  ]
+                },
+                "pen":{
+                  "penCapStyle":0,
+                  "penJoinStyle":0,
+                  "penWidth":64,
+                  "penMiterLimit":3
+                },
+                "brush":{
+                  "style":0
+                },
+                "stroke":{
+                  "thickness":64
+                }
+              },
+              {
+                "elementData":{
+                  "contours":[
+                    {
+                      "nodes":[
+                        "320 128",
+                        "448 128",
+                        "448 256",
+                        "320 256"
+                      ]
+                    },
+                    {
+                      "nodes":[
+                        "704 128",
+                        "832 128",
+                        "832 256",
+                        "704 256"
+                      ]
+                    },
+                    {
+                      "nodes":[
+                        "704 512",
+                        "832 512",
+                        "832 640",
+                        "704 640"
+                      ]
+                    },
+                    {
+                      "nodes":[
+                        "320 512",
+                        "448 512",
+                        "448 640",
+                        "320 640"
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name":"contour_duplicate",
+        "openTypeGlyphClass":1,
+        "layers":[
+          {
+            "name":"Regular",
+            "advanceWidth":960,
+            "elements":[
+              {
+                "elementData":{
+                  "contours":[
+                    {
+                      "nodes":[
+                        "160 160",
+                        "576 160",
+                        "576 576",
+                        "160 576"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "352 704",
+                        "352 800",
+                        "800 800",
+                        "800 352",
+                        "704 352"
+                      ]
+                    }
+                  ]
+                },
+                "pen":{
+                  "penCapStyle":0,
+                  "penJoinStyle":0,
+                  "penWidth":64,
+                  "penMiterLimit":3
+                },
+                "brush":{
+                  "style":0
+                },
+                "stroke":{
+                  "thickness":64
+                }
+              },
+              {
+                "elementData":{
+                  "contours":[
+                    {
+                      "nodes":[
+                        "96 96",
+                        "224 96",
+                        "224 224",
+                        "96 224"
+                      ]
+                    },
+                    {
+                      "nodes":[
+                        "512 96",
+                        "640 96",
+                        "640 224",
+                        "512 224"
+                      ]
+                    },
+                    {
+                      "nodes":[
+                        "512 512",
+                        "640 512",
+                        "640 640",
+                        "512 640"
+                      ]
+                    },
+                    {
+                      "nodes":[
+                        "96 512",
+                        "224 512",
+                        "224 640",
+                        "96 640"
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name":"component_decompose",
+        "openTypeGlyphClass":1,
+        "layers":[
+          {
+            "name":"Regular",
+            "advanceWidth":960,
+            "elements":[
+              {
+                "elementData":{
+                  "contours":[
+                    {
+                      "nodes":[
+                        "128 352",
+                        "320 352",
+                        "320 608",
+                        "128 608"
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "elementData":{
+                  "contours":[
+                    {
+                      "nodes":[
+                        "640 384",
+                        "800 384",
+                        "800 576",
+                        "640 576"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "384 480",
+                        "512 480"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "448 544",
+                        "512 480",
+                        "448 416"
+                      ]
+                    }
+                  ]
+                },
+                "pen":{
+                  "penCapStyle":0,
+                  "penJoinStyle":0,
+                  "penWidth":64,
+                  "penMiterLimit":3
+                },
+                "brush":{
+                  "style":0
+                },
+                "stroke":{
+                  "thickness":64
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name":"guide_remove",
+        "openTypeGlyphClass":1,
+        "layers":[
+          {
+            "name":"Regular",
+            "advanceWidth":960,
+            "elements":[
+              {
+                "elementData":{
+                  "contours":[
+                    {
+                      "open":true,
+                      "nodes":[
+                        "832 704",
+                        "704 704"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "640 704",
+                        "512 704"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "448 704",
+                        "320 704"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "256 704",
+                        "128 704"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "352 224",
+                        "608 480"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "352 480",
+                        "608 224"
+                      ]
+                    }
+                  ]
+                },
+                "pen":{
+                  "penCapStyle":0,
+                  "penJoinStyle":0,
+                  "penWidth":64,
+                  "penMiterLimit":3
+                },
+                "brush":{
+                  "style":0
+                },
+                "stroke":{
+                  "thickness":64
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name":"tool_hand",
+        "openTypeGlyphClass":1,
+        "layers":[
+          {
+            "name":"Regular",
+            "advanceWidth":960,
+            "elements":[
+              {
+                "elementData":{
+                  "contours":[
+                    {
+                      "open":true,
+                      "nodes":[
+                        "320 448",
+                        "320 640",
+                        "320 675  349 704  384 704 s",
+                        "419 704  448 675  448 640 s",
+                        "448 512",
+                        "448 704",
+                        "448 739  477 768  512 768 s",
+                        "547 768  576 739  576 704 s",
+                        "576 512",
+                        "576 672",
+                        "576 707  605 736  640 736 s",
+                        "675 736  704 707  704 672 s",
+                        "704 480",
+                        "704 576",
+                        "704 611  733 640  768 640 s",
+                        "803 640  832 611  832 576 s",
+                        "832 384",
+                        "832 243  717 128  576 128 s",
+                        "448 128",
+                        "160 416",
+                        "160 451  189 480  224 480 s",
+                        "320 448"
+                      ]
+                    }
+                  ]
+                },
+                "pen":{
+                  "penCapStyle":0,
+                  "penJoinStyle":0,
+                  "penWidth":64,
+                  "penMiterLimit":3
+                },
+                "brush":{
+                  "style":0
+                },
+                "stroke":{
+                  "thickness":64
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name":"file_new",
+        "openTypeGlyphClass":1,
+        "layers":[
+          {
+            "name":"Regular",
+            "advanceWidth":960,
+            "elements":[
+              {
+                "elementData":{
+                  "contours":[
+                    {
+                      "open":true,
+                      "nodes":[
+                        "320 512",
+                        "320 160",
+                        "800 160",
+                        "800 672",
+                        "677 800",
+                        "480 800"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "640 800",
+                        "640 640",
+                        "768 640"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "96 736",
+                        "416 736"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "256 896",
+                        "256 576"
+                      ]
+                    }
+                  ]
+                },
+                "pen":{
+                  "penCapStyle":0,
+                  "penJoinStyle":0,
+                  "penWidth":64,
+                  "penMiterLimit":3
+                },
+                "brush":{
+                  "style":0
+                },
+                "stroke":{
+                  "thickness":64
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name":"config_save",
+        "openTypeGlyphClass":1,
+        "layers":[
+          {
+            "name":"Regular",
+            "advanceWidth":960,
+            "elements":[
+              {
+                "elementData":{
+                  "contours":[
+                    {
+                      "open":true,
+                      "nodes":[
+                        "640 160",
+                        "800 160",
+                        "800 672",
+                        "677 800",
+                        "320 800",
+                        "320 448"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "608 320",
+                        "160 320"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "448 480",
+                        "608 320",
+                        "448 160"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "640 800",
+                        "640 640",
+                        "768 640"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "416 544",
+                        "736 544"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "512 480",
+                        "512 608"
+                      ]
+                    }
+                  ]
+                },
+                "pen":{
+                  "penCapStyle":0,
+                  "penJoinStyle":0,
+                  "penWidth":64,
+                  "penMiterLimit":3
+                },
+                "brush":{
+                  "style":0
+                },
+                "stroke":{
+                  "thickness":64
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name":"config_open",
+        "openTypeGlyphClass":1,
+        "layers":[
+          {
+            "name":"Regular",
+            "advanceWidth":960,
+            "elements":[
+              {
+                "elementData":{
+                  "contours":[
+                    {
+                      "open":true,
+                      "nodes":[
+                        "480 800",
+                        "480 640",
+                        "640 640",
+                        "640 672",
+                        "512 800",
+                        "160 800",
+                        "160 160",
+                        "480 160"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "768 320",
+                        "288 320"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "608 480",
+                        "768 320",
+                        "608 160"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "224 544",
+                        "576 544"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "320 480",
+                        "320 608"
+                      ]
+                    }
+                  ]
+                },
+                "pen":{
+                  "penCapStyle":0,
+                  "penJoinStyle":0,
+                  "penWidth":64,
+                  "penMiterLimit":3
+                },
+                "brush":{
+                  "style":0
+                },
+                "stroke":{
+                  "thickness":64
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name":"designspace_save",
+        "openTypeGlyphClass":1,
+        "layers":[
+          {
+            "name":"Regular",
+            "advanceWidth":960,
+            "elements":[
+              {
+                "elementData":{
+                  "contours":[
+                    {
+                      "open":true,
+                      "nodes":[
+                        "640 160",
+                        "800 160",
+                        "800 672",
+                        "677 800",
+                        "320 800",
+                        "320 448"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "608 320",
+                        "160 320"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "448 480",
+                        "608 320",
+                        "448 160"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "640 800",
+                        "640 640",
+                        "768 640"
+                      ]
+                    }
+                  ]
+                },
+                "pen":{
+                  "penCapStyle":0,
+                  "penJoinStyle":0,
+                  "penWidth":64,
+                  "penMiterLimit":3
+                },
+                "brush":{
+                  "style":0
+                },
+                "stroke":{
+                  "thickness":64
+                }
+              },
+              {
+                "elementData":{
+                  "contours":[
+                    {
+                      "open":true,
+                      "nodes":[
+                        "416 544",
+                        "544 672"
+                      ]
+                    }
+                  ]
+                },
+                "pen":{
+                  "penCapStyle":0,
+                  "penJoinStyle":0,
+                  "penWidth":64,
+                  "penMiterLimit":3
+                },
+                "brush":{
+                  "style":0
+                },
+                "stroke":{
+                  "thickness":64
+                }
+              },
+              {
+                "elementData":{
+                  "contours":[
+                    {
+                      "nodes":[
+                        "368 496",
+                        "464 496",
+                        "464 592",
+                        "368 592"
+                      ]
+                    },
+                    {
+                      "nodes":[
+                        "496 624",
+                        "592 624",
+                        "592 720",
+                        "496 720"
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name":"designspace_open",
+        "openTypeGlyphClass":1,
+        "layers":[
+          {
+            "name":"Regular",
+            "advanceWidth":960,
+            "elements":[
+              {
+                "elementData":{
+                  "contours":[
+                    {
+                      "open":true,
+                      "nodes":[
+                        "480 800",
+                        "480 640",
+                        "640 640",
+                        "640 672",
+                        "512 800",
+                        "160 800",
+                        "160 160",
+                        "480 160"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "768 320",
+                        "288 320"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "608 480",
+                        "768 320",
+                        "608 160"
+                      ]
+                    }
+                  ]
+                },
+                "pen":{
+                  "penCapStyle":0,
+                  "penJoinStyle":0,
+                  "penWidth":64,
+                  "penMiterLimit":3
+                },
+                "brush":{
+                  "style":0
+                },
+                "stroke":{
+                  "thickness":64
+                }
+              },
+              {
+                "elementData":{
+                  "contours":[
+                    {
+                      "open":true,
+                      "nodes":[
+                        "256 512",
+                        "384 640"
+                      ]
+                    }
+                  ]
+                },
+                "pen":{
+                  "penCapStyle":0,
+                  "penJoinStyle":0,
+                  "penWidth":64,
+                  "penMiterLimit":3
+                },
+                "brush":{
+                  "style":0
+                },
+                "stroke":{
+                  "thickness":64
+                }
+              },
+              {
+                "elementData":{
+                  "contours":[
+                    {
+                      "nodes":[
+                        "208 464",
+                        "304 464",
+                        "304 560",
+                        "208 560"
+                      ]
+                    },
+                    {
+                      "nodes":[
+                        "336 592",
+                        "432 592",
+                        "432 688",
+                        "336 688"
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name":"font_new",
+        "openTypeGlyphClass":1,
+        "layers":[
+          {
+            "name":"Regular",
+            "advanceWidth":960,
+            "elements":[
+              {
+                "elementData":{
+                  "contours":[
+                    {
+                      "open":true,
+                      "nodes":[
+                        "288 416",
+                        "288 288",
+                        "224 160",
+                        "192 160",
+                        "128 288",
+                        "128 416"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "576 384",
+                        "416 384",
+                        "416 128"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "560 256",
+                        "416 256"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "832 384",
+                        "672 384",
+                        "672 160",
+                        "832 160"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "352 672",
+                        "608 672"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "480 544",
+                        "480 800"
+                      ]
+                    }
+                  ]
+                },
+                "pen":{
+                  "penCapStyle":0,
+                  "penJoinStyle":0,
+                  "penWidth":64,
+                  "penMiterLimit":3
+                },
+                "brush":{
+                  "style":0
+                },
+                "stroke":{
+                  "thickness":64
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name":"font_export",
+        "openTypeGlyphClass":1,
+        "layers":[
+          {
+            "name":"Regular",
+            "advanceWidth":960,
+            "elements":[
+              {
+                "elementData":{
+                  "contours":[
+                    {
+                      "nodes":[
+                        "128 160",
+                        "288 160",
+                        "288 384",
+                        "128 384"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "384 384",
+                        "576 384"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "480 384",
+                        "480 128"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "832 384",
+                        "672 384",
+                        "672 128"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "800 256",
+                        "672 256"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "480 864",
+                        "480 544"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "640 704",
+                        "480 544",
+                        "320 704"
+                      ]
+                    }
+                  ]
+                },
+                "pen":{
+                  "penCapStyle":0,
+                  "penJoinStyle":0,
+                  "penWidth":64,
+                  "penMiterLimit":3
+                },
+                "brush":{
+                  "style":0
+                },
+                "stroke":{
+                  "thickness":64
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name":"font_info",
+        "openTypeGlyphClass":1,
+        "layers":[
+          {
+            "name":"Regular",
+            "advanceWidth":960,
+            "elements":[
+              {
+                "elementData":{
+                  "contours":[
+                    {
+                      "open":true,
+                      "nodes":[
+                        "640 192",
+                        "640 288",
+                        "448 736",
+                        "320 736",
+                        "128 288",
+                        "128 192"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "160 352",
+                        "608 352"
+                      ]
+                    }
+                  ]
+                },
+                "pen":{
+                  "penCapStyle":0,
+                  "penJoinStyle":0,
+                  "penWidth":64,
+                  "penMiterLimit":3
+                },
+                "brush":{
+                  "style":0
+                },
+                "stroke":{
+                  "cap0":"fixed",
+                  "cap1":"fixed",
+                  "join":"round",
+                  "miter_limit":2,
+                  "thickness":64
+                }
+              },
+              {
+                "elementData":{
+                  "contours":[
+                    {
+                      "open":true,
+                      "nodes":[
+                        "768 192",
+                        "768 512"
+                      ]
+                    },
+                    {
+                      "open":true,
+                      "nodes":[
+                        "768 576",
+                        "768 640"
+                      ]
+                    }
+                  ]
+                },
+                "pen":{
+                  "penCapStyle":0,
+                  "penJoinStyle":0,
+                  "penWidth":64,
+                  "penMiterLimit":3
+                },
+                "brush":{
+                  "style":0
+                },
+                "stroke":{
                   "thickness":64
                 }
               }
@@ -37565,12 +42088,6 @@
           "panose":"0 0 0 0 0 0 0 0 0 0",
           "guidelines":[
             {
-              "name":"f1",
-              "style":"custom",
-              "horizontal":true,
-              "position":896
-            },
-            {
               "name":"f2",
               "style":"custom",
               "horizontal":true,
@@ -37611,6 +42128,12 @@
               "style":"custom",
               "horizontal":true,
               "position":832
+            },
+            {
+              "name":"f9",
+              "style":"custom",
+              "horizontal":true,
+              "position":896
             }
           ],
           "otherData":{
@@ -37627,7 +42150,7 @@
             "TtHinter":1,
             "TtHorizSmoothing":0,
             "TtNoSmoothing":0,
-            "TtaFamilyAlign":false,
+            "TtaFamilyAlign":0,
             "TtaHintComposites":true,
             "TtaHintingLimit":200,
             "TtaHintingRangeMax":50,
@@ -37706,8 +42229,5 @@
         }
       }
     ]
-  },
-  "workspace":{
-    "xml":"<?xml version=\"1.0\"?><WindowManager><FrameWindow x=\"-1\" y=\"-8\" width=\"1920\" height=\"1137\" mainWindow=\"1\"><Window id=\"40cf9bc6-6202-40df-8baf-02554ea1babc\" title=\" TypeRig Icons Regular \" permanent=\"0\" active=\"1\" fl.bottom=\"true\" fl.columns=\"12\" fl.list=\"false\" fl.list_width=\"400\" fl.property=\"true\" fl.sidebar=\"true\" fl.table=\"true\" fl.type=\"font\"/><Dock edge=\"4\" dockedEdges=\"13\" width=\"301\" height=\"1111\"><Column><Section width=\"299\" height=\"161\" floatingWidth=\"200\" floatingHeight=\"241\" dockedVerticalWidth=\"299\" dockedVerticalHeight=\"161\" dockedHorizontalWidth=\"-1\" dockedHorizontalHeight=\"-1\" collapsed=\"0\" canDock=\"2\"><Panel id=\"5\" title=\"FontAudit\" active=\"1\" floatingWidth=\"-1\" floatingHeight=\"-1\" dockedVerticalWidth=\"299\" dockedVerticalHeight=\"161\" dockedHorizontalWidth=\"-1\" dockedHorizontalHeight=\"-1\"/></Section><Section width=\"299\" height=\"358\" floatingWidth=\"214\" floatingHeight=\"241\" dockedVerticalWidth=\"299\" dockedVerticalHeight=\"358\" dockedHorizontalWidth=\"-1\" dockedHorizontalHeight=\"-1\" collapsed=\"0\" canDock=\"2\"><Panel id=\"26\" title=\"Variations\" active=\"1\" floatingWidth=\"214\" floatingHeight=\"241\" dockedVerticalWidth=\"299\" dockedVerticalHeight=\"358\" dockedHorizontalWidth=\"-1\" dockedHorizontalHeight=\"-1\" prop.mode=\"0\" prop.space=\"false\"/></Section><Section width=\"299\" height=\"423\" floatingWidth=\"214\" floatingHeight=\"241\" dockedVerticalWidth=\"299\" dockedVerticalHeight=\"423\" dockedHorizontalWidth=\"-1\" dockedHorizontalHeight=\"-1\" collapsed=\"0\" canDock=\"2\"><Panel id=\"9\" title=\"Layers &amp; Masters\" active=\"1\" floatingWidth=\"214\" floatingHeight=\"241\" dockedVerticalWidth=\"299\" dockedVerticalHeight=\"423\" dockedHorizontalWidth=\"-1\" dockedHorizontalHeight=\"-1\" prop.panel_visible=\"false\"/></Section><Section width=\"299\" height=\"551\" floatingWidth=\"214\" floatingHeight=\"241\" dockedVerticalWidth=\"299\" dockedVerticalHeight=\"551\" dockedHorizontalWidth=\"-1\" dockedHorizontalHeight=\"-1\" collapsed=\"0\" canDock=\"2\"><Panel id=\"10\" title=\"Glyph\" active=\"1\" floatingWidth=\"214\" floatingHeight=\"241\" dockedVerticalWidth=\"299\" dockedVerticalHeight=\"551\" dockedHorizontalWidth=\"-1\" dockedHorizontalHeight=\"-1\"/><Panel id=\"1\" title=\"Elements\" active=\"0\" floatingWidth=\"214\" floatingHeight=\"241\" dockedVerticalWidth=\"299\" dockedVerticalHeight=\"551\" dockedHorizontalWidth=\"-1\" dockedHorizontalHeight=\"-1\" prop.chart_visible=\"false\" prop.panel_expanded=\"true\" prop.panel_visible=\"true\"/></Section></Column></Dock><Dock edge=\"8\" dockedEdges=\"10\" width=\"1577\" height=\"148\"><Column><Section width=\"1125\" height=\"147\" floatingWidth=\"648\" floatingHeight=\"100\" dockedVerticalWidth=\"-1\" dockedVerticalHeight=\"-1\" dockedHorizontalWidth=\"1125\" dockedHorizontalHeight=\"147\" collapsed=\"0\" canDock=\"2\"><Panel id=\"21\" title=\"Preview\" active=\"1\" floatingWidth=\"-1\" floatingHeight=\"-1\" dockedVerticalWidth=\"-1\" dockedVerticalHeight=\"-1\" dockedHorizontalWidth=\"1125\" dockedHorizontalHeight=\"147\"/></Section><Section width=\"450\" height=\"147\" floatingWidth=\"400\" floatingHeight=\"101\" dockedVerticalWidth=\"-1\" dockedVerticalHeight=\"-1\" dockedHorizontalWidth=\"450\" dockedHorizontalHeight=\"147\" collapsed=\"0\" canDock=\"2\"><Panel id=\"22\" title=\"Output\" active=\"1\" floatingWidth=\"400\" floatingHeight=\"101\" dockedVerticalWidth=\"-1\" dockedVerticalHeight=\"-1\" dockedHorizontalWidth=\"450\" dockedHorizontalHeight=\"147\"/></Section></Column></Dock><Toolbar id=\"1001\" visible=\"true\" dockEdge=\"2\"/></FrameWindow><Desktop index=\"0\"/></WindowManager>\n"
   }
 }

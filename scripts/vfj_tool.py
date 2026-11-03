@@ -16,6 +16,8 @@ import os
 import re
 import sys
 
+from icon_draw import save_vfj
+
 # - Init --------------------------------------------------
 FONT_VFJ = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'sources', 'typerig-icons.vfj')
 
@@ -90,8 +92,7 @@ def cmd_merge(args):
 			dst['font']['glyphs'].append(g); added.append(g['name'])
 
 	dst['font']['glyphsCount'] = len(dst['font']['glyphs'])
-	with open(a.dst, 'w', encoding='utf-8') as f:
-		json.dump(dst, f, indent=1, ensure_ascii=False)
+	save_vfj(dst, a.dst)	# FontLab's own layout, so the diff shows only the glyph changes
 	print('Added: {}\nReplaced: {}\nSkipped (exist, no --replace): {}'.format(added, replaced, kept))
 
 # - Run ---------------------------------------------------

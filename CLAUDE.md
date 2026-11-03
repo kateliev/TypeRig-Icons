@@ -14,6 +14,7 @@ Home of TypeRig Icons, the icon font of the TypeRig GUI (FontLab).
     editor → `lists/icon_usage.csv` (with heuristic mismatch flags).
   - `glyph_todo.py` — glyph backlog rules over the census + `glyph_catalog.py` (planned editor glyphs)
     → `lists/glyph_todo.csv` (grouped; new / alias / rename / use existing, P1–P3).
+  - `draw_p1.py [proof.vfj]` — the P1 glyphs as code (run from `scripts/`); writes a proof VFJ to review in FontLab.
 - **Drawing new icons:** follow `Memory/project_drawing_workflow.md`; temporary proofs and PNGs go to the scratchpad,
   not the repo.
 - Related tooling (Figma → FontLab import, live-stroke research): `D:\Remote\GitHub\IconRig`.

@@ -25,5 +25,8 @@ Read from `sources/typerig-icons.vfj` on 2026-10-29 (FontLab 8 build 8950 save):
 - **Layer flags:** Regular 0 / 16 / 17 / absent, mask 12 / 13 — bit meanings unverified. IconRig found a written
   `"flags": 0` hides a layer, so new glyphs leave `flags` out.
 - UPM must stay 960 in any VFJ we write; FontLab rescales pastes between fonts of different UPM.
+- **File layout** (FontLab 8 save): 2-space indent, `"key":value` with no space, `{"point":"x y"}` kept on one line,
+  empty `{}` / `[]` split over two lines, LF line ends, trailing newline. `icon_draw.dumps_vfj()` reproduces it byte for
+  byte (checked 2026-11-02), so `vfj_tool.py merge` into the source VFJ diffs only the changed glyphs.
 
 Related: [[project-icon-style]], [[project-drawing-workflow]]

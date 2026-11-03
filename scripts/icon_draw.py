@@ -14,6 +14,7 @@
 import copy
 import json
 import os
+import re
 
 # - Init --------------------------------------------------
 FONT_VFJ = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'sources', 'typerig-icons.vfj')
@@ -121,11 +122,23 @@ def load(vfj=FONT_VFJ):
 	with open(vfj, encoding='utf-8') as f:
 		return json.load(f)
 
+def dumps_vfj(d):
+	'''JSON text the way FontLab writes a VFJ (2-space indent, no space after ':', {"point":..} inline,
+	empty {} / [] split over two lines), so a re-written source VFJ diffs only where glyphs changed'''
+	out = json.dumps(d, indent=2, separators=(',', ':'), ensure_ascii=False) + '\n'
+	out = re.sub(r'\{\n\s*("point":"[^"]*")\n\s*\}', r'{\1}', out)
+	out = re.sub(r'(\n(\s*)[^\n]*)\{\}', lambda m: m.group(1) + '{\n' + m.group(2) + '}', out)
+	out = re.sub(r'(\n(\s*)[^\n]*)\[\]', lambda m: m.group(1) + '[\n' + m.group(2) + ']', out)
+	return out
+
+def save_vfj(d, out):
+	with open(out, 'w', encoding='utf-8', newline='') as f:
+		f.write(dumps_vfj(d))
+	return out
+
 def save_proof(glyphs, out, header_from=FONT_VFJ):
 	'''Write glyphs into a new VFJ that carries the font's header (UPM, master, guides) — open in FontLab and copy.'''
 	d = load(header_from)
 	d['font']['glyphs'] = copy.deepcopy(list(glyphs))
 	d['font']['glyphsCount'] = len(glyphs)
-	with open(out, 'w', encoding='utf-8') as f:
-		json.dump(d, f, indent=1, ensure_ascii=False)
-	return out
+	return save_vfj(d, out)
