@@ -30,6 +30,12 @@ separate draft file is kept. After the user's polish, render draft and polished 
 then write what changed into [[feedback-drawing-lessons]]. Never re-merge draw_p1.py with `--replace` after that:
 it would overwrite the polished glyphs.
 
+P2 status (2026-11-03): the user polished 31 P1 glyphs and added glyph_remove, delta_add, delta_remove, delta_clear
+(commit f5ea81d). The other 120 P2 glyphs (incl. aliases ok / cancel) are drawn in `scripts/draw_p2.py` and merged into
+the VFJ (528 -> 648), untuned. draw_p2.py reads shared parts (search lens, script_run brackets, undo, clipboard, shape,
+view_icons, glyph_add's a) from the current VFJ, so rerunning it after the user's polish picks those up; like P1,
+never re-merge it with `--replace` over polished glyphs.
+
 **How to apply:** draw P1 "new glyph" rows first, following [[project-drawing-workflow]] and [[project-icon-style]];
 new names follow the existing families (axis_*, delta_*, file_*, config_*, panel_*, anchor_*, element_*).
 After a glyph lands, the call sites in the Where column still need updating in the other repos.

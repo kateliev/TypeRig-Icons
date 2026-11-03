@@ -28,6 +28,19 @@ From the P1 batch (67 glyphs, 2026-11-02, not yet reviewed by the user):
   with the tips out on 160 / 800.
 - **A second name is a component glyph.** chevron_up = `component('fold_up')`; same for any alias, so the
   drawing stays in one place.
+From the user's polish of P1 (commit f5ea81d, 2026-11-03) — what the user changed, so apply it up front:
+
+- **Badge top-left, object bottom-right.** Variants of one object share it and change only the badge: delta_add /
+  delta_remove / delta_clear / delta_bake (play) / delta_live (eye) / delta_commit (check) are one Δ at
+  x 384–800, y 224–608 plus a badge around (288, 672): plus = (128–448, 672) + (288, 512–832), minus = same bar.
+- **Chamfer acute corners by hand.** Triangles get 32-unit cuts instead of miters: Δ (780 224 | 800 256 | … | 384 256
+  | 404 224), play (736 464 | 736 496 | 352 704 | 320 684 | 320 276 | 352 256), warning apex 464–496 at 844.
+- **Fill the live area.** Toggles 128–832 × 256–704, grid 160–800 (3×3 even at off-grid 373 / 587), tool_text
+  160–800: the user enlarged most shapes that sat inside the 160–800 box.
+- **Drop inner details.** Trash bars removed; search handle 64, lens r ≈ 256 at (415, 545), handle 576 384 → 799 160.
+- **Prefer the familiar form.** history = Material-like (hook arrow at top-left); snap = magnet at 45°;
+  contour_match kept the heart.
+
 - **Badges cost legibility.** The top-left badge zone (≈ 96–384) fits a plus, minus, check or X; a circular
   arrow there (axis_reset) is at the limit of what reads.
 
